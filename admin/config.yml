@@ -20,3 +20,18 @@ collections:
       - {label: "Cover Image", name: "image", widget: "image", required: false}
       - {label: "Summary", name: "summary", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Attachment", name: "attachment", widget: "file", required: false}
+  
+  - name: "policies"
+    label: "Policies"
+    folder: "content/policies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Attachment", name: "attachment", widget: "file", required: false}
