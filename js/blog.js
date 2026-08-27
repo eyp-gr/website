@@ -173,6 +173,11 @@ async function renderSinglePost(containerEl) {
                 : ""
             }
 
+            ${data.attachment
+                ? `<p class="post-attachment"><a href="${data.attachment}" download>${data.attachment.split("/").pop()}</a></p>`
+                : ""
+            }
+
             <div class="post-body">
                 ${marked.parse(body)}
             </div>
