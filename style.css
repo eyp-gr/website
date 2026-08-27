@@ -168,6 +168,7 @@ main,
 
 .nav{
     flex:1;
+    min-width:0;
 
     display:flex;
     justify-content:center;
@@ -195,6 +196,11 @@ main,
 
     cursor:pointer;
     transition:background .2s ease;
+}
+
+.nav > a,
+.nav-item{
+    flex-shrink:0;
 }
 
 .nav-item{
@@ -291,6 +297,95 @@ main,
 
     font-size:28px;
     line-height:1;
+}
+
+.overflow-panel{
+    display:none;
+}
+
+@media (min-width:769px){
+    .header .container{
+        position:relative;
+    }
+
+    .header.has-overflow .menu-toggle{
+        position:absolute;
+        top:50%;
+        right:15px;
+        transform:translateY(-50%);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:45px;
+        height:45px;
+        padding:0;
+        flex-shrink:0;
+    }
+
+    .header.has-overflow .nav{
+        margin-right:60px;
+    }
+
+    .nav.has-overflow{
+        min-width:0;
+        justify-content:flex-start;
+        overflow:hidden;
+    }
+
+    .nav.has-overflow > .is-overflowed{
+        display:none;
+    }
+
+    .nav.has-overflow ~ .overflow-panel{
+        position:absolute;
+        top:100%;
+        right:0;
+        z-index:1000;
+        display:none;
+        min-width:290px;
+        background:var(--blue);
+        box-shadow:0 10px 25px rgba(0,0,0,.18);
+    }
+
+    .nav.has-overflow ~ .overflow-panel.active{
+        display:block;
+    }
+
+    .overflow-nav .nav-item > button,
+    .overflow-nav > a{
+        width:100%;
+        min-height:52px;
+        padding:14px 20px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        border:0;
+        background:none;
+        color:var(--white);
+        font-family:inherit;
+        font-size:16px;
+        font-weight:600;
+        line-height:1.5;
+        text-decoration:none;
+        text-align:left;
+        cursor:pointer;
+    }
+
+    .overflow-nav .mega-menu{
+        position:static;
+        display:block;
+        min-width:0;
+        transform:none;
+        background:rgba(0,0,0,.12);
+        box-shadow:none;
+        opacity:1;
+        visibility:visible;
+    }
+
+    .overflow-nav .mega-menu a{
+        padding:12px 20px 12px 42px;
+        text-align:left;
+    }
 }
 
 
