@@ -329,7 +329,7 @@ main,
     .nav.has-overflow{
         min-width:0;
         justify-content:flex-start;
-        overflow:hidden;
+        overflow:visible;
     }
 
     .nav.has-overflow > .is-overflowed{
