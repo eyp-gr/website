@@ -1109,7 +1109,7 @@ main,
 
 .events{
     padding:25px 0;
-    background:#448DD4;
+    background:#204587;
 }
 
 .section-header{
@@ -1153,7 +1153,7 @@ main,
     display:block;
     width:100%;
     height:220px;
-    object-fit:cover;
+    object-fit: contain;
 }
 
 .event-content{
