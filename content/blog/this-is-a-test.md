@@ -1,8 +1,8 @@
 ---
-title: This is a testττ
+title: Αυτό είναι ένα τεστ
 date: 2026-09-10T11:54:00.000+03:00
 author: EYP Greece
 image: ""
-summary: This is the test
+summary: Hahaha
 ---
 Pan pan
