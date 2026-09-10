@@ -1,8 +1,8 @@
 ---
-title: Αυτό είναι ένα τεστ
+title: ΤΕΣΤ ΤΕΣΤ
 date: 2026-09-10T11:54:00.000+03:00
 author: EYP Greece
-image: ""
+image: /images/blog/oudas-26-full-logo.png
 summary: Hahaha
 ---
 Pan pan
