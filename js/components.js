@@ -1,5 +1,10 @@
 async function loadComponent(id, file) {
     const response = await fetch(file);
+
+    if (!response.ok) {
+        throw new Error(`Failed to load ${file}: ${response.status}`);
+    }
+
     document.getElementById(id).innerHTML = await response.text();
 }
 
@@ -7,11 +12,60 @@ async function loadComponent(id, file) {
 document.addEventListener("DOMContentLoaded", async () => {
 
     const level = Number(document.body.dataset.level || 0);
-
     const prefix = "../".repeat(level);
 
-    await loadComponent("navbar", prefix + "components/navbar.html");
-    await loadComponent("footer", prefix + "components/footer.html");
+    /* =========================================================
+       LANGUAGE
+    ========================================================= */
+
+    const isEnglish = window.location.pathname.startsWith("/en/");
+
+    const navbarFile = isEnglish
+        ? prefix + "components/navbar-en.html"
+        : prefix + "components/navbar.html";
+
+    const footerFile = isEnglish
+        ? prefix + "components/footer-en.html"
+        : prefix + "components/footer.html";
+
+
+    /* =========================================================
+       LOAD COMPONENTS
+    ========================================================= */
+
+    await loadComponent("navbar", navbarFile);
+    await loadComponent("footer", footerFile);
+
+
+    /* =========================================================
+       LANGUAGE SWITCH
+    ========================================================= */
+
+    const languageSwitch = document.getElementById("language-switch");
+
+    if (languageSwitch) {
+
+        const path = window.location.pathname;
+
+        if (isEnglish) {
+
+            // /en/items/contact.html
+            // becomes
+            // /items/contact.html
+
+            languageSwitch.textContent = "Ελληνικά";
+            languageSwitch.href = path.replace(/^\/en/, "");
+
+        } else {
+
+            // /items/contact.html
+            // becomes
+            // /en/items/contact.html
+
+            languageSwitch.textContent = "English";
+            languageSwitch.href = "/en" + path;
+        }
+    }
 
 
     /* =========================================================
@@ -35,26 +89,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     const isPhoneMenu = () => window.innerWidth <= 768;
 
     const resetOverflow = () => {
+
         nav.querySelectorAll(".is-overflowed").forEach(item => {
             item.classList.remove("is-overflowed");
         });
+
         nav.classList.remove("has-overflow");
         header.classList.remove("has-overflow");
+
         overflowNav.innerHTML = "";
+
         overflowPanel.classList.remove("active");
         overflowPanel.setAttribute("aria-hidden", "true");
     };
 
+
     const firstOverflowIndex = () => {
+
         let usedWidth = 0;
 
         return Array.from(nav.children).findIndex(item => {
+
             usedWidth += item.getBoundingClientRect().width;
+
             return usedWidth > nav.getBoundingClientRect().width;
         });
     };
 
+
     const updateOverflow = () => {
+
         resetOverflow();
 
         if (isPhoneMenu()) return;
@@ -65,19 +129,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         header.classList.add("has-overflow");
         nav.classList.add("has-overflow");
+
         overflowIndex = firstOverflowIndex();
 
-        Array.from(nav.children).slice(overflowIndex).forEach(item => {
-            item.classList.add("is-overflowed");
-            overflowNav.appendChild(item.cloneNode(true));
-        });
+        Array.from(nav.children)
+            .slice(overflowIndex)
+            .forEach(item => {
 
-        overflowPanel.setAttribute("aria-hidden", "false");
+                item.classList.add("is-overflowed");
+
+                overflowNav.appendChild(item.cloneNode(true));
+            });
     };
+
 
     menuToggle.addEventListener("click", () => {
 
-        const target = isPhoneMenu() ? nav : overflowPanel;
+        const target = isPhoneMenu()
+            ? nav
+            : overflowPanel;
+
         const isOpen = target.classList.toggle("active");
 
         menuToggle.setAttribute("aria-expanded", isOpen);
@@ -88,9 +159,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             icon.textContent = "×";
         } else {
             icon.textContent = "☰";
-
         }
-
     });
 
 
@@ -98,27 +167,39 @@ document.addEventListener("DOMContentLoaded", async () => {
        MOBILE DROPDOWNS
     ========================================================= */
 
-    /* =========================================================
-       CLOSE MENU AFTER CLICKING A LINK
-    ========================================================= */
-
     document.querySelectorAll(".nav, .overflow-nav").forEach(menu => {
+
         menu.addEventListener("click", event => {
+
             const item = event.target.closest(".nav-item");
             const button = event.target.closest("button");
             const link = event.target.closest("a");
 
-            if (item && button === item.firstElementChild && button.tagName === "BUTTON") {
+
+            if (
+                item &&
+                button === item.firstElementChild &&
+                button.tagName === "BUTTON"
+            ) {
+
                 if (!isPhoneMenu()) return;
 
                 document.querySelectorAll(".nav-item").forEach(otherItem => {
-                    if (otherItem !== item) otherItem.classList.remove("active");
+
+                    if (otherItem !== item) {
+                        otherItem.classList.remove("active");
+                    }
+
                 });
+
                 item.classList.toggle("active");
+
                 return;
             }
 
+
             if (!link) return;
+
 
             if (isPhoneMenu()) {
 
@@ -135,13 +216,18 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
 
             } else {
+
                 overflowPanel.classList.remove("active");
+
                 overflowPanel.setAttribute("aria-hidden", "true");
+
                 menuToggle.setAttribute("aria-expanded", "false");
+
                 menuToggle.querySelector(".hamburger-icon").textContent = "☰";
             }
 
         });
+
     });
 
 
@@ -152,14 +238,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.addEventListener("resize", () => {
 
         nav.classList.remove("active");
-        navItems.forEach(item => item.classList.remove("active"));
+
+        navItems.forEach(item => {
+            item.classList.remove("active");
+        });
+
         menuToggle.setAttribute("aria-expanded", "false");
+
         menuToggle.querySelector(".hamburger-icon").textContent = "☰";
+
         updateOverflow();
     });
 
 
     updateOverflow();
+
     window.addEventListener("load", updateOverflow, { once: true });
 
 });
