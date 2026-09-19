@@ -1,6 +1,13 @@
-<body data-level="3">
+---
+import Navbar from '../../components/Navbar.astro';
+import Layout from '../../layouts/Layout.astro';    
+---
 
-        <div class="banner">
+<Layout>
+
+	<Navbar />
+
+    <div class="banner">
         <h1>Executive Board</h1>
     </div>
 
@@ -41,7 +48,7 @@
                 <div class="image-side">
                     <div class="rotated-bg"></div>
                     <div class="image-box">
-                        <img src="/images/board/petros.jpg" alt="Πέτρος Κατρακούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="/src/assets/board/petros.jpg" alt="Πέτρος Κατρακούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="image-placeholder" style="display:none;">Πέτρος Κατρακούλης</div>
                     </div>
                 </div>
@@ -67,7 +74,7 @@
                 <div class="image-side">
                     <div class="rotated-bg"></div>
                     <div class="image-box">
-                        <img src="/images/board/stergiani.jpg" alt="Στεργιανή Τοπαλίδου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="/src/assets/board/stergiani.jpg" alt="Στεργιανή Τοπαλίδου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="image-placeholder" style="display:none;">Στεργιανή Τοπαλίδου</div>
                     </div>
                 </div>
@@ -93,7 +100,7 @@
                 <div class="image-side">
                     <div class="rotated-bg"></div>
                     <div class="image-box">
-                        <img src="/images/board/alexandros.jpg" alt="Αλέξανδρος Σιωμούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="/src/assets/board/alexandros.jpg" alt="Αλέξανδρος Σιωμούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="image-placeholder" style="display:none;">Αλέξανδρος Σιωμούλης</div>
                     </div>
                 </div>
@@ -119,7 +126,7 @@
                 <div class="image-side">
                     <div class="rotated-bg"></div>
                     <div class="image-box">
-                        <img src="/images/board/maria.png" alt="Μαρία Ερωτοκρίτου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="/src/assets/board/maria.png" alt="Μαρία Ερωτοκρίτου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="image-placeholder" style="display:none;">Μαρία Ερωτοκρίτου</div>
                     </div>
                 </div>
@@ -145,7 +152,7 @@
                 <div class="image-side">
                     <div class="rotated-bg"></div>
                     <div class="image-box">
-                        <img src="/images/board/iro.jpg" alt="Αργυρώ Δήμητρα (Ηρώ) Μιχαηλίδη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="/src/assets/board/iro.jpg" alt="Αργυρώ Δήμητρα (Ηρώ) Μιχαηλίδη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="image-placeholder" style="display:none;">Αργυρώ Δήμητρα (Ηρώ) Μιχαηλίδη</div>
                     </div>
                 </div>
@@ -171,7 +178,7 @@
                 <div class="image-side">
                     <div class="rotated-bg"></div>
                     <div class="image-box">
-                        <img src="/images/board/ellie.jpg" alt="Ελένη Γκεσούλη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="/src/assets/board/ellie.jpg" alt="Ελένη Γκεσούλη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="image-placeholder" style="display:none;">Ελένη Γκεσούλη</div>
                     </div>
                 </div>
@@ -197,7 +204,7 @@
     </div>
 
 
-    <script>
+    <!-- <script>
         function copyToClipboard(text) {
 
             navigator.clipboard.writeText(text);
@@ -214,158 +221,156 @@
                 message.remove();
             }, 2000);
         }
-    </script>
+    </script> -->
 
-</body>
+    <style>
 
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 35px 25px;
+        }
 
-<style>
+        .member-card {
+            min-height: 220px;
+            display: flex;
+            align-items: stretch;
+        }
 
-.member-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 35px 25px;
-}
+        .member-card.full-width-center {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: 100%;
+            max-width: 535px;
+        }
 
-.member-card {
-    min-height: 220px;
-    display: flex;
-    align-items: stretch;
-}
+        .image-side {
+            position: relative;
+            z-index: 2;
+            width: 200px;
+            flex-shrink: 0;
+        }
 
-.member-card.full-width-center {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 100%;
-    max-width: 535px;
-}
+        .rotated-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            border-radius: 25px;
+            background: var(--light-blue);
+            transform: rotate(-4deg);
+        }
 
-.image-side {
-    position: relative;
-    z-index: 2;
-    width: 200px;
-    flex-shrink: 0;
-}
+        .image-box {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 2px solid var(--light-blue);
+            border-radius: 22px;
+            background: #e2e8f0;
+        }
 
-.rotated-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    border-radius: 25px;
-    background: var(--light-blue);
-    transform: rotate(-4deg);
-}
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.image-box {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border: 2px solid var(--light-blue);
-    border-radius: 22px;
-    background: #e2e8f0;
-}
+        .image-placeholder {
+            padding: 10px;
+            color: #64748b;
+            font-size: .95rem;
+            font-weight: 700;
+            text-align: center;
+        }
 
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .text-side {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: -15px;
+            padding: 20px 20px 20px 30px;
+            border-radius: 0 20px 20px 0;
+            background: #dbeafe;
+        }
 
-.image-placeholder {
-    padding: 10px;
-    color: #64748b;
-    font-size: .95rem;
-    font-weight: 700;
-    text-align: center;
-}
+        .text-side::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 20px 20px 0;
+            border-color: transparent var(--light-blue) transparent transparent;
+            opacity: .8;
+        }
 
-.text-side {
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: -15px;
-    padding: 20px 20px 20px 30px;
-    border-radius: 0 20px 20px 0;
-    background: #dbeafe;
-}
+        .member-name {
+            margin-bottom: 8px;
+            color: #1e3a8a;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
 
-.text-side::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 20px 20px 0;
-    border-color: transparent var(--light-blue) transparent transparent;
-    opacity: .8;
-}
+        .member-role {
+            margin-bottom: 15px;
+            color: #334155;
+            font-size: .95rem;
+            line-height: 1.5;
+        }
 
-.member-name {
-    margin-bottom: 8px;
-    color: #1e3a8a;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
+        .member-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
 
-.member-role {
-    margin-bottom: 15px;
-    color: #334155;
-    font-size: .95rem;
-    line-height: 1.5;
-}
+        .email-copy {
+            width: fit-content;
+            color: var(--light-blue);
+            font-size: .9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .2s;
+        }
 
-.member-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+        .email-copy:hover {
+            color: #0879a7;
+            text-decoration: underline;
+        }
 
-.email-copy {
-    width: fit-content;
-    color: var(--light-blue);
-    font-size: .9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .2s;
-}
+        /* Tablet & μικρότερες οθόνες (<= 850px) */
+        @media (max-width: 850px) {
+            .member-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
-.email-copy:hover {
-    color: #0879a7;
-    text-decoration: underline;
-}
+        /* Mobile (<= 768px) */
+        @media (max-width: 768px) {
+            .member-card {
+                flex-direction: column;
+            }
 
-/* Tablet & μικρότερες οθόνες (<= 850px) */
-@media (max-width: 850px) {
-    .member-grid {
-        grid-template-columns: 1fr;
-    }
-}
+            .image-side {
+                width: 100%;
+                height: 220px;
+            }
 
-/* Mobile (<= 768px) */
-@media (max-width: 768px) {
-    .member-card {
-        flex-direction: column;
-    }
-
-    .image-side {
-        width: 100%;
-        height: 220px;
-    }
-
-    .text-side {
-        margin-top: -15px;
-        margin-left: 0;
-        padding: 30px 20px 20px;
-        border-radius: 0 0 20px 20px;
-    }
-}
-</style>
+            .text-side {
+                margin-top: -15px;
+                margin-left: 0;
+                padding: 30px 20px 20px;
+                border-radius: 0 0 20px 20px;
+            }
+        }
+        </style>
+</Layout>
