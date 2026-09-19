@@ -1,11 +1,312 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { $brand } from 'astro:schema';
+import Navbar from '';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+
+	<Navbar />
+
+    <div class="hero">
+        <img src="/images/index.webp" alt="Η 51η Εθνική Συνδιάσκεψη Επιλογής" fetchpriority="high" decoding="async">
+
+        <div class="hero-overlay">
+            <h1>European Youth Parliament Greece</h1>
+            <p>
+                The new generation of Europe is here
+            </p>
+            <div class="button-group">
+                <a href="items/get-to-know-us/who-we-are.html" class="pill-btn">Learn more</a>
+                <a href="#events" class="pill-btn">Upcoming events</a>
+            </div>
+        </div>
+    </div>
+
+<div class="page-section eyp-intro">
+    <div class="content-container section-grid">
+        <div class="section-text eyp-section">
+            <h2>What is the European Youth Parliament Greece?</h2>
+            <p>
+            The European Youth Parliament Greece is the National Committee of the
+            European Youth Parliament (EYP) in Greece. EYP is a non-governmental,
+            non-profit organization that organizes conferences
+            for young people, simulating the functioning of the European Parliament.
+            </p>
+        </div>
+
+        <div class="eyp-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVJfU0-HZaE?si=8AL3f9KeV5lvcyDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="events" id="events">
+    <div class="content-container">
+        <div class="section-header">
+            <h2>Upcoming Events</h2>
+        </div>
+        <div class="event-grid">
+            <div class="event-card">
+                <img src="/images/sessions/patras-26.webp" alt="Patras '26" loading="lazy">
+                <div class="event-content">
+                    <span class="event-date">5-8 November 2026</span>
+                    <h3>2nd Regional Selection Conference</h3>
+                    <p class="event-location">Patras</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="/images/sessions/oudas-26.webp" alt="2nd UF" loading="lazy">
+                <div class="event-content">
+                    <span class="event-date">26-29 November 2026</span>
+                    <h3>2nd University Forum</h3>
+                    <p class="event-location">Athens</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="/images/sessions/thessaloniki-26.webp" alt="Thessaloniki '26" loading="lazy" style="transform: scale(1.2);">
+                <div class="event-content">
+                    <span class="event-date">10-14 December 2026</span>
+                    <h3>52nd National Selection Conference</h3>
+                    <p class="event-location">Thessaloniki</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="join-section">
+    <div class="content-container">
+
+        <div class="section-header">
+            <h2 style="color: #1B365D;">How can I participate?</h2>
+        </div>
+
+        <div class="join-grid">
+
+            <a href="/items/participation/participants.html" class="join-card">
+                <div class="join-icon">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+                <h3>Delegates</h3>
+
+                <p>
+                    Attend a European Youth Parliament session as a delegate
+                </p>
+
+                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a href="/items/participation/volunteers.html" class="join-card">
+                <div class="join-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <h3>Volunteers</h3>
+
+                <p>
+                    Become a volunteer and help organize the activities of the European Youth Parliament
+                </p>
+
+                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a href="/items/participation/schools.html" class="join-card">
+                <div class="join-icon">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+
+                <h3>Schools</h3>
+
+                <p>
+                    Participation in our activities as a school
+                </p>
+
+                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a href="/items/partners/become-a-partner.html" class="join-card">
+                <div class="join-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+
+                <h3>Partners</h3>
+
+                <p>
+                    Support our work through partnerships
+                </p>
+
+                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <a href="/items/contact.html" class="join-card">
+                <div class="join-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <h3>Contact</h3>
+
+                <p>
+                    Have any questions? Contact us!
+                </p>
+
+                <span>Contact <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 25px;
+}
+
+.member-card {
+    min-height: 220px;
+    display: flex;
+    align-items: stretch;
+}
+
+.member-card.full-width-center {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 535px;
+}
+
+.image-side {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.rotated-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 25px;
+    background: var(--light-blue);
+    transform: rotate(-4deg);
+}
+
+.image-box {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid var(--light-blue);
+    border-radius: 22px;
+    background: #e2e8f0;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    padding: 10px;
+    color: #64748b;
+    font-size: .95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-side {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -15px;
+    padding: 20px 20px 20px 30px;
+    border-radius: 0 20px 20px 0;
+    background: #dbeafe;
+}
+
+.text-side::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent var(--light-blue) transparent transparent;
+    opacity: .8;
+}
+
+.member-name {
+    margin-bottom: 8px;
+    color: #1e3a8a;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.member-role {
+    margin-bottom: 15px;
+    color: #334155;
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+.member-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.email-copy {
+    width: fit-content;
+    color: var(--light-blue);
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.email-copy:hover {
+    color: #0879a7;
+    text-decoration: underline;
+}
+
+/* Tablet & μικρότερες οθόνες (<= 850px) */
+@media (max-width: 850px) {
+    .member-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+    .member-card {
+        flex-direction: column;
+    }
+
+    .image-side {
+        width: 100%;
+        height: 220px;
+    }
+
+    .text-side {
+        margin-top: -15px;
+        margin-left: 0;
+        padding: 30px 20px 20px;
+        border-radius: 0 0 20px 20px;
+    }
+}
+</style>
 </Layout>

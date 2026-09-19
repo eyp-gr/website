@@ -1,0 +1,534 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<header class="header">
+    <div class="container">
+
+        <a href="/" class="logo">
+            <img src="/src/assets/logo/long_white.webp" alt="EYP Greece">
+        </a>
+
+        <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false">
+            <span class="hamburger-icon">☰</span>
+        </button>
+
+        <nav class="nav">
+
+            <a href="/">Αρχική</a>
+
+            <div class="nav-item">
+                <button>
+                    Γνωρίστε μας
+                    <span>▾</span>
+                </button>
+
+                <div class="mega-menu">
+                    <a href="/items/get-to-know-us/who-we-are.html">Ποιοι είμαστε</a>
+                    <a href="/src/pages/get-to-know-us/executive-board.astro">Διοικητικό Συμβούλιο</a>
+                    <a href="/items/get-to-know-us/wg-and-rd.html">Ομάδες Εργασίας και Περιφερειακές Ομάδες</a>
+                    <a href="/items/get-to-know-us/eyp-network.html">Δίκτυο του Ε.Κ.Ν.</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <button>
+                    Τι κάνουμε
+                    <span>▾</span>
+                </button>
+
+                <div class="mega-menu">
+                    <a href="/items/what-do-we-do/sessions.html">Δράσεις</a>
+                    <a href="/items/what-do-we-do/mentorship-program.html">Πρόγραμμα Mentorship</a>
+                    <a href="/items/what-do-we-do/members-assembly.html">Γενικές Συνελεύσεις</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <button>
+                    Understanding Europe
+                    <span>▾</span>
+                </button>
+
+                <div class="mega-menu">
+                    <a href="/items/understanding-europe/what-is-ue.html">Τι είναι το πρόγραμμα</a>
+                    <a href="/items/understanding-europe/structure.html">Δομή Προγράμματος</a>
+                    <a href="/items/understanding-europe/participation.html">Συμμετοχή</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <button>
+                    Συμμετοχή
+                    <span>▾</span>
+                </button>
+
+                <div class="mega-menu">
+                    <a href="/items/participation/participants.html">Συμμετέχοντες</a>
+                    <a href="/items/participation/volunteers.html">Εθελοντές</a>
+                    <a href="/items/participation/schools.html">Σχολεία και Καθηγητές</a>
+                    <a href="/items/participation/faq.html">Συχνές Ερωτήσεις</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <button>
+                    Συνεργάτες
+                    <span>▾</span>
+                </button>
+
+                <div class="mega-menu">
+                    <a href="/items/partners/our-partners.html">Οι συνεργάτες μας</a>
+                    <a href="/items/partners/become-a-partner.html">Γίνετε Συνεργάτης</a>
+                </div>
+            </div>
+
+            <a href="/items/news.html">Νέα</a>
+            <a href="/items/alumni.html">Alumni</a>
+            <a href="/items/contact.html">Επικοινωνία</a>
+            <a href="/items/policies.html">Policies</a>
+
+            <a href="#" id="language-switch">English</a>
+
+        </nav>
+
+        <div class="overflow-panel" aria-hidden="true">
+            <nav class="overflow-nav" aria-label="Περισσότερες επιλογές"></nav>
+        </div>
+
+    </div>
+</header>
+
+<style>
+/* =========================================================
+   VARIABLES & GLOBAL RESET FOR HEADER
+========================================================= */
+:root {
+    --blue: #1a4388;
+    --dark-blue: #1b365d;
+    --purple: #434f98;
+    --light-blue: #0c9fda;
+    --gold: #d4af37;
+    --text: #222;
+    --muted: #555;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font: inherit;
+}
+
+.header {
+    height: 90px;
+    background: var(--blue);
+    font-family: "Source Sans 3", sans-serif;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.logo img {
+    display: block;
+    height: 72px;
+    width: auto;
+}
+
+.nav {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav > a,
+.nav-item > button {
+    height: 90px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: none;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.nav > a,
+.nav-item {
+    flex-shrink: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item span {
+    margin-left: 4px;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: .8;
+    transition: transform 0.2s ease;
+}
+
+.nav > a:hover,
+.nav-item > button:hover,
+.mega-menu a:hover {
+    background: var(--light-blue);
+}
+
+/* =========================================================
+   DROPDOWN (MEGA MENU)
+========================================================= */
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 1000;
+    min-width: 270px;
+    overflow: hidden;
+    background: var(--blue);
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.nav-item:hover .mega-menu,
+.nav-item:focus-within .mega-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    transition: background-color 0.2s ease;
+}
+
+.mega-menu a:last-child {
+    border-bottom: none;
+}
+
+/* =========================================================
+   MOBILE / OVERFLOW MENU BUTTON
+========================================================= */
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger-icon {
+    display: block;
+    color: var(--white);
+    font-size: 28px;
+    line-height: 1;
+}
+
+.overflow-panel {
+    display: none;
+}
+
+/* =========================================================
+   DESKTOP OVERFLOW STYLES
+========================================================= */
+
+@media (min-width: 769px) {
+    .header.has-overflow .menu-toggle {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        flex-shrink: 0;
+    }
+
+    .header.has-overflow .nav {
+        margin-right: 50px;
+    }
+
+    .nav.has-overflow {
+        min-width: 0;
+        justify-content: flex-start;
+    }
+
+    .nav.has-overflow > .is-overflowed {
+        display: none !important;
+    }
+
+    .nav.has-overflow ~ .overflow-panel {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        display: none;
+        min-width: 280px;
+        background: var(--blue);
+        box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    }
+
+    .nav.has-overflow ~ .overflow-panel.active {
+        display: block;
+    }
+
+    .overflow-nav .nav-item > button,
+    .overflow-nav > a {
+        width: 100%;
+        min-height: 52px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0;
+        background: none;
+        color: var(--white);
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-decoration: none;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .overflow-nav .mega-menu {
+        position: static;
+        display: block;
+        min-width: 0;
+        transform: none;
+        background: rgba(0,0,0,.12);
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .overflow-nav .mega-menu a {
+        padding: 12px 20px 12px 42px;
+        text-align: left;
+    }
+}
+
+/* =========================================================
+   MOBILE NAVIGATION (<= 768px)
+========================================================= */
+
+@media (max-width: 768px) {
+    .header {
+        height: 75px;
+    }
+
+    .header .container {
+        height: 75px;
+        justify-content: center;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    .logo img {
+        width: min(240px, calc(100vw - 90px));
+        height: auto;
+        max-height: 60px;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        z-index: 10;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 0;
+        background: var(--blue);
+        box-shadow: 0 10px 25px rgba(0,0,0,.18);
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav > a,
+    .nav-item > button {
+        width: 100%;
+        height: auto;
+        min-height: 52px;
+        padding: 14px 22px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .nav > a {
+        justify-content: flex-start;
+    }
+
+    .nav-item > button {
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item span {
+        margin-left: auto;
+        font-size: 11px;
+    }
+
+    .mega-menu {
+        position: static;
+        width: 100%;
+        min-width: 250px;
+        display: none;
+        transform: none;
+        background: rgba(0,0,0,.12);
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-item:hover .mega-menu {
+        display: block;
+    }
+
+    .mega-menu a {
+        padding: 13px 22px 13px 42px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+    }
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const header = document.querySelector('.header') as HTMLElement | null;
+        const nav = document.querySelector('.nav') as HTMLElement | null;
+        const menuToggle = document.querySelector('.menu-toggle') as HTMLButtonElement | null;
+        const overflowPanel = document.querySelector('.overflow-panel') as HTMLElement | null;
+        const overflowNav = document.querySelector('.overflow-nav') as HTMLElement | null;
+
+        if (!header || !nav || !menuToggle || !overflowPanel || !overflowNav) return;
+
+        function updateDesktopOverflow() {
+            if (!header || !nav || !overflowPanel || !overflowNav) return;
+
+            if (window.innerWidth <= 768) {
+                header.classList.remove('has-overflow');
+                nav.classList.remove('has-overflow');
+                overflowPanel.classList.remove('active');
+                Array.from(nav.children).forEach(child => (child as HTMLElement).classList.remove('is-overflowed'));
+                return;
+            }
+
+            header.classList.remove('has-overflow');
+            nav.classList.remove('has-overflow');
+            overflowNav.innerHTML = '';
+            const items = Array.from(nav.children) as HTMLElement[];
+            items.forEach(child => child.classList.remove('is-overflowed'));
+
+            const navWidth = nav.clientWidth;
+            let totalWidth = 0;
+            const overflowedItems: HTMLElement[] = [];
+
+            items.forEach(item => {
+                totalWidth += item.offsetWidth;
+                if (totalWidth > navWidth - 60) {
+                    item.classList.add('is-overflowed');
+                    overflowedItems.push(item);
+                }
+            });
+
+            if (overflowedItems.length > 0) {
+                header.classList.add('has-overflow');
+                nav.classList.add('has-overflow');
+                
+                overflowedItems.forEach(item => {
+                    const clone = item.cloneNode(true) as HTMLElement;
+                    overflowNav.appendChild(clone);
+                });
+            }
+        }
+
+        menuToggle.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                nav.classList.toggle('active');
+            } else {
+                overflowPanel.classList.toggle('active');
+            }
+        });
+
+        window.addEventListener('resize', updateDesktopOverflow);
+        updateDesktopOverflow();
+    });
+</script>
