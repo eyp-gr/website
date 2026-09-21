@@ -24,9 +24,23 @@ const { title = "Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδο
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <title>{title}</title>
+
+    <style is:global>
+      html::-webkit-scrollbar,
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      html, body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
   </head>
+
   <body>
     <!-- Εδώ μπαίνει το περιεχόμενο της κάθε σελίδας -->
     <slot />
   </body>
+
 </html>

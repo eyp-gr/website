@@ -1,0 +1,80 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';    
+---
+
+<Layout title="ΕΚΝΕ - Επικοινωνία">
+
+	<Navbar />
+
+        <body data-level="1">
+
+            <section class="contact-section">
+
+                <div class="contact-image">
+
+                    <img src="/src/assets/contact/contact.jpg" alt="Contact">
+
+                    <div class="contact-overlay">
+                        <h1>Επικοινωνήστε<br>μαζί μας!</h1>
+                    </div>
+
+                </div>
+
+                <div class="contact-content">
+
+                    <div class="contact-text">
+
+                        <h2>Contact Us</h2>
+
+                        <p>
+                            Σε περίπτωση που έχετε οποιαδήποτε απορία ή θέλετε να επικοινωνήσετε σχετικά με τη συμμετοχή σας στο ΕΚΝΕ,
+                            μη διστάσετε να μας στείλετε ένα μήνυμα σε κάποιο από τα
+                            social media του ΕΚΝΕ ή σε κάποιο e-mail. Θα χαρούμε να σας ακούσουμε!
+                        </p>
+
+                    </div>
+
+                    <div class="contact-gallery">
+
+                        <img src="/src/assets/contact/phone.png" alt="Τηλέφωνο επικοινωνίας: +30 215 215 1994" onclick="copyToClipboard('+30 215 215 1994')">
+
+                        <img src="/src/assets/contact/email.png" alt="Email: info@eypgreece.org" onclick="copyToClipboard('info@eypgreece.org')">
+
+                        <img src="/src/assets/contact/address.png" alt="Διεύθυνση: Βίτσι 55, Θεσσαλονίκη" onclick="window.open('https://maps.app.goo.gl/htt4HPmCkYikPaiJ9','_blank')">
+
+                    </div>
+
+                    <div class="contact-socials">
+
+                        <a target="_blank" href="https://www.instagram.com/eyp.greece/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a target="_blank" href="https://www.linkedin.com/company/european-youth-parliament-greece">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a target="_blank" href="https://www.facebook.com/eypgr">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a target="_blank" href="https://www.tiktok.com/@eyp.greece">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                        <a target="_blank" href="https://discord.com/invite/bnfjMAGUZe">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </body>
+
+    <Footer />
+</Layout>
