@@ -1,311 +1,167 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
 
 	<Navbar />
 
+<main>
+
     <div class="hero">
-        <img src="/images/index.webp" alt="Η 51η Εθνική Συνδιάσκεψη Επιλογής" fetchpriority="high" decoding="async">
+        <img src="/src/assets/index.webp" alt="Η 51η Εθνική Συνδιάσκεψη Επιλογής" fetchpriority="high" decoding="async">
 
         <div class="hero-overlay">
-            <h1>European Youth Parliament Greece</h1>
-            <p>
-                The new generation of Europe is here
-            </p>
+            <h1>Ευρωπαϊκο Κοινοβούλιο Νέων Ελλάδος</h1>
+            <p>Η νέα γενιά της Ευρώπης είναι εδώ!</p>
             <div class="button-group">
-                <a href="items/get-to-know-us/who-we-are.html" class="pill-btn">Learn more</a>
-                <a href="#events" class="pill-btn">Upcoming events</a>
+                <a href="items/get-to-know-us/who-we-are.html" class="pill-btn">Μάθετε περισσότερα</a>
+                <a href="#events" class="pill-btn">Επερχόμενες δράσεις</a>
             </div>
         </div>
     </div>
 
-<div class="page-section eyp-intro">
-    <div class="content-container section-grid">
-        <div class="section-text eyp-section">
-            <h2>What is the European Youth Parliament Greece?</h2>
-            <p>
-            The European Youth Parliament Greece is the National Committee of the
-            European Youth Parliament (EYP) in Greece. EYP is a non-governmental,
-            non-profit organization that organizes conferences
-            for young people, simulating the functioning of the European Parliament.
-            </p>
-        </div>
-
-        <div class="eyp-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LVJfU0-HZaE?si=8AL3f9KeV5lvcyDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
-<div class="events" id="events">
-    <div class="content-container">
-        <div class="section-header">
-            <h2>Upcoming Events</h2>
-        </div>
-        <div class="event-grid">
-            <div class="event-card">
-                <img src="/images/sessions/patras-26.webp" alt="Patras '26" loading="lazy">
-                <div class="event-content">
-                    <span class="event-date">5-8 November 2026</span>
-                    <h3>2nd Regional Selection Conference</h3>
-                    <p class="event-location">Patras</p>
-                </div>
+    <div class="page-section eyp-intro">
+        <div class="content-container section-grid">
+            <div class="section-text eyp-section">
+                <h2>Τι είναι το Ευρωπαϊκό Κοινοβούλιο Νέων;</h2>
+                <p>
+                Το Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδος είναι η Εθνική Επιτροπή του
+                Ευρωπαϊκού Κοινοβουλίου Νέων (ΕΚΝ) στην Ελλάδα. 
+                Το ΕΚΝ είναι ένας μη κυβερνητικός, 
+                μη κερδοσκοπικός οργανισμός που διοργανώνει συνέδρια
+                για νέους, προσομοιώνοντας τη λειτουργία του Ευρωπαϊκού Κοινοβουλίου.
+                </p>
             </div>
-            <div class="event-card">
-                <img src="/images/sessions/oudas-26.webp" alt="2nd UF" loading="lazy">
-                <div class="event-content">
-                    <span class="event-date">26-29 November 2026</span>
-                    <h3>2nd University Forum</h3>
-                    <p class="event-location">Athens</p>
-                </div>
-            </div>
-            <div class="event-card">
-                <img src="/images/sessions/thessaloniki-26.webp" alt="Thessaloniki '26" loading="lazy" style="transform: scale(1.2);">
-                <div class="event-content">
-                    <span class="event-date">10-14 December 2026</span>
-                    <h3>52nd National Selection Conference</h3>
-                    <p class="event-location">Thessaloniki</p>
-                </div>
+
+            <div class="eyp-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LVJfU0-HZaE?si=8AL3f9KeV5lvcyDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-</div>
 
-<div class="join-section">
-    <div class="content-container">
-
-        <div class="section-header">
-            <h2 style="color: #1B365D;">How can I participate?</h2>
+    <div class="events" id="events">
+        <div class="content-container">
+            <div class="section-header">
+                <h2>Επερχόμενες δράσεις</h2>
+            </div>
+            <div class="event-grid">
+                <div class="event-card">
+                    <img src="/src/assets/blog/rsc" alt="Patras '26" loading="lazy">
+                    <div class="event-content">
+                        <span class="event-date">5-8 Νοεμβρίου 2026</span>
+                        <h3>2η Περιφερειακή Συνδιάσκεψη Επιλογής</h3>
+                        <p class="event-location">Πάτρα</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="/images/sessions/oudas-26.webp" alt="2nd UF" loading="lazy">
+                    <div class="event-content">
+                        <span class="event-date">26-29 Νοεμβρίου 2026</span>
+                        <h3>2ο Πανεπιστημιακό Φόρουμ</h3>
+                        <p class="event-location">Αθήνα</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="/images/sessions/thessaloniki-26.webp" alt="Thessaloniki '26" loading="lazy" style="transform: scale(1.2);">
+                    <div class="event-content">
+                        <span class="event-date">10-14 Δεκεμβρίου 2026</span>
+                        <h3>52η Εθνική Συνδιάσκεψη Επιλογής</h3>
+                        <p class="event-location">Θεσσαλονίκη</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="join-grid">
-
-            <a href="/items/participation/participants.html" class="join-card">
-                <div class="join-icon">
-                    <i class="fa-solid fa-user-graduate"></i>
-                </div>
-
-                <h3>Delegates</h3>
-
-                <p>
-                    Attend a European Youth Parliament session as a delegate
-                </p>
-
-                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-            <a href="/items/participation/volunteers.html" class="join-card">
-                <div class="join-icon">
-                    <i class="fa-solid fa-hand-holding-heart"></i>
-                </div>
-
-                <h3>Volunteers</h3>
-
-                <p>
-                    Become a volunteer and help organize the activities of the European Youth Parliament
-                </p>
-
-                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-            <a href="/items/participation/schools.html" class="join-card">
-                <div class="join-icon">
-                    <i class="fa-solid fa-school"></i>
-                </div>
-
-                <h3>Schools</h3>
-
-                <p>
-                    Participation in our activities as a school
-                </p>
-
-                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-            <a href="/items/partners/become-a-partner.html" class="join-card">
-                <div class="join-icon">
-                    <i class="fa-solid fa-handshake"></i>
-                </div>
-
-                <h3>Partners</h3>
-
-                <p>
-                    Support our work through partnerships
-                </p>
-
-                <span>Learn more <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-            <a href="/items/contact.html" class="join-card">
-                <div class="join-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-
-                <h3>Contact</h3>
-
-                <p>
-                    Have any questions? Contact us!
-                </p>
-
-                <span>Contact <i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-
-        </div>
-
     </div>
-</div>
 
-<style>
+    <div class="join-section">
+        <div class="content-container">
 
-.member-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 35px 25px;
-}
+            <div class="section-header">
+                <h2 style="color: #1B365D;">Πώς μπορώ να συμμετάσχω;</h2>
+            </div>
 
-.member-card {
-    min-height: 220px;
-    display: flex;
-    align-items: stretch;
-}
+            <div class="join-grid">
 
-.member-card.full-width-center {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 100%;
-    max-width: 535px;
-}
+                <a href="/items/participation/participants.html" class="join-card">
+                    <div class="join-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
 
-.image-side {
-    position: relative;
-    z-index: 2;
-    width: 200px;
-    flex-shrink: 0;
-}
+                    <h3>Σύνεδροι</h3>
 
-.rotated-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    border-radius: 25px;
-    background: var(--light-blue);
-    transform: rotate(-4deg);
-}
+                    <p>
+                        Παρακολουθήστε μια συνεδρίαση του Ευρωπαϊκού Κοινοβουλίου Νέων ως σύνεδρος
+                    </p>
 
-.image-box {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border: 2px solid var(--light-blue);
-    border-radius: 22px;
-    background: #e2e8f0;
-}
+                    <span>Μάθε περισσότερα <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
 
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+                <a href="/items/participation/volunteers.html" class="join-card">
+                    <div class="join-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
 
-.image-placeholder {
-    padding: 10px;
-    color: #64748b;
-    font-size: .95rem;
-    font-weight: 700;
-    text-align: center;
-}
+                    <h3>Εθελοντές</h3>
 
-.text-side {
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: -15px;
-    padding: 20px 20px 20px 30px;
-    border-radius: 0 20px 20px 0;
-    background: #dbeafe;
-}
+                    <p>
+                        Γίνεται εθελοντής και βοηθήστε στην οργάνωση των δράσεων του Ευρωπαϊκού Κοινοβουλίου Νέων
+                    </p>
 
-.text-side::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 20px 20px 0;
-    border-color: transparent var(--light-blue) transparent transparent;
-    opacity: .8;
-}
+                    <span>Μάθε περισσότερα <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
 
-.member-name {
-    margin-bottom: 8px;
-    color: #1e3a8a;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
+                <a href="/items/participation/schools.html" class="join-card">
+                    <div class="join-icon">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
 
-.member-role {
-    margin-bottom: 15px;
-    color: #334155;
-    font-size: .95rem;
-    line-height: 1.5;
-}
+                    <h3>Σχολεία</h3>
 
-.member-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+                    <p>
+                        Δηλώστε συμμετοχή σε δράση μας ως σχολείο
+                    </p>
 
-.email-copy {
-    width: fit-content;
-    color: var(--light-blue);
-    font-size: .9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .2s;
-}
+                    <span>Μάθε περισσότερα <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
 
-.email-copy:hover {
-    color: #0879a7;
-    text-decoration: underline;
-}
+                <a href="/items/partners/become-a-partner.html" class="join-card">
+                    <div class="join-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
 
-/* Tablet & μικρότερες οθόνες (<= 850px) */
-@media (max-width: 850px) {
-    .member-grid {
-        grid-template-columns: 1fr;
-    }
-}
+                    <h3>Συνεργάτες</h3>
 
-/* Mobile (<= 768px) */
-@media (max-width: 768px) {
-    .member-card {
-        flex-direction: column;
-    }
+                    <p>
+                        Υποστηρίξτε το έργο μας μέσα από συνεργασίες
+                    </p>
 
-    .image-side {
-        width: 100%;
-        height: 220px;
-    }
+                    <span>Μάθε περισσότερα <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
 
-    .text-side {
-        margin-top: -15px;
-        margin-left: 0;
-        padding: 30px 20px 20px;
-        border-radius: 0 0 20px 20px;
-    }
-}
-</style>
+                <a href="/items/contact.html" class="join-card">
+                    <div class="join-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <h3>Επικοινωνία</h3>
+
+                    <p>
+                        Έχετε κάποια ερώτηση; Επικοινωνήστε μαζί μας!
+                    </p>
+
+                    <span>Επικοινωνία <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<Footer />
+
 </Layout>
