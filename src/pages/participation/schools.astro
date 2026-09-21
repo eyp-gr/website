@@ -1,0 +1,40 @@
+---
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';    
+---
+
+<Layout title="ΕΚΝΕ - Σχολεία">
+
+	<Navbar />
+
+        <body data-level="2">
+
+            <div class="banner">
+                <h1>Σχολεία και καθηγητές</h1>
+            </div>
+
+            <div class="page-section">
+                <div class="content-container section-grid">
+                    <div class="section-image" style="background-color: #fff;">
+                        <img src="/src/assets/photos/image10.webp">
+                    </div>
+                    <div class="section-text">
+                        <h2>Συμμετοχή σχολείων σε συνδιασκέψεις</h2>
+                        <p>
+                            Στις Εθνικές Συνδυασκέψεις του Ε.Κ.Ν.Ε, μπορούν να συμμετέχουν μαθητές της Α, Β, Γ, Λυκείου όλων των Λυκείων της Ελλάδας, μέσω του υπέυθυνου καθηγητή. 
+                            Στην καρτέλα νέα μπορείτε να δείτε ανακοινώσεις και καλέσματα προς σχολεία για την αποστολή συνέδρων σε δράσεις μας.
+                            Επικοινωνήστε στο mail info@eypgreece.org για περισσότερες πληροφορίες ή ερωτήσεις.
+                        </p>
+                        <div class="button-group">
+                            <a href="../news.html" class="pill-btn">Νέα</a>
+                            <a href="../contact.html" class="pill-btn">Επικοινωνία</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+
+    <Footer />
+</Layout>

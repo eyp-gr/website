@@ -1338,71 +1338,114 @@ main,
    13. FAQ
 ========================================================= */
 
-.faq-section{
-    padding:40px 0;
+.faq-section {
+    padding: 40px 0;
 }
 
-.faq{
-    max-width:900px;
-    margin:0 auto;
+.faq {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.faq-item{
-    margin-bottom:15px;
-    overflow:hidden;
-
-    border-radius:14px;
-    background:var(--white);
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    overflow: hidden;
 }
 
-.faq-item summary{
-    padding:22px 25px;
+.faq-item summary {
+    padding: 22px 25px;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    color:var(--dark-blue);
-    font-size:1.1rem;
-    font-weight:700;
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
 
-    cursor:pointer;
-    list-style:none;
-    transition:.2s ease;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    
+    transition: background-color 0.2s ease;
 }
 
-.faq-item summary::-webkit-details-marker{
-    display:none;
+.faq-item summary::-webkit-details-marker {
+    display: none;
 }
 
-.faq-item summary::after{
-    content:"+";
-    flex-shrink:0;
-
-    margin-left:20px;
-    font-size:1.5rem;
-    font-weight:400;
-
-    transition:transform .2s ease;
+/* Απαλό hover */
+.faq-item summary:hover {
+    background-color: #f5f7fc;
 }
 
-.faq-item[open] summary::after{
-    transform:rotate(45deg);
+/* Εικονίδιο + / x */
+.faq-item summary::after {
+    content: "+";
+    flex-shrink: 0;
+
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    transition: transform 0.35s ease;
 }
 
-.faq-item summary:hover{
-    background:#f5f7fc;
+.faq-item.is-open summary::after {
+    transform: rotate(45deg);
 }
 
-.faq-answer{
-    padding:0 25px 25px;
-    color:#666;
-    line-height:1.7;
+/* Smooth Slide Down & Up Animation */
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease-in-out;
 }
 
-.faq-answer p{
-    margin:0;
+.faq-item.is-open .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-item.is-closing .faq-answer {
+    grid-template-rows: 0fr;
+}
+
+.faq-answer-inner {
+    overflow: hidden;
+    padding: 0 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease, padding 0.35s ease;
+}
+
+.faq-item.is-open .faq-answer-inner {
+    opacity: 1;
+    padding: 15px 25px 25px 25px;
+}
+
+.faq-item.is-closing .faq-answer-inner {
+    opacity: 0;
+    padding: 0 25px;
+}
+
+/* Typography & Spacing */
+.faq-answer-inner p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+.faq-answer-inner ul {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.faq-answer-inner li {
+    margin-bottom: 6px;
+    color: #666;
+    line-height: 1.6;
 }
 
 /* =========================================================

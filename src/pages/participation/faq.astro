@@ -1,0 +1,125 @@
+---
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';    
+---
+
+<Layout title="ΕΚΝΕ - Συχνές ερωτήσεις">
+
+    <Navbar />
+
+        <body data-level="2">
+
+            <div class="banner">
+                <h1>Συχνές ερωτήσεις</h1>
+            </div>
+
+            <div class="faq-section">
+                <div class="content-container">
+                    <div class="faq">
+                        <details class="faq-item">
+                            <summary>Πότε διεξάγονται οι ετήσιες συνδιασκέψεις;</summary>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Τον Απρίλιο (Αθήνα) και τον Δεκέμβριο (Θεσσαλονίκη)
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Πώς μπορώ να ενημερώνομαι;</summary>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Μπορείς να ενημερώνεσαι για τις επερχόμενες δράσεις
+                                        και τις διαθέσιμες αιτήσεις συμμετοχής μέσα από την
+                                        ιστοσελίδα μας και τα μέσα κοινωνικής δικτύωσης.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Πώς μπορώ να συμμετέχω;</summary>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Μπορείς να συμμετέχεις με τρεις βασικούς τρόπους, ανάλογα με την ηλικία και την εμπειρία σου:
+                                    </p>
+                                    <ul>
+                                        <li>Αν είσαι μαθητής Λυκείου: μέσω του σχολείου σου και του υπεύθυνου καθηγητή, στις Εθνικές ή Περιφερειακές Συνδιασκέψεις Επιλογής.</li>
+                                        <li>Αν είσαι άνω των 18: μέσω ανοικτών αιτήσεων για λειτουργικά στελέχη, συμμετοχή σε HR events ή παρουσία σε Γενική Συνέλευση.</li>
+                                        <li>Αν θέλεις να συμμετέχεις σε άλλες δράσεις: μπορείς να δηλώσεις συμμετοχή σε Περιφερειακές Συνδιασκέψεις, Trainings ή στο Mentorship Programme.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Πώς μπορώ να ενημερώνομαι για νέες δράσεις και ανοιχτές αιτήσεις;</summary>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Μέσα από τα social media του Ε.Κ.Ν.Ε., την ιστοσελίδα και την mailing list.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Πώς λαμβάνω επιπλέον καθοδήγηση στον Οργανισμό;</summary>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Η καθοδήγηση παρέχεται μέσα από:
+                                    </p>
+                                    <ul>
+                                        <li>το Mentorship Programme</li>
+                                        <li>τα Trainings του Ε.Κ.Ν.Ε.</li>
+                                        <li>την συμμετοχή στις Γενικές συνελεύσεις ή</li>
+                                        <li>την επικοινωνία με μέλη του ΔΣ και τους υπεύθυνους των ομάδων</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+        <script>
+            document.querySelectorAll('.faq-item summary').forEach(summary => {
+                summary.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const details = summary.parentElement as HTMLDetailsElement;
+
+                    if (!details) return;
+
+                    if (details.open) {
+                        // ΚΛΕΙΣΙΜΟ: Προσθέτουμε is-closing, αφαιρούμε is-open
+                        details.classList.add('is-closing');
+                        details.classList.remove('is-open');
+
+                        setTimeout(() => {
+                            details.open = false;
+                            details.classList.remove('is-closing');
+                        }, 350); // 350ms όσο διαρκεί το CSS transition
+                    } else {
+                        // ΑΝΟΙΓΜΑ: Ανοίγουμε το details και περιμένουμε 1 frame για να ξεκινήσει το CSS animation
+                        details.open = true;
+                        
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => {
+                                details.classList.add('is-open');
+                            });
+                        });
+                    }
+                });
+            });
+        </script>
+
+        </body>
+
+    <Footer />
+</Layout>
