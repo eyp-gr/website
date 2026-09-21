@@ -47,9 +47,9 @@
                 </button>
 
                 <div class="mega-menu">
-                    <a href="/items/understanding-europe/what-is-ue.html">Τι είναι το πρόγραμμα</a>
-                    <a href="/items/understanding-europe/structure.html">Δομή Προγράμματος</a>
-                    <a href="/items/understanding-europe/participation.html">Συμμετοχή</a>
+                    <a href="/understanding-europe/what-is-ue">Τι είναι το πρόγραμμα</a>
+                    <a href="/understanding-europe/structure">Δομή Προγράμματος</a>
+                    <a href="/understanding-europe/participation">Συμμετοχή</a>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
                 header.classList.remove('has-overflow');
                 nav.classList.remove('has-overflow');
                 overflowPanel.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle?.setAttribute('aria-expanded', 'false');
                 Array.from(nav.children).forEach(child => (child as HTMLElement).classList.remove('is-overflowed'));
                 return;
             }
@@ -146,8 +146,10 @@
             }
         }
 
-        menuToggle.addEventListener('click', (e) => {
+        menuToggle?.addEventListener('click', (e) => {
             e.stopPropagation();
+            if (!menuToggle) return;
+
             const isOpen = window.innerWidth <= 768 
                 ? nav.classList.toggle('active')
                 : overflowPanel.classList.toggle('active');
@@ -168,7 +170,7 @@
             if (!header.contains(target)) {
                 overflowPanel.classList.remove('active');
                 nav.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle?.setAttribute('aria-expanded', 'false');
             }
         });
 

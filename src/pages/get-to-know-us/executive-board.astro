@@ -207,7 +207,7 @@ import Layout from '../../layouts/Layout.astro';
             </div>
 
             <script>
-                function copyToClipboard(text) {
+                function copyToClipboard(text: string) {
                     navigator.clipboard.writeText(text);
                     const message = document.createElement("div");
                     message.textContent = "Αντιγράφηκε!";
