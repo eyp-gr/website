@@ -264,5 +264,791 @@
         }
       }
     }
+  },
+  "executiveBoard": {
+    "title": {
+      "el": "Διοικητικό Συμβούλιο",
+      "en": "Executive Board"
+    },
+    "intro": {
+      "el": "Το <strong>Διοικητικό Συμβούλιο</strong> του ΕΚΝΕ για το έτος 2026, όπως εκλέχθηκε από τα μέλη του σωματείου, αποτελείται από τους:",
+      "en": "The <strong>Executive Board</strong> of EYP Greece for the year 2026, as elected by the members of the organization, consists of:"
+    },
+    "members": {
+      "panos": {
+        "name": {
+          "el": "Παναγιώτης Τζιάτζιος",
+          "en": "Panagiotis Tziatzios"
+        },
+        "role": {
+          "el": "Πρόεδρος, Υπεύθυνος Ασφάλειας & Ευημερίας",
+          "en": "President, Safe Person & Welfare Officer"
+        }
+      },
+      "petros": {
+        "name": {
+          "el": "Πέτρος Κατρακούλης",
+          "en": "Petros Katrakoulis"
+        },
+        "role": {
+          "el": "Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης",
+          "en": "Vice President, Head of Public Relations & Strategic Development"
+        }
+      },
+      "stergiani": {
+        "name": {
+          "el": "Στεργιανή Τοπαλίδου",
+          "en": "Stergiani Topalidou"
+        },
+        "role": {
+          "el": "Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων",
+          "en": "Secretary General, Head of Fundraising"
+        }
+      },
+      "alexandros": {
+        "name": {
+          "el": "Αλέξανδρος Σιωμούλης",
+          "en": "Alexandros Siomoulis"
+        },
+        "role": {
+          "el": "Ταμίας",
+          "en": "Treasurer"
+        }
+      },
+      "maria": {
+        "name": {
+          "el": "Μαρία Ερωτοκρίτου",
+          "en": "Maria Erotokritou"
+        },
+        "role": {
+          "el": "Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας",
+          "en": "Board Member, Head of Human Resources & Outreach"
+        }
+      },
+      "iro": {
+        "name": {
+          "el": "Αργυρώ (Ηρώ) Μιχαηλίδη",
+          "en": "Argyro (Iro) Michailidi"
+        },
+        "role": {
+          "el": "Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών",
+          "en": "Board Member, Head of International Relations & Delegations"
+        }
+      },
+      "ellie": {
+        "name": {
+          "el": "Ελένη Γκεσούλη",
+          "en": "Eleni Gkesouli"
+        },
+        "role": {
+          "el": "Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας",
+          "en": "Board Member, Head of Marketing & Communications"
+        }
+      }
+    }
+  },
+  "eypNetwork": {
+    "title": {
+      "el": "Το Ευρωπαϊκό Κοινοβούλιο Νέων",
+      "en": "The European Youth Parliament"
+    },
+    "subtitle": {
+      "el": "Δίκτυο του ΕΚΝ",
+      "en": "EYP Network"
+    },
+    "description": {
+      "el": "Το Ευρωπαϊκό Κοινοβούλιο Νέων (ΕΚΝ, European Youth Parliament, EYP) είναι ένα δίκτυο οργανισμών με δράση στην Ευρώπη και έδρα το Βερολίνο και απαρτίζεται από 41 εθνικές επιτροπές. Από την ίδρυση του το 1987, έχει ως στόχο την προώθηση της ευρωπαϊκής διάστασης στην εκπαίδευση. Για την υλοποίηση αυτού του σκοπού διοργανώνει πάνω από 100 δράσεις, εμπλέκοντας σε αυτές πάνω από 25.000 νέους, ετησίως. Διαθέτει μη κερδοσκοπικό χαρακτήρα ενώ λειτουργεί ανεξάρτητα από πολιτικά και κομματικά συμφέροντα.",
+      "en": "The European Youth Parliament (EYP) is a network of organizations active across Europe with its headquarters in Berlin, comprising 41 National Committees. Since its establishment in 1987, it aims to promote a European dimension in education. To achieve this goal, it organizes over 100 events annually, engaging more than 25,000 young people. It is non-profit and operates independently of political and party interests."
+    },
+    "membersBtn": {
+      "el": "Members Platform",
+      "en": "Members Platform"
+    }
+  },
+  "groups": {
+    "title": {
+      "el": "Ομάδες Εργασίας και Περιφερειακές Ομάδες",
+      "en": "Working Groups and Regional Groups"
+    },
+    "workingGroups": {
+      "title": {
+        "el": "Ομάδες Εργασίας",
+        "en": "Working Groups"
+      },
+      "description": {
+        "el": "Οι Ομάδες Εργασίας, αποτελούνται από μέλη του Ε.Κ.Ν.Ε. με ενδιαφέρον πάνω στη θεματική της Ομάδας και επιλέγονται, συνήθως μετά από αίτησή τους, από το Μέλος Δ.Σ. που είναι Υπεύθυνο για την Ομάδα.",
+        "en": "Working Groups consist of members of EYP Greece with an interest in the group's theme and are selected, usually following an application process, by the Board Member responsible for the group."
+      }
+    },
+    "regionalGroups": {
+      "title": {
+        "el": "Περιφερειακές Ομάδες",
+        "en": "Regional Groups"
+      },
+      "description": {
+        "el": "Οι Περιφερειακές Ομάδες είναι μια νέα δομή εντός του Ε.Κ.Ν.Ε, η οποία αποσκοπεί στην ενίσχυση της παρουσίας του Σωματείου σε όλη την Ελλάδα. Οι Περιφερειακές Ομάδες αποτελούν τον σύνδεσμο του Ε.Κ.Ν.Ε. με τις τοπικές κοινωνίες της χώρας έτσι ώστε να ενισχύσουμε τη συμμετοχή και την προσβασιμότητα του Σωματείου.",
+        "en": "Regional Groups are a new structure within EYP Greece aimed at strengthening the organization's presence throughout Greece. They serve as the link between EYP Greece and local communities to enhance engagement and accessibility."
+      }
+    },
+    "coordinators": {
+      "title": {
+        "el": "Περιφερειακοί Συντονιστές",
+        "en": "Regional Coordinators"
+      },
+      "despoina": {
+        "name": {
+          "el": "Δέσποινα Παπαδοπούλου",
+          "en": "Despoina Papadopoulou"
+        },
+        "region": {
+          "el": "Βόρεια Ελλάδα",
+          "en": "Northern Greece"
+        }
+      },
+      "domniki": {
+        "name": {
+          "el": "Δομνίκη Χατζηαλέξη",
+          "en": "Domniki Chatzialexi"
+        },
+        "region": {
+          "el": "Κεντρική Ελλάδα",
+          "en": "Central Greece"
+        }
+      },
+      "theophilos": {
+        "name": {
+          "el": "Θεόφιλος Καραμανώλης",
+          "en": "Theophilos Karamanolis"
+        },
+        "region": {
+          "el": "Νότια Ελλάδα",
+          "en": "Southern Greece"
+        }
+      }
+    }
+  },
+  "whoWeAre": {
+    "title": {
+      "el": "Ποιοι Είμαστε",
+      "en": "Who We Are"
+    },
+    "about": {
+      "title": {
+        "el": "Γνωρίστε το Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδος",
+        "en": "Discover the European Youth Parliament Greece"
+      },
+      "description": {
+        "el": "Το Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδος (Ε.Κ.Ν.Ε.) είναι σωματείο μη κερδοσκοπικού χαρακτήρα και ανεξαρτήτο πολιτικών και κομματικών συμφερόντων. Ιδρύθηκε το 1994 ως μια από τις 40 Εθνικές Επιτροπές του Ευρωπαϊκού Κοινοβουλίου (ΕΚΝ), έχοντας ως μόνιμη έδρα τη Θεσσαλονίκη.",
+        "en": "The European Youth Parliament Greece (EYP Greece) is a non-profit organization independent of political and party interests. Founded in 1994 as one of the 40 National Committees of the European Youth Parliament (EYP), it is permanently based in Thessaloniki."
+      }
+    },
+    "goals": {
+      "title": {
+        "el": "Οι στόχοι μας",
+        "en": "Our Goals"
+      },
+      "description": {
+        "el": "Κύριοι στόχοι του είναι η προώθηση μιας Ευρωπαϊκής διάστασης στην εκπαίδευση των νέων, η ανάληψη πρωτοβουλιών, καθώς και η ανάπτυξη κοινωνικών και επαγγελματικών δεξιοτήτων.",
+        "en": "Its main objectives are promoting a European dimension in youth education, encouraging initiative, and fostering social and professional skill development."
+      }
+    }
+  },
+  "participation": {
+    "faq": {
+      "title": {
+        "el": "ΕΚΝΕ - Συχνές ερωτήσεις",
+        "en": "EYP Greece - FAQ"
+      },
+      "banner_title": {
+        "el": "Συχνές ερωτήσεις",
+        "en": "Frequently Asked Questions"
+      },
+      "q1_question": {
+        "el": "Πότε διεξάγονται οι ετήσιες συνδιασκέψεις;",
+        "en": "When do the annual sessions take place?"
+      },
+      "q1_answer": {
+        "el": "Τον Απρίλιο (Αθήνα) και τον Δεκέμβριο (Θεσσαλονίκη)",
+        "en": "In April (Athens) and in December (Thessaloniki)"
+      },
+      "q2_question": {
+        "el": "Πώς μπορώ να ενημερώνομαι;",
+        "en": "How can I stay informed?"
+      },
+      "q2_answer": {
+        "el": "Μπορείς να ενημερώνεσαι για τις επερχόμενες δράσεις και τις διαθέσιμες αιτήσεις συμμετοχής μέσα από την ιστοσελίδα μας και τα μέσα κοινωνικής δικτύωσης.",
+        "en": "You can stay informed about upcoming events and available application forms through our website and social media channels."
+      },
+      "q3_question": {
+        "el": "Πώς μπορώ να συμμετέχω;",
+        "en": "How can I participate?"
+      },
+      "q3_answer_intro": {
+        "el": "Μπορείς να συμμετέχεις με τρεις βασικούς τρόπους, ανάλογα με την ηλικία και την εμπειρία σου:",
+        "en": "You can participate in three main ways, depending on your age and experience:"
+      },
+      "q3_answer_li1": {
+        "el": "Αν είσαι μαθητής Λυκείου: μέσω του σχολείου σου και του υπεύθυνου καθηγητή, στις Εθνικές ή Περιφερειακές Συνδιασκέψεις Επιλογής.",
+        "en": "If you are a High School student: through your school and teacher in charge, at National or Regional Selection Conferences."
+      },
+      "q3_answer_li2": {
+        "el": "Αν είσαι άνω των 18: μέσω ανοικτών αιτήσεων για λειτουργικά στελέχη, συμμετοχή σε HR events ή παρουσία σε Γενική Συνέλευση.",
+        "en": "If you are over 18: through open calls for officials, participation in HR events, or attendance at a General Assembly."
+      },
+      "q3_answer_li3": {
+        "el": "Αν θέλεις να συμμετέχεις σε άλλες δράσεις: μπορείς να δηλώσεις συμμετοχή σε Περιφερειακές Συνδιασκέψεις, Trainings ή στο Mentorship Programme.",
+        "en": "If you wish to participate in other activities: you can apply for Regional Conferences, Trainings, or the Mentorship Programme."
+      },
+      "q4_question": {
+        "el": "Πώς μπορώ να ενημερώνομαι για νέες δράσεις και ανοιχτές αιτήσεις;",
+        "en": "How can I stay updated on new projects and open calls?"
+      },
+      "q4_answer": {
+        "el": "Μέσα από τα social media του Ε.Κ.Ν.Ε., την ιστοσελίδα και την mailing list.",
+        "en": "Through EYP Greece's social media, website, and mailing list."
+      },
+      "q5_question": {
+        "el": "Πώς λαμβάνω επιπλέον καθοδήγηση στον Οργανισμό;",
+        "en": "How do I receive additional guidance in the Organization?"
+      },
+      "q5_answer_intro": {
+        "el": "Η καθοδήγηση παρέχεται μέσα από:",
+        "en": "Guidance is provided through:"
+      },
+      "q5_answer_li1": {
+        "el": "το Mentorship Programme",
+        "en": "the Mentorship Programme"
+      },
+      "q5_answer_li2": {
+        "el": "τα Trainings του Ε.Κ.Ν.Ε.",
+        "en": "EYP Greece Trainings"
+      },
+      "q5_answer_li3": {
+        "el": "την συμμετοχή στις Γενικές συνελεύσεις ή",
+        "en": "participation in General Assemblies or"
+      },
+      "q5_answer_li4": {
+        "el": "την επικοινωνία με μέλη του ΔΣ και τους υπεύθυνους των ομάδων",
+        "en": "communication with Board members and team leaders"
+      }
+    },
+    "participants": {
+      "title": {
+        "el": "ΕΚΝΕ - Συμμετέχοντες",
+        "en": "EYP Greece - Participants"
+      },
+      "banner_title": {
+        "el": "Συμμετοχή",
+        "en": "Participation"
+      },
+      "students_title": {
+        "el": "Μαθητές Λυκείου",
+        "en": "High School Students"
+      },
+      "students_text": {
+        "el": "Μαθητές λυκείου που ενδιαφέρονται να συμμετέχουν στις δράσεις του Ε.Κ.Ν.Ε., μπορούν να δηλώσουν συμμετοχή ως σύνεδροι (delegates) στις Εθνικές Συνδυασκέψεις Επιλογής σε Αθήνα και Θεσσαλονίκη μέσω του σχολείου και του υπεύθυνου καθηγητή αλλά και συμμετοχή σε άλλες δράσεις (Περιφερειακές Συνδυασκέψεις, Trainings και Μentorship).",
+        "en": "High school students interested in taking part in EYP Greece activities can apply as delegates to the National Selection Conferences in Athens and Thessaloniki through their school and teacher in charge, as well as participate in other events (Regional Conferences, Trainings, and Mentorship)."
+      },
+      "btn_schools_info": {
+        "el": "Πληροφορίες για σχολεία",
+        "en": "Information for schools"
+      },
+      "youth_title": {
+        "el": "Νέοι",
+        "en": "Youth"
+      },
+      "youth_text": {
+        "el": "Άτομα άνω των 18 μπορούν να δηλώσουν συμμετοχή ως λειτουργικά στελέχη ή mentees του Mentroship Program δημιουργώντας λογαριασμό στο Members Platform και κάνοντας αίτηση συμμετοχής σε δράσεις σε όλη την Ελλάδα και Ευρώπη.",
+        "en": "Individuals over 18 can apply as officials or mentees in the Mentorship Programme by creating an account on the Members Platform and submitting applications for events across Greece and Europe."
+      },
+      "btn_volunteers_positions": {
+        "el": "Θέσεις λειτουργικών στελεχών",
+        "en": "Official positions"
+      },
+      "btn_members_platform": {
+        "el": "Members Platform",
+        "en": "Members Platform"
+      }
+    },
+    "schools": {
+      "title": {
+        "el": "ΕΚΝΕ - Σχολεία",
+        "en": "EYP Greece - Schools"
+      },
+      "banner_title": {
+        "el": "Σχολεία και καθηγητές",
+        "en": "Schools & Teachers"
+      },
+      "section_title": {
+        "el": "Συμμετοχή σχολείων σε συνδιασκέψεις",
+        "en": "School Participation in Conferences"
+      },
+      "section_text": {
+        "el": "Στις Εθνικές Συνδυασκέψεις του Ε.Κ.Ν.Ε, μπορούν να συμμετέχουν μαθητές της Α, Β, Γ, Λυκείου όλων των Λυκείων της Ελλάδας, μέσω του υπέυθυνου καθηγητή. Στην καρτέλα νέα μπορείτε να δείτε ανακοινώσεις και καλέσματα προς σχολεία για την αποστολή συνέδρων σε δράσεις μας. Επικοινωνήστε στο mail info@eypgreece.org για περισσότερες πληροφορίες ή ερωτήσεις.",
+        "en": "High school students in 10th, 11th, and 12th grade from any high school in Greece can participate in EYP Greece's National Conferences through their teacher in charge. In the news section you can find announcements and calls for schools to send delegates to our events. Contact us at info@eypgreece.org for more information or inquiries."
+      },
+      "btn_news": {
+        "el": "Νέα",
+        "en": "News"
+      },
+      "btn_contact": {
+        "el": "Επικοινωνία",
+        "en": "Contact"
+      }
+    },
+    "volunteers": {
+      "title": {
+        "el": "ΕΚΝΕ - Εθελοντές",
+        "en": "EYP Greece - Volunteers"
+      },
+      "banner_title": {
+        "el": "Εθελοντές",
+        "en": "Volunteers"
+      },
+      "section_title": {
+        "el": "Ομάδες λειτουργικών στελεχών",
+        "en": "Official Teams"
+      },
+      "section_text": {
+        "el": "Ανακαλύψτε τις ομάδες που μπορείτε να συμμετάσχετε ως λειτουργικό στέλεχος σε δράσεις του ΕΚΝ σε όλη την Ευρώπη!",
+        "en": "Discover the teams you can join as an official in EYP events all across Europe!"
+      },
+      "btn_members_platform": {
+        "el": "Members Platform",
+        "en": "Members Platform"
+      },
+      "academic_title": {
+        "el": "Ακαδημαϊκή Ομάδα / Academic Team",
+        "en": "Academic Team"
+      },
+      "academic_text": {
+        "el": "Αποτελείται από τον Πρόεδρο, τους Αντιπροέδρους της Συνδυάσκεψης, και τους Υπεύθυνους των Επιτροπών. Το σύνολο της Ακαδημαϊκής Ομάδας είναι υπεύθυνο για την καθοδήγηση των συνέδρων στην συγγραφή των ψηφισμάτων και την ομαλή διεξαγωγής της Γενικής Ολομέλειας της δράσης.",
+        "en": "Consists of the President, Vice-Presidents of the session, and Committee Chairs. The Academic Team is responsible for guiding delegates through resolution drafting and ensuring the smooth conduct of the General Assembly."
+      },
+      "media_title": {
+        "el": "Δημοσιογραφική Ομάδα / Μedia Τeam",
+        "en": "Media Team"
+      },
+      "media_text": {
+        "el": "Αποτελείται από τον Αρχισυντάκτη, τον Βοηθό Αρχισυντάκτη και τα μέλη της Δημοσιογραφικής Ομάδα. Η Δημοσιογραφική Ομάδα είναι υπεύθυνη για την κάλυψη και προβολή της δράσης στα Μέσα Κοινωνικής Δικτύωσης.",
+        "en": "Consists of the Editor-in-Chief, Editorial Assistants, and Media Team members. The Media Team is responsible for covering and promoting the session across Social Media channels."
+      },
+      "organising_title": {
+        "el": "Οργανωτική Ομάδα / Οrganising Team",
+        "en": "Organising Team"
+      },
+      "organising_text": {
+        "el": "Αποτελείται από τον / τους Επικεφαλείς της Διοργάνωσης, τους Υπεύθυνους Συντονισμού της Οργανωτικής Ομάδας και τα Μέλη της Οργανωτικής Ομάδας. Η Οργανωτική Ομάδας είναι υπέθυνη για την προετοιμασία και διοργάνωση της δράσης.",
+        "en": "Consists of Head Organisers, Core Organisers, and Organising Team Members. The Organising Team is responsible for the logistics, preparation, and execution of the event."
+      },
+      "jury_title": {
+        "el": "Ομάδα Αξιολόγησης των Συνέδρων / Jury",
+        "en": "Jury Team"
+      },
+      "jury_text": {
+        "el": "Αξιολόγησης των Συνέδρων και τα Μέλη της Ομάδας Αξιολόγησης των Συνέδρων. Η Ομάδα αυτή είναι υπεύθυνη για την αξιολόγηση των συμμετεχόντων και τη σύνταξη της λίστας των Συνέδρων που θα στελεχώσουν αποστολές στις Διεθνείς Συνδυασκέψεις και άλλες δράσεις.",
+        "en": "Consists of the Head Jury and Jury Team Members. This team is responsible for evaluating participants and selecting delegates to represent EYP Greece at International Sessions and other events."
+      },
+      "safety_title": {
+        "el": "Ομάδα Ασφαλείας / Safety Team",
+        "en": "Safety Team"
+      },
+      "safety_text": {
+        "el": "Αποτελείται από τον Event Safe Person και τον National Safety Person και έχει ως σκοπό τη διαφύλαξη της ασφάλειας της δράσης και της ευημέρειας των συμμετεχόντων της.",
+        "en": "Consists of the Event Safe Person and National Safety Person, aiming to ensure safety and maintain the well-being of all session participants."
+      }
+    }
+  },
+  "partners": {
+    "become_a_partner": {
+      "title": {
+        "el": "ΕΚΝΕ - Γίνετε συνεργάτης μας",
+        "en": "EYP Greece - Become a Partner"
+      },
+      "banner_title": {
+        "el": "Γίνετε συνεργάτης μας",
+        "en": "Become a Partner"
+      },
+      "why_partner_title": {
+        "el": "Γιατί να συνεργαστείτε με το ΕΚΝΕ",
+        "en": "Why partner with EYP Greece"
+      },
+      "impact_title": {
+        "el": "Impact - Επίδραση:",
+        "en": "Impact:"
+      },
+      "impact_text": {
+        "el": "Θα συμβάλλετε στην διοργάνωση δράσεων που θα αποτελέσουν μοναδική εμπειρία για εκατοντάδες νέους και μαθητές Λυκείου που συμμετέχουν ως εθελοντές ή σύνεδροι.",
+        "en": "You will contribute to the organization of events that offer a unique experience to hundreds of young people and high school students participating as volunteers or delegates."
+      },
+      "promotion_title": {
+        "el": "Promotion - Προώθηση:",
+        "en": "Promotion:"
+      },
+      "promotion_text": {
+        "el": "Θα προβάλλετε το προϊόν ή/και την εταιρία σας σε ένα διεθνές κοινό που απαρτίζεται από νέους και νέες 16-25 ετών από όλα τα γεωγραφικά μήκη της Ευρώπης.",
+        "en": "You will showcase your product and/or company to an international audience of young people aged 16-25 from all across Europe."
+      },
+      "career_title": {
+        "el": "Εργασιακή Ανάπτυξη:",
+        "en": "Professional Development:"
+      },
+      "career_text": {
+        "el": "Θα διαδραματίσετε ουσιαστικό ρόλο στην διαμόρφωση μιας νέας γενιάς πολιτών, που θа κληθούν να χρησιμοποιήσουν τα εργαλεία που θа αποκομίσουν από τις δράσεις μаς στη μετέπειτα επαγγελματική πορεία τους και στην αγορά εργασίας.",
+        "en": "You will play an essential role in shaping a new generation of active citizens who will apply the skills gained from our activities in their future professional careers."
+      },
+      "ways_to_support_title": {
+        "el": "Τρόποι στήριξης",
+        "en": "Ways to Support"
+      },
+      "financial_title": {
+        "el": "Χρηματική Χορηγία:",
+        "en": "Financial Sponsorship:"
+      },
+      "financial_text": {
+        "el": "Οι περισσότεροι συνεργάτες του Ε.Κ.Ν.Ε. υποστηρίζουν την βιωσιμότητα των δράσεων μας μέσω χρηματικής χορηγίας, που καλύπτει τα έξοδα διαμονής, ενοικίασης χώρου, αλλά και αγοράς υλικού και φαγητού για τους συνέδρους.",
+        "en": "Most of EYP Greece's partners support the sustainability of our projects through financial sponsorship, covering expenses for accommodation, venue rentals, equipment, and catering for delegates."
+      },
+      "in_kind_title": {
+        "el": "Παραχώρηση Υλικού:",
+        "en": "In-kind Donations:"
+      },
+      "in_kind_text": {
+        "el": "Ένας άλλος τρόπος που μπορείτε να στηρίξετε τις δράσεις του Ε.Κ.Ν.Ε. είναι μέσω της παραχώρησης υλικού. Οι χορηγίες υλικού καλύπτουν συνήθως τις ανάγκες ενός συνεδρίου για γραφική ύλη ή για Η/Υ και οπτικοακουστικό υλικό (μικρόφωνα, ηχεία, προτζέκτορες).",
+        "en": "Another way to support EYP Greece is through in-kind donations. These usually cover session needs for stationery or IT and audiovisual equipment (microphones, speakers, projectors)."
+      },
+      "vouchers_title": {
+        "el": "Δωροεπιταγές και Προϊόντα:",
+        "en": "Gift Vouchers and Products:"
+      },
+      "vouchers_text": {
+        "el": "Μπορείτε να στηρίξετε το Ε.Κ.Ν.Ε. μέσω της παραχώρησης δωροεπιταγών ή και προϊόντων της εταιρείας σας, τα οποία θα χρησιμοποιηθούν με στόχο την ανεύρεση πόρων για τη στήριξη του σωματείου και κατά τη διάρκεια συνεδρίων.",
+        "en": "You can support EYP Greece by donating gift vouchers or company products, which will be utilized for fundraising purposes and during sessions."
+      },
+      "media_title": {
+        "el": "Προβολή και συνεργασία στα Μ.Κ.Δ. και τα Μ.Μ.Ε.:",
+        "en": "Media & Social Media Promotion:"
+      },
+      "media_text": {
+        "el": "Πέρα από τους παραπάνω τρόπους, έχετε τη δυνατότητα να στηρίξετε το Σωματείο με τη συντονισμένη προβολή του σε ενημερωτικές ιστοσελίδες και ραδιοτηλεοπτικούς σταθμούς μέσω δελτίων τύπου και συνεντεύξεων, της ανάρτησης post / story, και της αλληλοπροώθησης δράσεων στα Μ.Κ.Δ.",
+        "en": "Additionally, you can support our Organization through coordinated promotion on news websites, TV/radio broadcasts, press releases, interviews, posts/stories, and cross-promotion on social media."
+      }
+    },
+    "our_partners": {
+      "title": {
+        "el": "ΕΚΝΕ - Συνεργάτες",
+        "en": "EYP Greece - Our Partners"
+      },
+      "banner_title": {
+        "el": "Οι Συνεργάτες μας",
+        "en": "Our Partners"
+      }
+    }
+  },
+  "understanding_europe": {
+    "participation": {
+      "title": {
+        "el": "UE - Συμμετοχή",
+        "en": "UE - Participation"
+      },
+      "banner_title": {
+        "el": "Συμμετοχή",
+        "en": "Participation"
+      },
+      "workshops_title": {
+        "el": "Τα σεμινάρια μας",
+        "en": "Our Workshops"
+      },
+      "workshops_intro": {
+        "el": "Τα ενημερωτικά μας σεμινάρια είναι ειδικά σχεδιασμένα για να προάγουν τον συμμετοχικό διάλογο και προσφέρονται σε:",
+        "en": "Our educational workshops are specially designed to foster interactive dialogue and are offered to:"
+      },
+      "workshops_li1": {
+        "el": "Σχολεία Πρωτοβάθμιας Εκπαίδευσης (Ε' & ΣΤ' Τάξη)",
+        "en": "Primary Schools (5th & 6th grade)"
+      },
+      "workshops_li2": {
+        "el": "Σχολεία Δευτεροβάθμιας Εκπαίδευσης",
+        "en": "Secondary Schools"
+      },
+      "workshops_li3": {
+        "el": "Φορείς και Οργανισμούς με αντίστοιχο ενδιαφέρον στα ευρωπαϊκά ζητήματα",
+        "en": "Institutions and Organizations with a shared interest in European affairs"
+      },
+      "participation_title": {
+        "el": "Συμμετοχή",
+        "en": "How to Get Involved"
+      },
+      "participation_intro": {
+        "el": "Υπάρχουν δύο τρόποι να εμπλακείς και να ζήσεις την εμπειρία του Understanding Europe:",
+        "en": "There are two ways to get involved and experience Understanding Europe:"
+      },
+      "participant_role": {
+        "el": "Ως Συμμετέχοντας (Participant): Κάνε την αρχή βιώνοντας το πρόγραμμα από κοντά. Σε αυτό τον επίπεδο, θα παρακολουθήσεις τα σεμινάρια (crash courses) στην πράξη, θα εξοικειωθείς με τη μεθοδολογία μας και θα δεις πώς λειτουργεί η συμμετοχική διδασκαλία.",
+        "en": "As a Participant: Start by experiencing the project firsthand. At this level, you will attend crash courses in practice, familiarize yourself with our methodology, and see how peer education works."
+      },
+      "trainer_role_intro": {
+        "el": "Ως Εκπαιδευτής (Trainer): Είσαι έτοιμος να μπεις στην τάξη και να ενδυναμώσεις άλλους νέους; Για να γίνεις επίσημος εκπαιδευτής και να ενταχθείς στην ομάδα μας, η διαδικασία είναι απλή:",
+        "en": "As a Trainer: Are you ready to enter the classroom and empower other young people? To become an official trainer and join our team, the process is simple:"
+      },
+      "trainer_step1": {
+        "el": "Αίτηση: Δήλωσε συμμετοχή σε ένα από τα ανοιχτά μας καλέσματα για νέους εκπαιδευτές.",
+        "en": "Application: Apply through one of our open calls for new trainers."
+      },
+      "trainer_step2": {
+        "el": "Training for Trainers (T4T): Εφόσον η αίτησή σου γίνει δεκτή, θα παρακολουθήσεις το ειδικό εκπαιδευτικό πρόγραμμα T4T.",
+        "en": "Training for Trainers (T4T): If your application is accepted, you will attend our specialized T4T training programme."
+      },
+      "trainer_step3": {
+        "el": "Πιστοποίηση: Με την ολοκλήρωσή του, πιστοποιείσαι επίσημα, μπαίνεις στην ομάδα και αναλαμβάνεις τον συντονισμό των δικών σου εργαστηρίων!",
+        "en": "Certification: Upon completion, you become officially certified, join our team, and facilitate your own workshops!"
+      }
+    },
+    "structure": {
+      "title": {
+        "el": "UE - Δομή",
+        "en": "UE - Structure"
+      },
+      "banner_title": {
+        "el": "Η δομή του Understanding Europe",
+        "en": "The Structure of Understanding Europe"
+      },
+      "approach_title": {
+        "el": "Εκπαιδευτική προσέγγιση",
+        "en": "Educational Approach"
+      },
+      "approach_text": {
+        "el": "Η εκπαιδευτική προσέγγιση των επιμορφωτικών σεμιναρίων (Crash Courses) του Understanding Europe επικεντρώνεται στην καλλιέργεια βασικών δεξιοτήτων που προάγουν μια κουλτούρα συμμετοχικής διδασκαλίας και μάθησης, δίνοντας έμφαση στη συμπερίληψη καθώς και τη διαφορετικότητα. Μέσα από εκπαιδευτικά εργαστήρια που προσφέρονται από νέους για νέους, το πρόγραμμα δίνει τη δυνατότητα στους μαθητές να γίνουν ενεργοί ευρωπαίοι πολίτες, συμμετέχοντας σε μια ανοιχτή και πλουραλιστική Ευρώπη. Αυτή η προσέγγιση ενθαρρύνει τους μαθητές να ασχοληθούν ουσιαστικά με τα ευρωπαϊκά ζητήματα, παρέχοντάς τους τις γνώσεις και τα εργαλεία που χρειάζονται για να συμβάλλουν θετικά στις κοινότητές τους και πέρα από αυτές.",
+        "en": "The educational approach of Understanding Europe's Crash Courses focuses on fostering essential skills that promote a culture of peer-to-peer teaching and learning, emphasizing inclusion and diversity. Through workshops delivered by youth for youth, the project enables students to become active European citizens participating in an open and pluralistic Europe. This approach encourages students to meaningfully engage with European issues, equipping them with the knowledge and tools needed to contribute positively to their communities and beyond."
+      },
+      "team_title": {
+        "el": "Η ομάδα μας",
+        "en": "Our Team"
+      },
+      "team_intro": {
+        "el": "Η δομή της ομάδας μας είναι απλή και αποτελείται από τους εξής ρόλους:",
+        "en": "Our team structure is straightforward and consists of the following roles:"
+      },
+      "coordinators_title": {
+        "el": "Υπεύθυνοι Χώρας (Coordinators)",
+        "en": "National Coordinators"
+      },
+      "coordinators_text": {
+        "el": "Αναλαμβάνουν τον συνολικό συντονισμό του προγράμματος σε εθνικό επίπεδο, οργανώνουν τις δράσεις και διασφαλίζουν την ομαλή συνεργασία και λειτουργία της ομάδας.",
+        "en": "They oversee the overall coordination of the project at a national level, organize activities, and ensure smooth collaboration and operation within the team."
+      },
+      "peer_educators_title": {
+        "el": "Εκπαιδευτές των Εκπαιδευτών (Peer Educators)",
+        "en": "Peer Educators"
+      },
+      "peer_educators_text": {
+        "el": "Λαμβάνουν πρώτα οι ίδιοι ειδική κατάρτιση, προκειμένου στη συνέχεια να αναλάβουν τον κρίσιμο ρόλο να εκπαιδεύσουν, να καθοδηγήσουν και να προετοιμάσουν τη νέα γενιά εκπαιδευτών.",
+        "en": "They receive specialized training themselves to then take on the crucial role of educating, mentoring, and preparing the new generation of trainers."
+      },
+      "trainers_title": {
+        "el": "Εκπαιδευτές (Trainers)",
+        "en": "Trainers"
+      },
+      "trainers_text": {
+        "el": "Αποτελούν τα πρόσωπα του προγράμματος, αναλαμβάνοντας την προετοιμασία και την απευθείας παράδοση των επιμορφωτικών σεμιναρίων (crash courses) στους μαθητές και τους φορείς.",
+        "en": "They are the face of the project, responsible for preparing and delivering crash courses directly to students and institutions."
+      }
+    },
+    "what_is_ue": {
+      "title": {
+        "el": "Understanding Europe",
+        "en": "Understanding Europe"
+      },
+      "banner_title": {
+        "el": "Τι είναι το πρόγραμμα;",
+        "en": "What is the project?"
+      },
+      "section_title": {
+        "el": "Το Understanding Europe",
+        "en": "Understanding Europe"
+      },
+      "paragraph_1": {
+        "el": "To Understanding Europe είναι ένα πανευρωπαϊκό Εκπαιδευτικό Δίκτυο που ενδυναμώνει τους νέους στην Ευρώπη μέσω της εκπαίδευσης για τη δημοκρατική ιδιότητα του πολίτη και επιδιώκει να τους δώσει φωνή. Οι εκπαιδευτικές του μορφές και μέθοδοι βασίζονται στην προσέγγιση της εκπαίδευσης από ομότιμα/νέα ατομα (peers). Μέσω αυτής της δομής, το Understanding Europe προσεγγίζει μαθητές, κυρίως Λυκείων, σε πολλές ευρωπαϊκές χώρες, και προσαρμόζει την μορφή του προγράμματος ανά χώρα.",
+        "en": "Understanding Europe is a European Educational Network that empowers young people in Europe through democratic citizenship education, striving to give them a voice. Its educational formats and methods are based on peer-to-peer education approaches. Through this structure, Understanding Europe reaches students, mainly high school pupils, across many European countries, adapting its format locally."
+      },
+      "paragraph_2": {
+        "el": "Το Understanding Europe Greece είναι ένα πρόγραμμα του Ευρωπαϊκού Κοινοβουλίου Νέων Ελλάδος (Ε.Κ.Ν.Ε.). Μέσω του Δικτύου Understanding Europe, επιθυμούμε να ενισχύσουμε τη συνεισφορά μας στη συμμετοχή των νέων, χρησιμοποιώντας την εμπειρία μας στα έργα για τη νεολαία και τα ευρωπαϊκά ζητήματα, ώστε να καταπολεμηθεί ο ευρωσκεπτικισμός και να καλλιεργηθεί η αίσθηση της ευρωπαϊκής ταυτότητας και του “ανήκειν” στους μαθητές.",
+        "en": "Understanding Europe Greece is an initiative of EYP Greece. Through the Understanding Europe Network, we aim to enhance youth participation by leveraging our experience in youth work and European affairs to counter euroscepticism and cultivate a sense of European identity and belonging among students."
+      }
+    }
+  },
+  "what_do_we_do": {
+    "generalAssemblies": {
+      "title": {
+        "el": "Γενικές Συνελεύσεις",
+        "en": "General Assemblies"
+      },
+      "sectionTitle": {
+        "el": "Γενικές Συνελεύσεις",
+        "en": "General Assemblies"
+      },
+      "paragraph1": {
+        "el": "Oι Τακτικές Γενικές Συνελεύσεις του Σωματείου πραγματοποιούνται βάσει του καταστατικού μια φορά τον μήνα. Οι Γενικές συνελεύσεις, όπως αναφέρεται στο Άρθρο 13 του καταστατικού αποσκοπούν στον καταµερισµό των εργασιών, τον απολογισµό, την ενηµέρωση και την ανάλυση θεµάτων που έχουν προκύψει εντός της Εθνικής επιτροπής, ενώ ο τόπος τήρησής τους αποφασίζεται από το Δ.Σ.",
+        "en": "The Regular General Assemblies of the Organisation take place once a month in accordance with the statute. The General Assemblies, as stated in Article 13 of the statute, aim at the division of tasks, reporting, updates, and analysis of issues arising within the National Committee, while their location is determined by the Executive Board."
+      },
+      "paragraph2": {
+        "el": "Σε αυτές έχουν δικαίωμα συμμετοχής όλα τα άτομα που ενδιαφέρονται να γνωρίσουν το Ε.Κ.Ν.Ε., άσχετα με το αν είναι οικονομικά ενήμερα μέλη του για το τρέχον έτος. Παρόλα αυτά, το σύνολο των οικονομικά ενήμερων μελών φέρουν και το δικαίωμα ψήφου πάρω στα θέματα προς συζήτηση.",
+        "en": "All individuals interested in getting to know EYP Greece are eligible to participate, regardless of whether they are financially active members for the current year. However, only financially active members hold voting rights on the topics under discussion."
+      }
+    },
+    "mentorship": {
+      "title": {
+        "el": "Πρόγραμμα Mentorship",
+        "en": "Mentorship Programme"
+      },
+      "sectionTitle": {
+        "el": "Mentorship Program",
+        "en": "Mentorship Program"
+      },
+      "introParagraph1": {
+        "el": "Κάθε νεοεισαχθέν ή παλιό μέλος στο Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδος (ΕΚΝΕ) καλείται να αντιμετωπίσει ορισμένες αντικειμενικές δυσκολίες όσον αφορά την κατανόηση της λειτουργίας του οργανισμού, την ομαλή ένταξη του σε αυτόν και την εύρεση των κατάλλων “βημάτων” που θα ακολουθήσει στο ταξίδι του σε αυτό.",
+        "en": "Every newly introduced or old member of the European Youth Parliament Greece (EYP Greece) faces certain objective challenges regarding understanding the organization's functioning, smooth integration, and finding the right 'steps' to follow in their journey."
+      },
+      "introParagraph2": {
+        "el": "Λύση σε αυτό έρχεται να δώσει το Mentorship Programme του ΕΚΝΕ “Touched by an Angel”, το οποίο συντονίζει η Ομάδα Εργασίας Ανθρώπινων Πόρων (Υπεύθυνη: Μαρία Ερωτοκρίτου, Μέλη: Μελίνα Μαχιμάρη, Λένα Σπανού, Θανάσης Καραγεώργος, Δήμητρα Γαρδίκη, Αναστασία Τζίκα και Αλεξάνδρα Ταμπάκου).",
+        "en": "A solution to this is provided by EYP Greece's Mentorship Programme 'Touched by an Angel', coordinated by the Human Resources Working Group (Lead: Maria Erotokritou, Members: Melina Machimari, Lena Spanou, Thanasis Karageorgos, Dimitra Gardiki, Anastasia Tzika, and Alexandra Tampakou)."
+      },
+      "whoIsItFor": {
+        "el": "Ποιους αφορά;",
+        "en": "Who is it for?"
+      },
+      "whoIsItForText": {
+        "el": "Πρακτικά το πρόγραμμα είναι ανοιχτό προς όλα τα μέλη και φίλους του Ευρωπαϊκού Κοινοβουλίου Νέων Ελλάδος που έχουν ξεκινήσει, θέλουν να ξεκινήσουν το ταξίδι τους σε αυτό και σε μέλη που θέλουν να συνεχίσουν δημιουργικά και παραγωγικά το ταξίδι τους.",
+        "en": "Practically, the program is open to all members and friends of the European Youth Parliament Greece who have started or wish to start their journey in it, as well as members who want to continue their journey creatively and productively."
+      },
+      "aimsTitle": {
+        "el": "Αναφορικά, το Mentorship Programme αποσκοπεί στην ομαλή ένταξη των:",
+        "en": "In summary, the Mentorship Programme aims at the smooth integration of:"
+      },
+      "aim1": {
+        "el": "Μαθητών/φοιτητών που έχουν ήδη ασχοληθεί με το ΕΚΝΕ στο παρελθόν αλλά δεν συνέχισαν ενεργά το ταξίδι τους,",
+        "en": "High school / university students who have previously engaged with EYP Greece but did not continue actively,"
+      },
+      "aim2": {
+        "el": "Μελών και φίλων που θέλουν καθοδήγηση και στα επόμενα βήματα που πρέπει να ακολουθήσουν και να εμβαθύνουν τις γνώσεις σε Διοικητικά θέματα του σωματείου,",
+        "en": "Members and friends who seek guidance on the next steps to take and wish to deepen their knowledge in administrative affairs of the organisation,"
+      },
+      "aim3": {
+        "el": "Μαθητών/φοιτητών που έμαθαν πρόσφατα για το ΕΚΝΕ και δεν έχουν συμμετάσχει σε Συνέδρια αυτού.",
+        "en": "High school / university students who recently learned about EYP Greece and have not yet participated in its sessions."
+      }
+    },
+    "sessions": {
+      "title": {
+        "el": "Συνδιασκέψεις και Φόρουμ",
+        "en": "Sessions and Forums"
+      },
+      "regionalsTitle": {
+        "el": "Περιφερειακές Συνδιασκέψεις",
+        "en": "Regional Sessions"
+      },
+      "regionalsText": {
+        "el": "Το ΕΚΝΕ διοργανώνει ανά τακτά χρονικά διαστήματα Περιφερειακές Συνδιασκέψεις σε διάφορες πόλεις της Ελλάδας, με στόχο την προώθηση του σωματείου στην περιφέρεια και την ενίσχυση της συμμετοχής των νέων στα ευρωπαϊκά κοινά.",
+        "en": "EYP Greece regularly organizes Regional Sessions in various cities across Greece, aiming to promote the organisation in regional areas and enhance youth participation in European affairs."
+      },
+      "nationalsTitle": {
+        "el": "Εθνικές Συνδιασκέψεις",
+        "en": "National Selection Conferences"
+      },
+      "nationalsText": {
+        "el": "Το ΕΚΝΕ διοργανώνει κάθε χρόνο, 2 Εθνικές Συνδιασκέψεις Επιλογής, μια στην Αθήνα και μια στη Θεσσαλονίκη. Σε αυτές συμμετέχουν μαθητές Λυκείου λαμβάνοντας μέρος σε ένα πλήρες τετραήμερο πρόγραμμα προσομοίωσης των εργασιών του Ευρωπαϊκού Κοινοβουλίου ενώ όσοι διακριθούν, συμμετέχουν σε Διεθνείς Συνόδους και Φόρα, απαρτίζοντας την εκάστοτε εθνική μας αποστολή.",
+        "en": "EYP Greece organizes two National Selection Conferences every year, one in Athens and one in Thessaloniki. High school students participate in a full four-day simulation of the European Parliament's work, while selected participants represent our national delegation at International Sessions and Forums."
+      },
+      "internationalsTitle": {
+        "el": "Διεθνή Σύνοδοι & Φορουμ",
+        "en": "International Sessions & Forums"
+      },
+      "internationalsText": {
+        "el": "Εκτός των Εθνικών Συνδιασκέψεων, το ΕΚΝΕ έχει διοργανώσει με επιτυχία διεθνείς δράσεις, όπως την 100η Διεθνή Σύνοδο που πραγματοποιήθηκε στην Θεσσαλονίκη το 2024 και πληθώρα διεθνών φόρα.",
+        "en": "In addition to National Selection Conferences, EYP Greece has successfully organized international events, such as the 100th International Session held in Thessaloniki in 2024 and numerous international forums."
+      },
+      "trainingsTitle": {
+        "el": "Διεθνή Training",
+        "en": "International Trainings"
+      },
+      "trainingsText1": {
+        "el": "Το ΕΚΝΕ διοργανώνει δράσεις (Διεθνή Training) που στοχεύουν στην εκπαίδευση ολόκληρου του δικτύου, για να αναλάβουν ρόλους λειτουργικών στελεχών σε Συνδιασκέψεις και Φόρουμ.",
+        "en": "EYP Greece organizes International Trainings aimed at training the entire network to take up official roles in Sessions and Forums."
+      },
+      "trainingsText2": {
+        "el": "Το 3ο Διεθνές Training που πραγματοποιήθηκε τον Μάρτιο του 2026 στην Νέα Καλλικράτεια Χαλκιδικής είναι το πιο πρόσφατο Διεθνές Training που διοργανώθηκε από το ΕΚΝΕ.",
+        "en": "The 3rd International Training held in March 2026 in Nea Kallikrateia, Chalkidiki, is the most recent International Training organized by EYP Greece."
+      }
+    }
+  },
+  "alumni": {
+    "title": {
+      "el": "Alumni",
+      "en": "Alumni"
+    },
+    "sectionTitle": {
+      "el": "Δίκτυο Alumni",
+      "en": "Alumni Network"
+    },
+    "text1": {
+      "el": "Alumni του EYP Greece, θεωρούνται όλα τα άτομα που έχουν συμμετάσχει στις δράσεις και τα προγράμματα του Οργανισμού, σε οποιονδήποτε ρόλο, αλλά έχουν ολοκληρώσει την ενεργή πορεία τους μέσα στο Δίκτυο.",
+      "en": "Alumni of EYP Greece are considered all individuals who have participated in the Organization's activities and programs in any role, but have completed their active trajectory within the Network."
+    },
+    "text2": {
+      "el": "Η αποστολή του Alumni Network του EYP Greece είναι να διατηρήσει ζωντανή τη σχέση των Αlumni αφενός μεταξύ τους, και αφετέρου με τον Οργανισμό και τις αξίες του.",
+      "en": "The mission of EYP Greece's Alumni Network is to keep the connection among Alumni alive, as well as their bond with the Organization and its values."
+    },
+    "text3": {
+      "el": "Με την εμπειρία και τη γνώση που έχουν αποκτήσει μέσα από τη συμμετοχή τους και τους ρόλους που έχουν αναλάβει, οι Alumni μπορούν να συνεχίσουν να στηρίζουν την αποστολή μας και να συμβάλλουν στο εργο του EYP Greece.",
+      "en": "With the experience and knowledge gained through their participation and roles, Alumni can continue to support our mission and contribute to the work of EYP Greece."
+    },
+    "text4": {
+      "el": "Η διαρκής σύνδεσή τους με τον Οργανισμό συμβάλλει στη σταθερότητα και τη συνέχεια ενός δικτύου που εξελίσσεται, εμπνέει και υποστηρίζει τις επόμενες γενιές EYPiers που δραστηριοποιούνται στην χώρα μας.",
+      "en": "With the experience and knowledge gained through their participation and roles, Alumni can continue to support our mission and contribute to the work of EYP Greece.<br><br>Their ongoing connection with the Organization contributes to the stability and continuity of a network that evolves, inspires, and supports future generations of EYPiers in our country."
+    }
+  },
+  "contact": {
+    "title": {
+      "el": "Επικοινωνήστε<br>μαζί μας!",
+      "en": "Contact<br>Us!"
+    },
+    "sectionTitle": {
+      "el": "Contact Us",
+      "en": "Contact Us"
+    },
+    "text": {
+      "el": "Σε περίπτωση που έχετε οποιαδήποτε απορία ή θέλετε να επικοινωνήσετε σχετικά με τη συμμετοχή σας στο ΕΚΝΕ, μη διστάσετε να μας στείλετε ένα μήνυμα σε κάποιο από τα social media του ΕΚΝΕ ή σε κάποιο e-mail. Θα χαρούμε να σας ακούσουμε!",
+      "en": "If you have any questions or would like to contact us regarding your participation in EYP Greece, please do not hesitate to send us a message on any of EYP Greece's social media or via email. We would love to hear from you!"
+    },
+    "phoneAlt": {
+      "el": "Τηλέφωνο επικοινωνίας: +30 215 215 1994",
+      "en": "Contact Phone: +30 215 215 1994"
+    },
+    "emailAlt": {
+      "el": "Email: info@eypgreece.org",
+      "en": "Email: info@eypgreece.org"
+    },
+    "addressAlt": {
+      "el": "Διεύθυνση: Βίτσι 55, Θεσσαλονίκη",
+      "en": "Address: Vitsi 55, Thessaloniki"
+    }
+  },
+  "news": {
+    "loading": {
+      "el": "Φόρτωση άρθρων…",
+      "en": "Loading articles…"
+    }
+  },
+  "policies": {
+    "loading": {
+      "el": "Φόρτωση άρθρων…",
+      "en": "Loading articles…"
+    }
+  },
+  "post": {
+    "loading": {
+      "el": "Φόρτωση άρθρου…",
+      "en": "Loading article…"
+    }
   }
 }

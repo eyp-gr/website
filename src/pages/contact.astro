@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="ΕΚΝΕ - Επικοινωνία">
 
-	<Navbar />
+    <Navbar />
 
         <body data-level="1">
 
@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
                     <img src="/src/assets/contact/contact.jpg" alt="Contact">
 
                     <div class="contact-overlay">
-                        <h1>Επικοινωνήστε<br>μαζί μας!</h1>
+                        <h1 data-i18n="contact.title">Επικοινωνήστε<br>μαζί μας!</h1>
                     </div>
 
                 </div>
@@ -26,9 +26,9 @@ import Layout from '../layouts/Layout.astro';
 
                     <div class="contact-text">
 
-                        <h2>Contact Us</h2>
+                        <h2 data-i18n="contact.sectionTitle">Contact Us</h2>
 
-                        <p>
+                        <p data-i18n="contact.text">
                             Σε περίπτωση που έχετε οποιαδήποτε απορία ή θέλετε να επικοινωνήσετε σχετικά με τη συμμετοχή σας στο ΕΚΝΕ,
                             μη διστάσετε να μας στείλετε ένα μήνυμα σε κάποιο από τα
                             social media του ΕΚΝΕ ή σε κάποιο e-mail. Θα χαρούμε να σας ακούσουμε!
@@ -38,11 +38,11 @@ import Layout from '../layouts/Layout.astro';
 
                     <div class="contact-gallery">
 
-                        <img src="/src/assets/contact/phone.png" alt="Τηλέφωνο επικοινωνίας: +30 215 215 1994" onclick="copyToClipboard('+30 215 215 1994')">
+                        <img src="/src/assets/contact/phone.png" data-i18n-attr="alt:contact.phoneAlt" alt="Τηλέφωνο επικοινωνίας: +30 215 215 1994" onclick="copyToClipboard('+30 215 215 1994')">
 
-                        <img src="/src/assets/contact/email.png" alt="Email: info@eypgreece.org" onclick="copyToClipboard('info@eypgreece.org')">
+                        <img src="/src/assets/contact/email.png" data-i18n-attr="alt:contact.emailAlt" alt="Email: info@eypgreece.org" onclick="copyToClipboard('info@eypgreece.org')">
 
-                        <img src="/src/assets/contact/address.png" alt="Διεύθυνση: Βίτσι 55, Θεσσαλονίκη" onclick="window.open('https://maps.app.goo.gl/htt4HPmCkYikPaiJ9','_blank')">
+                        <img src="/src/assets/contact/address.png" data-i18n-attr="alt:contact.addressAlt" alt="Διεύθυνση: Βίτσι 55, Θεσσαλονίκη" onclick="window.open('https://maps.app.goo.gl/htt4HPmCkYikPaiJ9','_blank')">
 
                     </div>
 

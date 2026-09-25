@@ -11,11 +11,11 @@ import Layout from '../../layouts/Layout.astro';
         <body data-level="2">
 
             <div class="banner">
-                <h1>Διοικητικό Συμβούλιο</h1>
+                <h1 data-i18n="executiveBoard.title">Διοικητικό Συμβούλιο</h1>
             </div>
 
             <div class="content-container">
-                <p class="intro-text">
+                <p class="intro-text" data-i18n="executiveBoard.intro">
                     Το <strong>Διοικητικό Συμβούλιο</strong> του ΕΚΝΕ για το έτος 2026, όπως εκλέχθηκε από τα μέλη του σωματείου, αποτελείται από τους:
                 </p>
 
@@ -26,22 +26,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/panos.jpg" alt="Παναγιώτης Τζιάτζιος" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Παναγιώτης Τζιάτζιος</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.panos.name">Παναγιώτης Τζιάτζιος</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Παναγιώτης Τζιάτζιος</h2>
-                                <p class="member-role">Πρόεδρος, Υπεύθυνος Ασφάλειας & Ευημερίας</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.panos.name">Παναγιώτης Τζιάτζιος</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.panos.role">Πρόεδρος, Υπεύθυνος Ασφάλειας & Ευημερίας</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('panagiotis.tziatzios@eypgreece.org')">
                                     panagiotis.tziatzios@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('president@eypgreece.org')">
                                     president@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>
@@ -52,22 +50,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/petros.jpg" alt="Πέτρος Κατρακούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Πέτρος Κατρακούλης</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.petros.name">Πέτρος Κατρακούλης</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Πέτρος Κατρακούλης</h2>
-                                <p class="member-role">Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.petros.name">Πέτρος Κατρακούλης</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.petros.role">Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('petros.katrakoulis@eypgreece.org')">
                                     petros.katrakoulis@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('public.relations@eypgreece.org')">
                                     public.relations@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>
@@ -78,22 +74,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/stergiani.jpg" alt="Στεργιανή Τοπαλίδου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Στεργιανή Τοπαλίδου</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.stergiani.name">Στεργιανή Τοπαλίδου</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Στεργιανή Τοπαλίδου</h2>
-                                <p class="member-role">Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.stergiani.name">Στεργιανή Τοπαλίδου</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.stergiani.role">Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('stergiani.topalidou@eypgreece.org')">
                                     stergiani.topalidou@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('info@eypgreece.org')">
                                     info@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>
@@ -104,22 +98,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/alexandros.jpg" alt="Αλέξανδρος Σιωμούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Αλέξανδρος Σιωμούλης</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.alexandros.name">Αλέξανδρος Σιωμούλης</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Αλέξανδρος Σιωμούλης</h2>
-                                <p class="member-role">Ταμίας</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.alexandros.name">Αλέξανδρος Σιωμούλης</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.alexandros.role">Ταμίας</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('alexandros.siomoulis@eypgreece.org')">
                                     alexandros.siomoulis@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('treasurer@eypgreece.org')">
                                     treasurer@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>
@@ -130,22 +122,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/maria.png" alt="Μαρία Ερωτοκρίτου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Μαρία Ερωτοκρίτου</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.maria.name">Μαρία Ερωτοκρίτου</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Μαρία Ερωτοκρίτου</h2>
-                                <p class="member-role">Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.maria.name">Μαρία Ερωτοκρίτου</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.maria.role">Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('maria.erotokritou@eypgreece.org')">
                                     maria.erotokritou@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('humanresources@eypgreece.org')">
                                     humanresources@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>
@@ -156,22 +146,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/iro.jpg" alt="Αργυρώ Δήμητρα (Ηρώ) Μιχαηλίδη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Αργυρώ Δήμητρα (Ηρώ) Μιχαηλίδη</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.iro.name">Αργυρώ (Ηρώ) Μιχαηλίδη</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Αργυρώ (Ηρώ) Μιχαηλίδη</h2>
-                                <p class="member-role">Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.iro.name">Αργυρώ (Ηρώ) Μιχαηλίδη</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.iro.role">Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('iro.michailidi@eypgreece.org')">
                                     iro.michailidi@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('international.relations@eypgreece.org')">
                                     international.relations@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>
@@ -182,22 +170,20 @@ import Layout from '../../layouts/Layout.astro';
                             <div class="rotated-bg"></div>
                             <div class="image-box">
                                 <img src="/src/assets/board/ellie.jpg" alt="Ελένη Γκεσούλη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                <div class="image-placeholder" style="display:none;">Ελένη Γκεσούλη</div>
+                                <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.ellie.name">Ελένη Γκεσούλη</div>
                             </div>
                         </div>
                         <div class="text-side">
                             <div>
-                                <h2 class="member-name">Ελένη Γκεσούλη</h2>
-                                <p class="member-role">Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας</p>
+                                <h2 class="member-name" data-i18n="executiveBoard.members.ellie.name">Ελένη Γκεσούλη</h2>
+                                <p class="member-role" data-i18n="executiveBoard.members.ellie.role">Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας</p>
                             </div>
                             <div class="member-contact">
                                 <span class="email-copy" onclick="copyToClipboard('eleni.gkesouli@eypgreece.org')">
                                     eleni.gkesouli@eypgreece.org
-                                    
                                 </span>
                                 <span class="email-copy" onclick="copyToClipboard('communications@eypgreece.org')">
                                     communications@eypgreece.org
-                                    
                                 </span>
                             </div>
                         </div>

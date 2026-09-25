@@ -8,69 +8,72 @@ import Layout from '../../layouts/Layout.astro';
 
 	<Navbar />
 
-    <body data-level="2">
+        <body data-level="2">
 
-        <div class="banner">
-            <h1>Ομάδες Εργασίας και Περιφερειακές Ομάδες</h1>
-        </div>
-
-        <div class="page-section">
-            <div class="content-container section-grid">
-                <div class="section-image" style="background-color: #fff;">
-                    <img src="/src/assets/wg-and-rg/wg.webp">
-                </div>
-                <div class="section-text">
-                    <h2>Ομάδες Εργασίας</h2>
-                    <p>
-                        Οι Ομάδες Εργασίας, αποτελούνται από μέλη του Ε.Κ.Ν.Ε. με ενδιαφέρον πάνω στη θεματική της Ομάδας και επιλέγονται, συνήθως μετά από αίτησή τους, από το Μέλος Δ.Σ. που είναι Υπεύθυνο για την Ομάδα.
-                    </p>
-                </div>
+            <div class="banner">
+                <h1 data-i18n="groups.title">Ομάδες Εργασίας και Περιφερειακές Ομάδες</h1>
             </div>
-        </div>
 
-        <div class="page-section">
-            <div class="content-container section-grid">
-                <div class="section-text">
-                    <h2>Περιφερειακές Ομάδες</h2>
-                    <p>
-                        Οι Περιφερειακές Ομάδες είναι μια νέα δομή εντός του Ε.Κ.Ν.Ε, η οποία αποσκοπεί στην ενίσχυση της παρουσίας του Σωματείου σε όλη την Ελλάδα. Οι Περιφερειακές Ομάδες αποτελούν τον σύνδεσμο του Ε.Κ.Ν.Ε. με τις τοπικές κοινωνίες της χώρας έτσι ώστε να ενισχύσουμε τη συμμετοχή και την προσβασιμότητα του Σωματείου.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-container">
-
-            <h2>Περιφερειακοί Συντονιστές</h2>
-
-            <div class="card-section">
-                <div class="content-container">
-                    <div class="card-grid">
-
-                        <div class="info-card">
-                            <img src="/src/assets/wg-and-rg/despoina.webp" style="object-position: center 45%;">
-                            <h3>Δέσποινα Παπαδοπούλου</h3>
-                            <p>Βόρεια Ελλάδα</p>
-                        </div>
-
-                        <div class="info-card">
-                            <img src="/src/assets/wg-and-rg/domniki.webp" style="object-position: center 65%;">
-                            <h3>Δομνίκη Χατζηαλέξη</h3>
-                            <p>Κεντρική Ελλάδα</p>
-                        </div>
-
-                        <div class="info-card">
-                            <img src="/src/assets/wg-and-rg/theophilos.webp" style="object-position: center 65%;">
-                            <h3>Θεόφιλος Καραμανώλης</h3>
-                            <p>Νότια Ελλάδα</p>
-                        </div>
-
+            <div class="page-section">
+                <div class="content-container section-grid">
+                    <div class="section-image" style="background-color: #fff;">
+                        <img src="/src/assets/wg-and-rg/wg.webp">
+                    </div>
+                    <div class="section-text">
+                        <h2 data-i18n="groups.workingGroups.title">Ομάδες Εργασίας</h2>
+                        <p data-i18n="groups.workingGroups.description">
+                            Οι Ομάδες Εργασίας, αποτελούνται από μέλη του Ε.Κ.Ν.Ε. με ενδιαφέρον πάνω στη θεματική της Ομάδας και επιλέγονται, συνήθως μετά από αίτησή τους, από το Μέλος Δ.Σ. που είναι Υπεύθυνο για την Ομάδα.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </body>
+            <div class="page-section">
+                <div class="content-container section-grid">
+                    <div class="section-text">
+                        <h2 data-i18n="groups.regionalGroups.title">Περιφερειακές Ομάδες</h2>
+                        <p data-i18n="groups.regionalGroups.description">
+                            Οι Περιφερειακές Ομάδες είναι μια νέα δομή εντός του Ε.Κ.Ν.Ε, η οποία αποσκοπεί στην ενίσχυση της παρουσίας του Σωματείου σε όλη την Ελλάδα. Οι Περιφερειακές Ομάδες αποτελούν τον σύνδεσμο του Ε.Κ.Ν.Ε. με τις τοπικές κοινωνίες της χώρας έτσι ώστε να ενισχύσουμε τη συμμετοχή και την προσβασιμότητα του Σωματείου.
+                        </p>
+                    </div>
+                    <div class="section-image" style="background-color: #fff;">
+                        <img src="/src/assets/wg-and-rg/wg.webp">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-container">
+
+                <h2 data-i18n="groups.coordinators.title">Περιφερειακοί Συντονιστές</h2>
+
+                <div class="card-section">
+                    <div class="content-container">
+                        <div class="card-grid">
+
+                            <div class="info-card">
+                                <img src="/src/assets/wg-and-rg/despoina.webp" style="object-position: center 45%;">
+                                <h3 data-i18n="groups.coordinators.despoina.name">Δέσποινα Παπαδοπούλου</h3>
+                                <p data-i18n="groups.coordinators.despoina.region">Βόρεια Ελλάδα</p>
+                            </div>
+
+                            <div class="info-card">
+                                <img src="/src/assets/wg-and-rg/domniki.webp" style="object-position: center 65%;">
+                                <h3 data-i18n="groups.coordinators.domniki.name">Δομνίκη Χατζηαλέξη</h3>
+                                <p data-i18n="groups.coordinators.domniki.region">Κεντρική Ελλάδα</p>
+                            </div>
+
+                            <div class="info-card">
+                                <img src="/src/assets/wg-and-rg/theophilos.webp" style="object-position: center 65%;">
+                                <h3 data-i18n="groups.coordinators.theophilos.name">Θεόφιλος Καραμανώλης</h3>
+                                <p data-i18n="groups.coordinators.theophilos.region">Νότια Ελλάδα</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </body>
 
     <Footer />
 </Layout>
