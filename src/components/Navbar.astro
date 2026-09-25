@@ -11,80 +11,80 @@
 
         <nav class="nav">
 
-            <a href="/">Αρχική</a>
+            <a href="/" data-i18n="nav.home">Αρχική</a>
 
             <div class="nav-item">
-                <button>
+                <button data-i18n="nav.getToKnowUs">
                     Γνωρίστε μας
                     <span>▾</span>
                 </button>
 
                 <div class="mega-menu">
-                    <a href="/get-to-know-us/who-we-are">Ποιοι είμαστε</a>
-                    <a href="/get-to-know-us/executive-board">Διοικητικό Συμβούλιο</a>
-                    <a href="/get-to-know-us/wg-and-rg">Ομάδες Εργασίας και Περιφερειακές Ομάδες</a>
-                    <a href="/get-to-know-us/eyp-network">Δίκτυο του Ε.Κ.Ν.</a>
+                    <a href="/get-to-know-us/who-we-are" data-i18n="nav.whoWeAre">Ποιοι είμαστε</a>
+                    <a href="/get-to-know-us/executive-board" data-i18n="nav.executiveBoard">Διοικητικό Συμβούλιο</a>
+                    <a href="/get-to-know-us/wg-and-rg" data-i18n="nav.workingGroups">Ομάδες Εργασίας και Περιφερειακές Ομάδες</a>
+                    <a href="/get-to-know-us/eyp-network" data-i18n="nav.eypNetwork">Δίκτυο του Ε.Κ.Ν.</a>
                 </div>
             </div>
 
             <div class="nav-item">
-                <button>
+                <button data-i18n="nav.whatWeDo">
                     Τι κάνουμε
                     <span>▾</span>
                 </button>
 
                 <div class="mega-menu">
-                    <a href="/what-do-we-do/sessions">Δράσεις</a>
-                    <a href="/what-do-we-do/mentorship-program">Πρόγραμμα Mentorship</a>
-                    <a href="/what-do-we-do/members-assembly">Γενικές Συνελεύσεις</a>
+                    <a href="/what-do-we-do/sessions" data-i18n="nav.sessions">Δράσεις</a>
+                    <a href="/what-do-we-do/mentorship-program" data-i18n="nav.mentorship">Πρόγραμμα Mentorship</a>
+                    <a href="/what-do-we-do/members-assembly" data-i18n="nav.membersAssembly">Γενικές Συνελεύσεις</a>
                 </div>
             </div>
 
             <div class="nav-item">
-                <button>
+                <button data-i18n="nav.understandingEurope">
                     Understanding Europe
                     <span>▾</span>
                 </button>
 
                 <div class="mega-menu">
-                    <a href="/understanding-europe/what-is-ue">Τι είναι το πρόγραμμα</a>
-                    <a href="/understanding-europe/structure">Δομή Προγράμματος</a>
-                    <a href="/understanding-europe/participation">Συμμετοχή</a>
+                    <a href="/understanding-europe/what-is-ue" data-i18n="nav.whatIsUE">Τι είναι το πρόγραμμα</a>
+                    <a href="/understanding-europe/structure" data-i18n="nav.structure">Δομή Προγράμματος</a>
+                    <a href="/understanding-europe/participation" data-i18n="nav.participation">Συμμετοχή</a>
                 </div>
             </div>
 
             <div class="nav-item">
-                <button>
+                <button data-i18n="nav.participation">
                     Συμμετοχή
                     <span>▾</span>
                 </button>
 
                 <div class="mega-menu">
-                    <a href="/participation/participants">Συμμετέχοντες</a>
-                    <a href="/participation/volunteers">Εθελοντές</a>
-                    <a href="/participation/schools">Σχολεία και Καθηγητές</a>
-                    <a href="/participation/faq">Συχνές Ερωτήσεις</a>
+                    <a href="/participation/participants" data-i18n="nav.participants">Συμμετέχοντες</a>
+                    <a href="/participation/volunteers" data-i18n="nav.volunteers">Εθελοντές</a>
+                    <a href="/participation/schools" data-i18n="nav.schools">Σχολεία και Καθηγητές</a>
+                    <a href="/participation/faq" data-i18n="nav.faq">Συχνές Ερωτήσεις</a>
                 </div>
             </div>
 
             <div class="nav-item">
-                <button>
+                <button data-i18n="nav.partners">
                     Συνεργάτες
                     <span>▾</span>
                 </button>
 
                 <div class="mega-menu">
-                    <a href="/partners/our-partners">Οι συνεργάτες μας</a>
-                    <a href="/partners/become-a-partner">Γίνετε Συνεργάτης</a>
+                    <a href="/partners/our-partners" data-i18n="nav.ourPartners">Οι συνεργάτες μας</a>
+                    <a href="/partners/become-a-partner" data-i18n="nav.becomePartner">Γίνετε Συνεργάτης</a>
                 </div>
             </div>
 
-            <a href="/news">Νέα</a>
-            <a href="/alumni">Alumni</a>
-            <a href="/contact">Επικοινωνία</a>
-            <a href="/policies">Policies</a>
+            <a href="/news" data-i18n="nav.news">Νέα</a>
+            <a href="/alumni" data-i18n="nav.alumni">Alumni</a>
+            <a href="/contact" data-i18n="nav.contact">Επικοινωνία</a>
+            <a href="/policies" data-i18n="nav.policies">Policies</a>
 
-            <a href="#" id="language-switch">English</a>
+            <a href="#" id="language-switch" data-language-switch aria-label="Change language">English</a>
 
         </nav>
 
@@ -94,9 +94,9 @@
 
     </div>
 </header>
-
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+
         const header = document.querySelector('.header') as HTMLElement | null;
         const nav = document.querySelector('.nav') as HTMLElement | null;
         const menuToggle = document.querySelector('.menu-toggle') as HTMLButtonElement | null;

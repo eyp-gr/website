@@ -1,0 +1,268 @@
+{
+  "nav": {
+    "home": {
+      "el": "Αρχική",
+      "en": "Home"
+    },
+    "getToKnowUs": {
+      "el": "Γνωρίστε μας",
+      "en": "Get to know us"
+    },
+    "whoWeAre": {
+      "el": "Ποιοι είμαστε",
+      "en": "Who we are"
+    },
+    "executiveBoard": {
+      "el": "Διοικητικό Συμβούλιο",
+      "en": "Executive Board"
+    },
+    "workingGroups": {
+      "el": "Ομάδες Εργασίας και Περιφερειακές Ομάδες",
+      "en": "Working Groups and Regional Groups"
+    },
+    "eypNetwork": {
+      "el": "Δίκτυο του Ε.Κ.Ν.",
+      "en": "EYP Network"
+    },
+    "whatWeDo": {
+      "el": "Τι κάνουμε",
+      "en": "What we do"
+    },
+    "sessions": {
+      "el": "Δράσεις",
+      "en": "Sessions"
+    },
+    "mentorship": {
+      "el": "Πρόγραμμα Mentorship",
+      "en": "Mentorship Programme"
+    },
+    "membersAssembly": {
+      "el": "Γενικές Συνελεύσεις",
+      "en": "General Assemblies"
+    },
+    "understandingEurope": {
+      "el": "Understanding Europe",
+      "en": "Understanding Europe"
+    },
+    "whatIsUE": {
+      "el": "Τι είναι το πρόγραμμα",
+      "en": "What is the programme"
+    },
+    "structure": {
+      "el": "Δομή Προγράμματος",
+      "en": "Programme Structure"
+    },
+    "participation": {
+      "el": "Συμμετοχή",
+      "en": "Participation"
+    },
+    "participants": {
+      "el": "Συμμετέχοντες",
+      "en": "Participants"
+    },
+    "volunteers": {
+      "el": "Εθελοντές",
+      "en": "Volunteers"
+    },
+    "schools": {
+      "el": "Σχολεία και Καθηγητές",
+      "en": "Schools and Teachers"
+    },
+    "faq": {
+      "el": "Συχνές Ερωτήσεις",
+      "en": "Frequently Asked Questions"
+    },
+    "partners": {
+      "el": "Συνεργάτες",
+      "en": "Partners"
+    },
+    "ourPartners": {
+      "el": "Οι συνεργάτες μας",
+      "en": "Our Partners"
+    },
+    "becomePartner": {
+      "el": "Γίνετε Συνεργάτης",
+      "en": "Become a Partner"
+    },
+    "news": {
+      "el": "Νέα",
+      "en": "News"
+    },
+    "alumni": {
+      "el": "Alumni",
+      "en": "Alumni"
+    },
+    "contact": {
+      "el": "Επικοινωνία",
+      "en": "Contact"
+    },
+    "policies": {
+      "el": "Policies",
+      "en": "Policies"
+    },
+    "switchToEnglish": {
+      "el": "English",
+      "en": "Ελληνικά"
+    }
+  },
+
+  "home": {
+    "heroTitle": {
+      "el": "Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδος",
+      "en": "European Youth Parliament Greece"
+    },
+    "heroSubtitle": {
+      "el": "Η νέα γενιά της Ευρώπης είναι εδώ!",
+      "en": "The next generation of Europe is here!"
+    },
+    "learnMore": {
+      "el": "Μάθετε περισσότερα",
+      "en": "Learn more"
+    },
+    "upcomingEvents": {
+      "el": "Επερχόμενες δράσεις",
+      "en": "Upcoming events"
+    },
+
+    "aboutTitle": {
+      "el": "Τι είναι το Ευρωπαϊκό Κοινοβούλιο Νέων;",
+      "en": "What is the European Youth Parliament?"
+    },
+    "aboutText": {
+      "el": "Το Ευρωπαϊκό Κοινοβούλιο Νέων Ελλάδος είναι η Εθνική Επιτροπή του Ευρωπαϊκού Κοινοβουλίου Νέων (ΕΚΝ) στην Ελλάδα. Το ΕΚΝ είναι ένας μη κυβερνητικός, μη κερδοσκοπικός οργανισμός που διοργανώνει συνέδρια για νέους, προσομοιώνοντας τη λειτουργία του Ευρωπαϊκού Κοινοβουλίου.",
+      "en": "The European Youth Parliament Greece is the National Committee of the European Youth Parliament (EYP) in Greece. EYP is a non-governmental, non-profit organisation that organises events for young people, simulating the work of the European Parliament."
+    },
+
+    "eventsTitle": {
+      "el": "Επερχόμενες δράσεις",
+      "en": "Upcoming events"
+    },
+
+    "events": {
+      "rsc": {
+        "date": {
+          "el": "5-8 Νοεμβρίου 2026",
+          "en": "5-8 November 2026"
+        },
+        "title": {
+          "el": "2η Περιφερειακή Συνδιάσκεψη Επιλογής",
+          "en": "2nd Regional Selection Conference"
+        },
+        "location": {
+          "el": "Πάτρα",
+          "en": "Patras"
+        }
+      },
+      "uf": {
+        "date": {
+          "el": "26-29 Νοεμβρίου 2026",
+          "en": "26-29 November 2026"
+        },
+        "title": {
+          "el": "2ο Πανεπιστημιακό Φόρουμ",
+          "en": "2nd University Forum"
+        },
+        "location": {
+          "el": "Αθήνα",
+          "en": "Athens"
+        }
+      },
+      "nsc": {
+        "date": {
+          "el": "10-14 Δεκεμβρίου 2026",
+          "en": "10-14 December 2026"
+        },
+        "title": {
+          "el": "52η Εθνική Συνδιάσκεψη Επιλογής",
+          "en": "52nd National Selection Conference"
+        },
+        "location": {
+          "el": "Θεσσαλονίκη",
+          "en": "Thessaloniki"
+        }
+      }
+    },
+
+    "participationTitle": {
+      "el": "Πώς μπορώ να συμμετάσχω;",
+      "en": "How can I participate?"
+    },
+
+    "participation": {
+      "participants": {
+        "title": {
+          "el": "Σύνεδροι",
+          "en": "Participants"
+        },
+        "description": {
+          "el": "Παρακολουθήστε μια συνεδρίαση του Ευρωπαϊκού Κοινοβουλίου Νέων ως σύνεδρος",
+          "en": "Take part in a European Youth Parliament session as a participant"
+        },
+        "link": {
+          "el": "Μάθε περισσότερα",
+          "en": "Learn more"
+        }
+      },
+
+      "volunteers": {
+        "title": {
+          "el": "Εθελοντές",
+          "en": "Volunteers"
+        },
+        "description": {
+          "el": "Γίνετε εθελοντής και βοηθήστε στην οργάνωση των δράσεων του Ευρωπαϊκού Κοινοβουλίου Νέων",
+          "en": "Become a volunteer and help organise European Youth Parliament activities"
+        },
+        "link": {
+          "el": "Μάθε περισσότερα",
+          "en": "Learn more"
+        }
+      },
+
+      "schools": {
+        "title": {
+          "el": "Σχολεία",
+          "en": "Schools"
+        },
+        "description": {
+          "el": "Δηλώστε συμμετοχή σε δράση μας ως σχολείο",
+          "en": "Take part in one of our activities as a school"
+        },
+        "link": {
+          "el": "Μάθε περισσότερα",
+          "en": "Learn more"
+        }
+      },
+
+      "partners": {
+        "title": {
+          "el": "Συνεργάτες",
+          "en": "Partners"
+        },
+        "description": {
+          "el": "Υποστηρίξτε το έργο μας μέσα από συνεργασίες",
+          "en": "Support our work through partnerships"
+        },
+        "link": {
+          "el": "Μάθε περισσότερα",
+          "en": "Learn more"
+        }
+      },
+
+      "contact": {
+        "title": {
+          "el": "Επικοινωνία",
+          "en": "Contact"
+        },
+        "description": {
+          "el": "Έχετε κάποια ερώτηση; Επικοινωνήστε μαζί μας!",
+          "en": "Have a question? Get in touch with us!"
+        },
+        "link": {
+          "el": "Επικοινωνία",
+          "en": "Contact us"
+        }
+      }
+    }
+  }
+}
