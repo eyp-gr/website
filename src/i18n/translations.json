@@ -1008,9 +1008,13 @@
     }
   },
   "contact": {
-    "title": {
-      "el": "Επικοινωνήστε<br>μαζί μας!",
-      "en": "Contact<br>Us!"
+    "title1": {
+      "el": "Επικοινωνήστε",
+      "en": "Contact!"
+    },
+    "title2": {
+      "el": " μαζί μας!",
+      "en": "Us!"
     },
     "sectionTitle": {
       "el": "Contact Us",

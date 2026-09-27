@@ -39,9 +39,6 @@ export function applyLanguage(language: Language) {
 
     /*
      * Translate normal text
-     *
-     * Example:
-     * <h1 data-i18n="home.heroTitle"></h1>
      */
     document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((element) => {
         const key = element.dataset.i18n;
@@ -52,15 +49,19 @@ export function applyLanguage(language: Language) {
 
         if (translation?.[language] === undefined) return;
 
-        // If the element contains other HTML elements
-        // (e.g. the ▾ inside navbar buttons),
-        // replace only the direct text without removing the children.
+        /*
+         * If the element contains other HTML elements
+         * (e.g. the ▾ inside navbar buttons),
+         * replace only the direct text without removing the children.
+         */
         const textNode = Array.from(element.childNodes).find(
-            (node) => node.nodeType === Node.TEXT_NODE && node.textContent?.trim()
+            (node) =>
+                node.nodeType === Node.TEXT_NODE &&
+                node.textContent?.trim()
         );
 
         if (textNode) {
-            textNode.textContent = `\n                    ${translation[language]}\n                    `;
+            textNode.textContent = ` ${translation[language]} `;
         } else {
             element.textContent = translation[language];
         }
@@ -68,9 +69,6 @@ export function applyLanguage(language: Language) {
 
     /*
      * Translate HTML attributes
-     *
-     * Example:
-     * data-i18n-attr="alt|home.heroImageAlt"
      */
     document
         .querySelectorAll<HTMLElement>('[data-i18n-attr]')
@@ -97,21 +95,34 @@ export function applyLanguage(language: Language) {
         });
 
     /*
-     * Update language button
+     * Update language switcher icon
      *
-     * Greek page  -> English
-     * English page -> Ελληνικά
+     * Greek page  -> show English flag
+     * English page -> show Greek flag
      */
     document
         .querySelectorAll<HTMLElement>('[data-language-switch]')
         .forEach((element) => {
-            const translation = getNestedValue(
-                translations,
-                'nav.switchToEnglish'
-            );
+            const icon = element.querySelector(
+                '.flag-icon'
+            ) as HTMLImageElement | null;
 
-            if (translation?.[language] !== undefined) {
-                element.textContent = translation[language];
+            if (!icon) return;
+
+            if (language === 'el') {
+                icon.src = '/lang/en-icon.png';
+                icon.alt = 'English';
+                element.setAttribute(
+                    'aria-label',
+                    'Change language to English'
+                );
+            } else {
+                icon.src = '/lang/el-icon.png';
+                icon.alt = 'Greek';
+                element.setAttribute(
+                    'aria-label',
+                    'Αλλαγή γλώσσας στα Ελληνικά'
+                );
             }
         });
 }

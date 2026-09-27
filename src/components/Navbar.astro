@@ -1,8 +1,12 @@
+---
+import logoImg from '../assets/logo/long_white.webp';
+---
+
 <header class="header">
     <div class="container">
 
         <a href="/" class="logo">
-            <img src="/src/assets/logo/long_white.webp" alt="EYP Greece">
+            <img src={logoImg.src} alt="EYP Greece" />
         </a>
 
         <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false">
@@ -11,7 +15,7 @@
 
         <nav class="nav">
 
-            <a href="/" data-i18n="nav.home">Αρχική</a>
+            <a href="/news" data-i18n="nav.news">Νέα</a>
 
             <div class="nav-item">
                 <button data-i18n="nav.getToKnowUs">
@@ -79,13 +83,12 @@
                 </div>
             </div>
 
-            <a href="/news" data-i18n="nav.news">Νέα</a>
             <a href="/alumni" data-i18n="nav.alumni">Alumni</a>
             <a href="/contact" data-i18n="nav.contact">Επικοινωνία</a>
-            <a href="/policies" data-i18n="nav.policies">Policies</a>
 
-            <a href="#" id="language-switch" data-language-switch aria-label="Change language">English</a>
-
+            <button id="language-switch" class="lang-switch" data-language-switch type="button" aria-label="Change language">
+                <img class="flag-icon" src="/lang/en-icon.png" width="39" height="27" alt="English"/>
+            </button>
         </nav>
 
         <div class="overflow-panel" aria-hidden="true">
@@ -94,6 +97,41 @@
 
     </div>
 </header>
+
+<style is:global>
+    .lang-switch {
+        flex-shrink: 0;
+
+        width: 48px;
+        height: 90px;
+
+        margin-left: 4px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+    }
+
+    .lang-switch .flag-icon {
+        display: block;
+
+        width: 39px;
+        height: 27px;
+
+        object-fit: contain;
+
+        border-radius: 2px;
+
+        transition: transform 0.2s ease;
+    }
+</style>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -105,6 +143,7 @@
 
         if (!header || !nav || !menuToggle || !overflowPanel || !overflowNav) return;
 
+        // Desktop Overflow Calculation
         function updateDesktopOverflow() {
             if (!header || !nav || !overflowPanel || !overflowNav) return;
 
@@ -146,6 +185,7 @@
             }
         }
 
+        // Hamburger Menu Toggle
         menuToggle?.addEventListener('click', (e) => {
             e.stopPropagation();
             if (!menuToggle) return;
@@ -157,14 +197,12 @@
             menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
 
-        // Αφαίρεση του focus από τα κουμπιά κατά το click ώστε να μην κολλούν
         document.querySelectorAll('.nav-item > button').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 (e.currentTarget as HTMLButtonElement).blur();
             });
         });
 
-        // Click outside handler: Κλείνει το overflow panel και το mobile navigation όταν κάνεις click αλλού
         document.addEventListener('click', (e) => {
             const target = e.target as Node;
             if (!header.contains(target)) {
