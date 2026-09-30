@@ -1,7 +1,35 @@
 ---
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
-import Layout from '../../layouts/Layout.astro';    
+import Layout from '../../layouts/Layout.astro';
+
+const milestones = [
+    { year: 1994, title: 'Ίδρυση του ΕΚΝΕ', description: 'Το EKNE ιδρύεται στη Θεσσαλονίκη ως εθνική επιτροπή του ΕΚΝ.', status: 'past' },
+    { year: 1996, title: 'Πρώτη Εθνική Επιλεκτική Σύνοδος', description: 'Διοργανώνεται η πρώτη ΕΣΕ για την επιλογή αντιπροσωπείας σε διεθνείς συνόδους.', status: 'past' },
+    { year: 1998, title: 'Πρώτη συμμετοχή σε Διεθνή Σύνοδο', description: 'Ελληνική αντιπροσωπεία συμμετέχει για πρώτη φορά σε Διεθνή Σύνοδο του ΕΚΝ στο εξωτερικό.', status: 'past' },
+    { year: 2000, title: 'Διεύρυνση σε νέες πόλεις', description: 'Το δίκτυο εθελοντών του ΕΚΝΕ επεκτείνεται πέρα από τη Θεσσαλονίκη.', status: 'past' },
+    { year: 2002, title: 'Πρώτο Περιφερειακό Σεμινάριο', description: 'Διοργανώνεται σεμινάριο επιμόρφωσης για νέα μέλη και εθελοντές.', status: 'past' },
+    { year: 2004, title: '10η επέτειος του ΕΚΝΕ', description: 'Το ΕΚΝΕ γιορτάζει δέκα χρόνια δράσης με ειδική αναδρομική εκδήλωση.', status: 'past' },
+    { year: 2006, title: 'Πρόγραμμα εκπαίδευσης προεδρείων', description: 'Καθιερώνεται ετήσιο πρόγραμμα εκπαίδευσης προεδρείων συνεδρίων (chairpersons).', status: 'past' },
+    { year: 2008, title: 'Σύνοδος με διεθνείς παρατηρητές', description: 'Πρώτη Εθνική Σύνοδος με τη συμμετοχή παρατηρητών από άλλες εθνικές επιτροπές του ΕΚΝ.', status: 'past' },
+    { year: 2010, title: 'Συνεργασία με σχολεία', description: 'Ξεκινά συστηματική συνεργασία με σχολεία δευτεροβάθμιας εκπαίδευσης σε πανελλαδικό επίπεδο.', status: 'past' },
+    { year: 2012, title: 'Ψηφιακή πλατφόρμα αιτήσεων', description: 'Λανσάρεται η πρώτη ηλεκτρονική πλατφόρμα για αιτήσεις νέων μελών.', status: 'past' },
+    { year: 2014, title: '20η επέτειος του ΕΚΝΕ', description: 'Αναδρομική έκθεση φωτογραφίας για τα είκοσι χρόνια παρουσίας του ΕΚΝΕ.', status: 'past' },
+    { year: 2016, title: 'Ακαδημαϊκές συνεργασίες', description: 'Το ΕΚΝΕ αναπτύσσει συνεργασίες με πανεπιστημιακά τμήματα και φοιτητικές ομάδες.', status: 'past' },
+    { year: 2017, title: 'Πρόγραμμα υποτροφιών', description: 'Εισάγεται πρόγραμμα υποτροφιών συμμετοχής για μαθητές με οικονομικά κριτήρια.', status: 'past' },
+    { year: 2018, title: 'Ανανέωση ταυτότητας', description: 'Το ΕΚΝΕ αποκτά νέα οπτική ταυτότητα και ανανεωμένη ιστοσελίδα.', status: 'past' },
+    { year: 2019, title: 'Ρεκόρ συμμετοχής', description: 'Καταγράφεται ρεκόρ αιτήσεων συμμετοχής σε Εθνική Σύνοδο.', status: 'past' },
+    { year: 2020, title: 'Μετάβαση σε online δράσεις', description: 'Οι δράσεις του ΕΚΝΕ μεταφέρονται online λόγω της πανδημίας.', status: 'past' },
+    { year: 2021, title: 'Πρώτη υβριδική σύνοδος', description: 'Διοργανώνεται η πρώτη υβριδική (online και διά ζώσης) Διεθνής Σύνοδος.', status: 'past' },
+    { year: 2022, title: 'Επιστροφή διά ζώσης', description: 'Οι δράσεις επιστρέφουν πλήρως διά ζώσης με νέο ρεκόρ συμμετοχής.', status: 'past' },
+    { year: 2024, title: '30η επέτειος του ΕΚΝΕ', description: 'Το ΕΚΝΕ γιορτάζει τριάντα χρόνια παρουσίας στην ελληνική εκπαιδευτική κοινότητα.', status: 'past' },
+    { year: 2026, title: 'Ανανέωση ψηφιακής παρουσίας', description: 'Λανσάρεται η νέα ιστοσελίδα του ΕΚΝΕ.', status: 'past' },
+    { year: 2027, title: 'Πρόγραμμα ηγεσίας αποφοίτων', description: 'Σχεδιάζεται πρόγραμμα ανάπτυξης δεξιοτήτων ηγεσίας για αποφοίτους του ΕΚΝΕ.', status: 'upcoming' },
+    { year: 2028, title: 'Επέκταση σε νέες περιφέρειες', description: 'Στόχος η δημιουργία τοπικών ομάδων εθελοντών σε περισσότερες πόλεις της χώρας.', status: 'upcoming' },
+    { year: 2029, title: 'Υποψηφιότητα για Διεθνή Σύνοδο', description: 'Στόχος η υποψηφιότητα για διοργάνωση Διεθνούς Συνόδου του ΕΚΝ στη Θεσσαλονίκη.', status: 'upcoming' },
+    { year: 2030, title: '35η επέτειος του ΕΚΝΕ', description: 'Προγραμματίζεται μεγάλη εκδήλωση για τα 35 χρόνια του ΕΚΝΕ.', status: 'upcoming' },
+    { year: 2031, title: 'Δίκτυο αποφοίτων', description: 'Στόχος η δημιουργία ενεργού δικτύου αποφοίτων (alumni) του ΕΚΝΕ.', status: 'upcoming' },
+];
 ---
 
 <Layout title="ΕΚΝΕ - Δίκτυο του ΕΚΝ">
@@ -53,9 +81,297 @@ import Layout from '../../layouts/Layout.astro';
                     </div>
                 </div>
 
+                <!-- ============== ΟΡΙΖΟΝΤΙΟ TIMELINE ΟΡΟΣΗΜΩΝ ============== -->
+                <div class="page-section timeline-section">
+                    <div class="content-container">
+                        <h2 data-i18n="eypNetwork.timeline.title">Οι σταθμοί μας</h2>
+                        <p class="timeline-intro" data-i18n="eypNetwork.timeline.intro">
+                            Μια διαδρομή μέσα από τα σημαντικότερα ορόσημα του ΕΚΝΕ, από την ίδρυσή του μέχρι τους στόχους των επόμενων χρόνων. Σύρετε ή χρησιμοποιήστε τα βέλη για να μετακινηθείτε.
+                        </p>
+                    </div>
+
+                    <div class="timeline-scroll" data-timeline>
+                        <button class="timeline-nav" data-timeline-prev aria-label="Παλαιότερα ορόσημα" type="button">‹</button>
+
+                        <div class="timeline-viewport" data-timeline-viewport tabindex="0" role="group" aria-label="Χρονολόγιο οροσήμων ΕΚΝΕ (οριζόντια κύλιση)">
+                            <div class="timeline-track" data-timeline-track>
+                                <div class="timeline-line" aria-hidden="true"></div>
+
+                                {milestones.map((milestone, index) => (
+                                    <div class={`timeline-point ${index % 2 === 0 ? 'timeline-point--above' : 'timeline-point--below'} ${milestone.status === 'upcoming' ? 'timeline-point--future' : ''}`}>
+                                        <span class="timeline-dot" aria-hidden="true"></span>
+                                        <div class="timeline-card">
+                                            <span class="timeline-year">{milestone.year}</span>
+                                            <h3 data-i18n={`eypNetwork.timeline.events.e${index + 1}.title`}>{milestone.title}</h3>
+                                            <p data-i18n={`eypNetwork.timeline.events.e${index + 1}.description`}>{milestone.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <button class="timeline-nav" data-timeline-next aria-label="Επόμενα ορόσημα" type="button">›</button>
+                    </div>
+                </div>
+
             </main>
 
         </body>
 
     <Footer />
 </Layout>
+
+<script>
+    // --------------------------------------------------------------------
+    // Οριζόντιο timeline: βέλη, drag-to-scroll με το ποντίκι, και μετατροπή
+    // κάθετης κύλισης (wheel) σε οριζόντια όταν ο χρήστης είναι πάνω του.
+    // --------------------------------------------------------------------
+    document.querySelectorAll('[data-timeline]').forEach((timeline) => {
+        const viewport = timeline.querySelector('[data-timeline-viewport]') as HTMLElement;
+        const prevBtn = timeline.querySelector('[data-timeline-prev]') as HTMLButtonElement;
+        const nextBtn = timeline.querySelector('[data-timeline-next]') as HTMLButtonElement;
+
+        if (!viewport) return;
+
+        const scrollAmount = () => viewport.clientWidth * 0.7;
+
+        prevBtn?.addEventListener('click', () => {
+            viewport.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+        });
+
+        nextBtn?.addEventListener('click', () => {
+            viewport.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+        });
+
+        // Μετατροπή κάθετης κύλισης (τροχός ποντικιού) σε οριζόντια.
+        viewport.addEventListener(
+            'wheel',
+            (e: WheelEvent) => {
+                if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                    viewport.scrollLeft += e.deltaY * 0.8;
+                    e.preventDefault();
+                }
+            },
+            { passive: false }
+        );
+
+        // Drag-to-scroll με το ποντίκι.
+        let isDragging = false;
+        let startX = 0;
+        let startScroll = 0;
+
+        viewport.addEventListener('mousedown', (e: MouseEvent) => {
+            isDragging = true;
+            viewport.classList.add('is-dragging');
+            startX = e.pageX;
+            startScroll = viewport.scrollLeft;
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+            viewport.classList.remove('is-dragging');
+        });
+
+        viewport.addEventListener('mouseleave', () => {
+            isDragging = false;
+            viewport.classList.remove('is-dragging');
+        });
+
+        viewport.addEventListener('mousemove', (e: MouseEvent) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            viewport.scrollLeft = startScroll - (e.pageX - startX);
+        });
+    });
+</script>
+
+<style>
+    /* =========================================================================
+   ΕΚΝΕ — Νέα στοιχεία: gallery/carousel, στατιστικά, ΔΣ hover+grid, timeline
+   Import αυτό το αρχείο στις 3 σελίδες. Αν έχετε ήδη CSS variables για τα
+   βασικά χρώματα του site, αντικαταστήστε τις τιμές παρακάτω με αυτές ώστε
+   να ταιριάζουν με την υπόλοιπη ταυτότητα.
+   ========================================================================= */
+
+:root {
+  --ekne-navy: #0f2a52;
+  --ekne-blue: #1f4fa3;
+  --ekne-blue-soft: #e8eefb;
+  --ekne-gold: #f2b134;
+  --ekne-ink: #1a1c22;
+  --ekne-muted: #5c6470;
+  --ekne-paper: #ffffff;
+  --ekne-line: #dde3ec;
+  --ekne-radius: 14px;
+}
+
+/* ---------- Γενικά (focus states, reduced motion) ---------- */
+
+.gallery-carousel *:focus-visible,
+.board-hover-grid *:focus-visible,
+.timeline-scroll *:focus-visible {
+  outline: 3px solid var(--ekne-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track,
+  .timeline-viewport,
+  .image-box img {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================================
+   4. ΟΡΙΖΟΝΤΙΟ TIMELINE (σελίδα "Δίκτυο του ΕΚΝ")
+   ========================================================================= */
+
+.timeline-section {
+  padding-block: 4rem 5rem;
+}
+
+.timeline-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-intro {
+  max-width: 640px;
+  color: var(--ekne-muted);
+  margin-bottom: 2.5rem;
+}
+
+.timeline-scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.timeline-nav {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--ekne-line);
+  background: var(--ekne-paper);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--ekne-blue);
+  transition: background 0.25s ease, color 0.25s ease;
+  margin: 6px;
+}
+
+.timeline-nav:hover {
+  background: var(--ekne-blue);
+  color: #fff;
+}
+
+.timeline-viewport {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ekne-line) transparent;
+}
+
+.timeline-viewport.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.timeline-viewport::-webkit-scrollbar { height: 6px; }
+.timeline-viewport::-webkit-scrollbar-thumb { background: var(--ekne-line); border-radius: 3px; }
+
+.timeline-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding-inline: 60px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--ekne-blue);
+  border-radius: 3px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.timeline-point {
+  position: relative;
+  flex: 0 0 240px;
+  height: 420px;
+  z-index: 1;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ekne-paper);
+  border: 4px solid var(--ekne-blue);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.timeline-point--future .timeline-dot {
+  border-color: var(--ekne-gold);
+  border-style: dashed;
+}
+
+.timeline-card {
+  position: absolute;
+  left: 50%;
+  width: 220px;
+  padding: 1rem 1.1rem;
+  background: var(--ekne-paper);
+  border: 1px solid var(--ekne-line);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 42, 82, 0.08);
+  transform: translateX(-50%);
+}
+
+.timeline-point--above .timeline-card { bottom: calc(50% + 20px); }
+.timeline-point--below .timeline-card { top: calc(50% + 20px); }
+
+.timeline-year {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--ekne-blue);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-point--future .timeline-year { color: var(--ekne-gold); }
+
+.timeline-card h3 {
+  font-size: 0.98rem;
+  margin: 0.1rem 0 0.35rem;
+  line-height: 1.3;
+}
+
+.timeline-card p {
+  font-size: 0.85rem;
+  color: var(--ekne-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .timeline-nav { display: none; }
+  .timeline-point { flex-basis: 180px; height: 260px; }
+  .timeline-card { width: 165px; padding: 0.8rem 0.9rem; }
+  .timeline-track { padding-inline: 24px; }
+}
+</style>

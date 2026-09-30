@@ -1,26 +1,29 @@
 ---
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
-import Layout from '../../layouts/Layout.astro';    
+import Layout from '../../layouts/Layout.astro';
 ---
-
+ 
 <Layout>
-
+ 
 	<Navbar />
-
+ 
         <body data-level="2">
-
+ 
             <div class="banner">
                 <h1 data-i18n="executiveBoard.title">Διοικητικό Συμβούλιο</h1>
             </div>
-
+ 
             <div class="content-container">
                 <p class="intro-text" data-i18n="executiveBoard.intro">
                     Το <strong>Διοικητικό Συμβούλιο</strong> του ΕΚΝΕ για το έτος 2026, όπως εκλέχθηκε από τα μέλη του σωματείου, αποτελείται από τους:
                 </p>
-
-                <div class="member-grid">
-
+ 
+                <!-- Πρόσθεσα τη δεύτερη κλάση "board-hover-grid": δεν πειράζει τίποτα
+                     από το υπάρχον .member-grid, απλώς προσθέτει το grayscale hover
+                     και οργανώνει τις 7 κάρτες σε σειρές 2-2-3 αντί για 2-2-2-1. -->
+                <div class="member-grid board-hover-grid">
+ 
                     <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
@@ -44,7 +47,7 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
+ 
                     <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
@@ -68,7 +71,7 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
+ 
                     <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
@@ -92,7 +95,7 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
+ 
                     <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
@@ -116,7 +119,7 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
+ 
                     <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
@@ -140,7 +143,7 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
+ 
                     <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
@@ -164,8 +167,8 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
-                    <div class="member-card full-width-center">
+ 
+                    <div class="member-card">
                         <div class="image-side">
                             <div class="rotated-bg"></div>
                             <div class="image-box">
@@ -188,10 +191,10 @@ import Layout from '../../layouts/Layout.astro';
                             </div>
                         </div>
                     </div>
-
+ 
                 </div>
             </div>
-
+ 
             <script>
                 function copyToClipboard(text: string) {
                     navigator.clipboard.writeText(text);
@@ -199,13 +202,68 @@ import Layout from '../../layouts/Layout.astro';
                     message.textContent = "Αντιγράφηκε!";
                     message.className = "copy-message";
                     document.body.appendChild(message);
-
+ 
                     setTimeout(() => {
                         message.remove();
                     }, 2000);
                 }
             </script>
 
+            <style>
+
+            /* ---------- Γενικά (focus states, reduced motion) ---------- */
+
+            .gallery-carousel *:focus-visible,
+            .board-hover-grid *:focus-visible,
+            .timeline-scroll *:focus-visible {
+            outline: 3px solid var(--ekne-gold);
+            outline-offset: 2px;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+            .carousel-track,
+            .timeline-viewport,
+            .image-box img {
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+            }
+
+            /* =========================================================================
+            3. ΔΙΟΙΚΗΤΙΚΟ ΣΥΜΒΟΥΛΙΟ — ίδιο layout με πριν + grayscale hover,
+            μόνο η τελευταία σειρά αλλάζει σε 3 άτομα αντί για 2-1.
+            ========================================================================= */
+            
+            .member-grid.board-hover-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2.5rem 2rem;
+            }
+
+            .member-grid.board-hover-grid .member-card:nth-child(-n + 2) {
+            grid-column: span 3;
+            }
+
+            .member-grid.board-hover-grid .member-card:nth-child(n + 3):nth-child(-n + 4) {
+            grid-column: span 3;
+            }
+
+            .member-grid.board-hover-grid .member-card:nth-child(n + 5) {
+            grid-column: span 2;
+            }
+
+            .image-box img {
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+            }
+
+            .member-card:hover .image-box img,
+            .member-card:focus-within .image-box img {
+            filter: grayscale(0%);
+            }
+
+            </style>
+ 
         </body>
     <Footer />
 </Layout>
