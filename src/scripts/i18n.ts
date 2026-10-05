@@ -54,17 +54,15 @@ export function applyLanguage(language: Language) {
          * (e.g. the ▾ inside navbar buttons),
          * replace only the direct text without removing the children.
          */
-        const textNode = Array.from(element.childNodes).find(
-            (node) =>
-                node.nodeType === Node.TEXT_NODE &&
-                node.textContent?.trim()
-        );
+document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((element) => {
+    const key = element.dataset.i18n;
+    if (!key) return;
 
-        if (textNode) {
-            textNode.textContent = ` ${translation[language]} `;
-        } else {
-            element.textContent = translation[language];
-        }
+    const translation = getNestedValue(translations, key);
+    if (translation?.[language] === undefined) return;
+
+    element.innerHTML = translation[language];
+});
     });
 
     /*

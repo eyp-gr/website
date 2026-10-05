@@ -363,7 +363,283 @@
     "membersBtn": {
       "el": "Members Platform",
       "en": "Members Platform"
+    },
+    "timeline": {
+  "1994": {
+    "title": {
+      "el": "Ίδρυση του ΕΚΝΕ",
+      "en": "EYP Greece is founded"
+    },
+    "description": {
+      "el": "Το ΕΚΝΕ ιδρύεται στη Θεσσαλονίκη ως εθνική επιτροπή του ΕΚΝ.",
+      "en": "EYP Greece is founded in Thessaloniki as a National Committee of the European Youth Parliament (EYP)."
     }
+  },
+
+  "1996": {
+    "title": {
+      "el": "Πρώτη Εθνική Επιλεκτική Σύνοδος",
+      "en": "First National Selection Conference"
+    },
+    "description": {
+      "el": "Διοργανώνεται η πρώτη ΕΣΕ για την επιλογή αντιπροσωπείας σε διεθνείς συνόδους.",
+      "en": "The first National Selection Conference is organised to select a delegation for international sessions."
+    }
+  },
+
+  "1998": {
+    "title": {
+      "el": "Πρώτη συμμετοχή σε Διεθνή Σύνοδο",
+      "en": "First Participation in an International Session"
+    },
+    "description": {
+      "el": "Ελληνική αντιπροσωπεία συμμετέχει για πρώτη φορά σε Διεθνή Σύνοδο του ΕΚΝ στο εξωτερικό.",
+      "en": "A Greek delegation participates for the first time in an international EYP session abroad."
+    }
+  },
+
+  "2000": {
+    "title": {
+      "el": "Διεύρυνση σε νέες πόλεις",
+      "en": "Expansion to New Cities"
+    },
+    "description": {
+      "el": "Το δίκτυο εθελοντών του ΕΚΝΕ επεκτείνεται πέρα από τη Θεσσαλονίκη.",
+      "en": "EYP Greece's volunteer network expands beyond Thessaloniki."
+    }
+  },
+
+  "2002": {
+    "title": {
+      "el": "Πρώτο Περιφερειακό Σεμινάριο",
+      "en": "First Regional Seminar"
+    },
+    "description": {
+      "el": "Διοργανώνεται σεμινάριο επιμόρφωσης για νέα μέλη και εθελοντές.",
+      "en": "A training seminar is organised for new members and volunteers."
+    }
+  },
+
+  "2004": {
+    "title": {
+      "el": "10η επέτειος του ΕΚΝΕ",
+      "en": "10th Anniversary of EYP Greece"
+    },
+    "description": {
+      "el": "Το ΕΚΝΕ γιορτάζει δέκα χρόνια δράσης με ειδική αναδρομική εκδήλωση.",
+      "en": "EYP Greece celebrates ten years of activity with a special commemorative event."
+    }
+  },
+
+  "2006": {
+    "title": {
+      "el": "Πρόγραμμα εκπαίδευσης προεδρείων",
+      "en": "Chairpersons Training Programme"
+    },
+    "description": {
+      "el": "Καθιερώνεται ετήσιο πρόγραμμα εκπαίδευσης προεδρείων συνεδρίων (chairpersons).",
+      "en": "An annual training programme for conference chairpersons is established."
+    }
+  },
+
+  "2008": {
+    "title": {
+      "el": "Σύνοδος με διεθνείς παρατηρητές",
+      "en": "Session with International Observers"
+    },
+    "description": {
+      "el": "Πρώτη Εθνική Σύνοδος με τη συμμετοχή παρατηρητών από άλλες εθνικές επιτροπές του ΕΚΝ.",
+      "en": "The first National Session takes place with observers from other EYP National Committees."
+    }
+  },
+
+  "2010": {
+    "title": {
+      "el": "Συνεργασία με σχολεία",
+      "en": "Collaboration with Schools"
+    },
+    "description": {
+      "el": "Ξεκινά συστηματική συνεργασία με σχολεία δευτεροβάθμιας εκπαίδευσης σε πανελλαδικό επίπεδο.",
+      "en": "Systematic collaboration with secondary schools begins on a nationwide level."
+    }
+  },
+
+  "2012": {
+    "title": {
+      "el": "Ψηφιακή πλατφόρμα αιτήσεων",
+      "en": "Digital Applications Platform"
+    },
+    "description": {
+      "el": "Λανσάρεται η πρώτη ηλεκτρονική πλατφόρμα για αιτήσεις νέων μελών.",
+      "en": "The first online platform for applications from new members is launched."
+    }
+  },
+
+  "2014": {
+    "title": {
+      "el": "20ή επέτειος του ΕΚΝΕ",
+      "en": "20th Anniversary of EYP Greece"
+    },
+    "description": {
+      "el": "Αναδρομική έκθεση φωτογραφίας για τα είκοσι χρόνια παρουσίας του ΕΚΝΕ.",
+      "en": "A retrospective photography exhibition celebrates twenty years of EYP Greece."
+    }
+  },
+
+  "2016": {
+    "title": {
+      "el": "Ακαδημαϊκές συνεργασίες",
+      "en": "Academic Partnerships"
+    },
+    "description": {
+      "el": "Το ΕΚΝΕ αναπτύσσει συνεργασίες με πανεπιστημιακά τμήματα και φοιτητικές ομάδες.",
+      "en": "EYP Greece develops partnerships with university departments and student groups."
+    }
+  },
+
+  "2017": {
+    "title": {
+      "el": "Πρόγραμμα υποτροφιών",
+      "en": "Scholarship Programme"
+    },
+    "description": {
+      "el": "Εισάγεται πρόγραμμα υποτροφιών συμμετοχής για μαθητές με οικονομικά κριτήρια.",
+      "en": "A participation scholarship programme is introduced for students based on financial criteria."
+    }
+  },
+
+  "2018": {
+    "title": {
+      "el": "Ανανέωση ταυτότητας",
+      "en": "Brand Identity Renewal"
+    },
+    "description": {
+      "el": "Το ΕΚΝΕ αποκτά νέα οπτική ταυτότητα και ανανεωμένη ιστοσελίδα.",
+      "en": "EYP Greece adopts a new visual identity and launches a redesigned website."
+    }
+  },
+
+  "2019": {
+    "title": {
+      "el": "Ρεκόρ συμμετοχής",
+      "en": "Record Participation"
+    },
+    "description": {
+      "el": "Καταγράφεται ρεκόρ αιτήσεων συμμετοχής σε Εθνική Σύνοδο.",
+      "en": "A record number of applications for participation in a National Session is recorded."
+    }
+  },
+
+  "2020": {
+    "title": {
+      "el": "Μετάβαση σε online δράσεις",
+      "en": "Transition to Online Activities"
+    },
+    "description": {
+      "el": "Οι δράσεις του ΕΚΝΕ μεταφέρονται online λόγω της πανδημίας.",
+      "en": "EYP Greece's activities move online due to the COVID-19 pandemic."
+    }
+  },
+
+  "2021": {
+    "title": {
+      "el": "Πρώτη υβριδική σύνοδος",
+      "en": "First Hybrid Session"
+    },
+    "description": {
+      "el": "Διοργανώνεται η πρώτη υβριδική (online και διά ζώσης) Διεθνής Σύνοδος.",
+      "en": "The first hybrid international session, combining online and in-person participation, is organised."
+    }
+  },
+
+  "2022": {
+    "title": {
+      "el": "Επιστροφή διά ζώσης",
+      "en": "Return to In-Person Activities"
+    },
+    "description": {
+      "el": "Οι δράσεις επιστρέφουν πλήρως διά ζώσης με νέο ρεκόρ συμμετοχής.",
+      "en": "Activities return fully in person, reaching a new record in participation."
+    }
+  },
+
+  "2024": {
+    "title": {
+      "el": "30ή επέτειος του ΕΚΝΕ",
+      "en": "30th Anniversary of EYP Greece"
+    },
+    "description": {
+      "el": "Το ΕΚΝΕ γιορτάζει τριάντα χρόνια παρουσίας στην ελληνική εκπαιδευτική κοινότητα.",
+      "en": "EYP Greece celebrates thirty years of presence in the Greek educational community."
+    }
+  },
+
+  "2026": {
+    "title": {
+      "el": "Ανανέωση ψηφιακής παρουσίας",
+      "en": "Renewed Digital Presence"
+    },
+    "description": {
+      "el": "Λανσάρεται η νέα ιστοσελίδα του ΕΚΝΕ.",
+      "en": "EYP Greece launches its new website."
+    }
+  },
+
+  "2027": {
+    "title": {
+      "el": "Πρόγραμμα ηγεσίας αποφοίτων",
+      "en": "Alumni Leadership Programme"
+    },
+    "description": {
+      "el": "Σχεδιάζεται πρόγραμμα ανάπτυξης δεξιοτήτων ηγεσίας για αποφοίτους του ΕΚΝΕ.",
+      "en": "A leadership skills development programme for EYP Greece alumni is planned."
+    }
+  },
+
+  "2028": {
+    "title": {
+      "el": "Επέκταση σε νέες περιφέρειες",
+      "en": "Expansion to New Regions"
+    },
+    "description": {
+      "el": "Στόχος η δημιουργία τοπικών ομάδων εθελοντών σε περισσότερες πόλεις της χώρας.",
+      "en": "The goal is to establish local volunteer groups in more cities across the country."
+    }
+  },
+
+  "2029": {
+    "title": {
+      "el": "Υποψηφιότητα για Διεθνή Σύνοδο",
+      "en": "Bid to Host an International Session"
+    },
+    "description": {
+      "el": "Στόχος η υποψηφιότητα για διοργάνωση Διεθνούς Συνόδου του ΕΚΝ στη Θεσσαλονίκη.",
+      "en": "The goal is to submit a bid to host an international EYP session in Thessaloniki."
+    }
+  },
+
+  "2030": {
+    "title": {
+      "el": "35η επέτειος του ΕΚΝΕ",
+      "en": "35th Anniversary of EYP Greece"
+    },
+    "description": {
+      "el": "Προγραμματίζεται μεγάλη εκδήλωση για τα 35 χρόνια του ΕΚΝΕ.",
+      "en": "A major event is planned to celebrate 35 years of EYP Greece."
+    }
+  },
+
+  "2031": {
+    "title": {
+      "el": "Δίκτυο αποφοίτων",
+      "en": "Alumni Network"
+    },
+    "description": {
+      "el": "Στόχος η δημιουργία ενεργού δικτύου αποφοίτων (alumni) του ΕΚΝΕ.",
+      "en": "The goal is to create an active alumni network for EYP Greece."
+    }
+  }
+}
   },
   "groups": {
     "title": {

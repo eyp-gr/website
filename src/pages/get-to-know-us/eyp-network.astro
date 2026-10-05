@@ -4,31 +4,31 @@ import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 
 const milestones = [
-    { year: 1994, title: 'Ίδρυση του ΕΚΝΕ', description: 'Το EKNE ιδρύεται στη Θεσσαλονίκη ως εθνική επιτροπή του ΕΚΝ.', status: 'past' },
-    { year: 1996, title: 'Πρώτη Εθνική Επιλεκτική Σύνοδος', description: 'Διοργανώνεται η πρώτη ΕΣΕ για την επιλογή αντιπροσωπείας σε διεθνείς συνόδους.', status: 'past' },
-    { year: 1998, title: 'Πρώτη συμμετοχή σε Διεθνή Σύνοδο', description: 'Ελληνική αντιπροσωπεία συμμετέχει για πρώτη φορά σε Διεθνή Σύνοδο του ΕΚΝ στο εξωτερικό.', status: 'past' },
-    { year: 2000, title: 'Διεύρυνση σε νέες πόλεις', description: 'Το δίκτυο εθελοντών του ΕΚΝΕ επεκτείνεται πέρα από τη Θεσσαλονίκη.', status: 'past' },
-    { year: 2002, title: 'Πρώτο Περιφερειακό Σεμινάριο', description: 'Διοργανώνεται σεμινάριο επιμόρφωσης για νέα μέλη και εθελοντές.', status: 'past' },
-    { year: 2004, title: '10η επέτειος του ΕΚΝΕ', description: 'Το ΕΚΝΕ γιορτάζει δέκα χρόνια δράσης με ειδική αναδρομική εκδήλωση.', status: 'past' },
-    { year: 2006, title: 'Πρόγραμμα εκπαίδευσης προεδρείων', description: 'Καθιερώνεται ετήσιο πρόγραμμα εκπαίδευσης προεδρείων συνεδρίων (chairpersons).', status: 'past' },
-    { year: 2008, title: 'Σύνοδος με διεθνείς παρατηρητές', description: 'Πρώτη Εθνική Σύνοδος με τη συμμετοχή παρατηρητών από άλλες εθνικές επιτροπές του ΕΚΝ.', status: 'past' },
-    { year: 2010, title: 'Συνεργασία με σχολεία', description: 'Ξεκινά συστηματική συνεργασία με σχολεία δευτεροβάθμιας εκπαίδευσης σε πανελλαδικό επίπεδο.', status: 'past' },
-    { year: 2012, title: 'Ψηφιακή πλατφόρμα αιτήσεων', description: 'Λανσάρεται η πρώτη ηλεκτρονική πλατφόρμα για αιτήσεις νέων μελών.', status: 'past' },
-    { year: 2014, title: '20η επέτειος του ΕΚΝΕ', description: 'Αναδρομική έκθεση φωτογραφίας για τα είκοσι χρόνια παρουσίας του ΕΚΝΕ.', status: 'past' },
-    { year: 2016, title: 'Ακαδημαϊκές συνεργασίες', description: 'Το ΕΚΝΕ αναπτύσσει συνεργασίες με πανεπιστημιακά τμήματα και φοιτητικές ομάδες.', status: 'past' },
-    { year: 2017, title: 'Πρόγραμμα υποτροφιών', description: 'Εισάγεται πρόγραμμα υποτροφιών συμμετοχής για μαθητές με οικονομικά κριτήρια.', status: 'past' },
-    { year: 2018, title: 'Ανανέωση ταυτότητας', description: 'Το ΕΚΝΕ αποκτά νέα οπτική ταυτότητα και ανανεωμένη ιστοσελίδα.', status: 'past' },
-    { year: 2019, title: 'Ρεκόρ συμμετοχής', description: 'Καταγράφεται ρεκόρ αιτήσεων συμμετοχής σε Εθνική Σύνοδο.', status: 'past' },
-    { year: 2020, title: 'Μετάβαση σε online δράσεις', description: 'Οι δράσεις του ΕΚΝΕ μεταφέρονται online λόγω της πανδημίας.', status: 'past' },
-    { year: 2021, title: 'Πρώτη υβριδική σύνοδος', description: 'Διοργανώνεται η πρώτη υβριδική (online και διά ζώσης) Διεθνής Σύνοδος.', status: 'past' },
-    { year: 2022, title: 'Επιστροφή διά ζώσης', description: 'Οι δράσεις επιστρέφουν πλήρως διά ζώσης με νέο ρεκόρ συμμετοχής.', status: 'past' },
-    { year: 2024, title: '30η επέτειος του ΕΚΝΕ', description: 'Το ΕΚΝΕ γιορτάζει τριάντα χρόνια παρουσίας στην ελληνική εκπαιδευτική κοινότητα.', status: 'past' },
-    { year: 2026, title: 'Ανανέωση ψηφιακής παρουσίας', description: 'Λανσάρεται η νέα ιστοσελίδα του ΕΚΝΕ.', status: 'past' },
-    { year: 2027, title: 'Πρόγραμμα ηγεσίας αποφοίτων', description: 'Σχεδιάζεται πρόγραμμα ανάπτυξης δεξιοτήτων ηγεσίας για αποφοίτους του ΕΚΝΕ.', status: 'upcoming' },
-    { year: 2028, title: 'Επέκταση σε νέες περιφέρειες', description: 'Στόχος η δημιουργία τοπικών ομάδων εθελοντών σε περισσότερες πόλεις της χώρας.', status: 'upcoming' },
-    { year: 2029, title: 'Υποψηφιότητα για Διεθνή Σύνοδο', description: 'Στόχος η υποψηφιότητα για διοργάνωση Διεθνούς Συνόδου του ΕΚΝ στη Θεσσαλονίκη.', status: 'upcoming' },
-    { year: 2030, title: '35η επέτειος του ΕΚΝΕ', description: 'Προγραμματίζεται μεγάλη εκδήλωση για τα 35 χρόνια του ΕΚΝΕ.', status: 'upcoming' },
-    { year: 2031, title: 'Δίκτυο αποφοίτων', description: 'Στόχος η δημιουργία ενεργού δικτύου αποφοίτων (alumni) του ΕΚΝΕ.', status: 'upcoming' },
+    { year: 1994, status: 'past' },
+    { year: 1996, status: 'past' },
+    { year: 1998, status: 'past' },
+    { year: 2000, status: 'past' },
+    { year: 2002, status: 'past' },
+    { year: 2004, status: 'past' },
+    { year: 2006, status: 'past' },
+    { year: 2008, status: 'past' },
+    { year: 2010, status: 'past' },
+    { year: 2012, status: 'past' },
+    { year: 2014, status: 'past' },
+    { year: 2016, status: 'past' },
+    { year: 2017, status: 'past' },
+    { year: 2018, status: 'past' },
+    { year: 2019, status: 'past' },
+    { year: 2020, status: 'past' },
+    { year: 2021, status: 'past' },
+    { year: 2022, status: 'past' },
+    { year: 2024, status: 'past' },
+    { year: 2026, status: 'past' },
+    { year: 2027, status: 'upcoming' },
+    { year: 2028, status: 'upcoming' },
+    { year: 2029, status: 'upcoming' },
+    { year: 2030, status: 'upcoming' },
+    { year: 2031, status: 'upcoming' },
 ];
 ---
 
@@ -98,12 +98,13 @@ const milestones = [
                                 <div class="timeline-line" aria-hidden="true"></div>
 
                                 {milestones.map((milestone, index) => (
-                                    <div class={`timeline-point ${index % 2 === 0 ? 'timeline-point--above' : 'timeline-point--below'} ${milestone.status === 'upcoming' ? 'timeline-point--future' : ''}`}>
+                                    <div class={`timeline-point ${index % 2 === 0? 'timeline-point--above': 'timeline-point--below'} ${milestone.status === 'upcoming'? 'timeline-point--future': ''}`}>
                                         <span class="timeline-dot" aria-hidden="true"></span>
+
                                         <div class="timeline-card">
                                             <span class="timeline-year">{milestone.year}</span>
-                                            <h3 data-i18n={`eypNetwork.timeline.events.e${index + 1}.title`}>{milestone.title}</h3>
-                                            <p data-i18n={`eypNetwork.timeline.events.e${index + 1}.description`}>{milestone.description}</p>
+                                            <h3 data-i18n={`eypNetwork.timeline.${milestone.year}.title`}></h3>
+                                            <p data-i18n={`eypNetwork.timeline.${milestone.year}.description`}></p>
                                         </div>
                                     </div>
                                 ))}
@@ -228,7 +229,7 @@ const milestones = [
    ========================================================================= */
 
 .timeline-section {
-  padding-block: 4rem 5rem;
+  padding-block: 0rem 3rem;
 }
 
 .timeline-section h2 {
