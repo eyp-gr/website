@@ -1,23 +1,20 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import Layout from '../layouts/Layout.astro';    
+import Layout from '../layouts/Layout.astro';
+
+import { getCollection } from 'astro:content';
+import PostList from '../components/PostList.astro';
+
+const posts = await getCollection('blog');
 ---
 
 <Layout title="ΕΚΝΕ - Νέα">
+  <Navbar />
 
-    <Navbar />
+  <body data-level="1">
+    <PostList posts={posts} />
+  </body>
 
-        <body data-level="1">
-
-
-            <div id="post-list" data-i18n="news.loading">Loading articles…</div>
-
-            <!-- <script>
-                renderPostList(document.getElementById("post-list"));
-            </script> -->
-
-        </body>
-
-    <Footer />
+  <Footer />
 </Layout>
