@@ -2,55 +2,6 @@
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
-
-// ---------------------------------------------------------------------------
-// Testimonials — ΣΗΜΕΙΩΣΗ: τα παρακάτω είναι ΕΝΔΕΙΚΤΙΚΑ/placeholder κείμενα,
-// όχι πραγματικά αποσπάσματα από μέλη. Αντικαταστήστε με πραγματικά λόγια
-// (και πάρτε τη συναίνεσή τους πριν τα δημοσιεύσετε με όνομα/ρόλο).
-// ---------------------------------------------------------------------------
-const testimonials = [
-    {
-        quote: 'Μπήκα στο ΕΚΝΕ χωρίς να ξέρω κανέναν. Μέσα σε λίγους μήνες είχα μια ολόκληρη παρέα και έναν μέντορα που με καθοδήγησε σε κάθε βήμα.',
-        name: 'Μέλος ΕΚΝΕ',
-        role: 'Μαθήτρια Λυκείου, Θεσσαλονίκη',
-    },
-    {
-        quote: 'Ο μέντοράς μου με βοήθησε να καταλάβω πώς λειτουργεί το σωματείο και ποια βήματα έπρεπε να ακολουθήσω για να αναλάβω πρώτο ρόλο σε Σύνοδο.',
-        name: 'Μέλος ΕΚΝΕ',
-        role: 'Φοιτητής, Αθήνα',
-    },
-    {
-        quote: 'Μετά από δύο χρόνια αδράνειας, το πρόγραμμα mentorship με βοήθησε να ξαναμπώ στο ΕΚΝΕ χωρίς να νιώθω χαμένος.',
-        name: 'Μέλος ΕΚΝΕ',
-        role: 'Φοιτήτρια, Θεσσαλονίκη',
-    },
-];
-
-// ---------------------------------------------------------------------------
-// Journey timeline — η πορεία από εθελοντή μέχρι ηγετικό ρόλο.
-// ---------------------------------------------------------------------------
-const journeySteps = [
-    {
-        title: 'Γίνεσαι Εθελοντής',
-        text: 'Κάνεις την πρώτη σου αίτηση και συμμετέχεις σε μια δράση του ΕΚΝΕ, γνωρίζοντας τον οργανισμό και τους ανθρώπους του από κοντά.',
-    },
-    {
-        title: 'Επιλέγεις Ομάδα',
-        text: 'Διαλέγεις σε ποια ομάδα θέλεις να δραστηριοποιηθείς: Οργανωτική, Ακαδημαϊκή, Δημοσιογραφική, Ομάδα Αξιολόγησης ή Ομάδα Ασφάλειας.',
-    },
-    {
-        title: 'Αναλαμβάνεις Ρόλο σε Δράση',
-        text: 'Συμμετέχεις ενεργά σε συγκεκριμένη δράση με συγκεκριμένο ρόλο μέσα στην ομάδα σου και αποκτάς πρακτική εμπειρία.',
-    },
-    {
-        title: 'Γίνεσαι Υπεύθυνος Ομάδας',
-        text: 'Με την εμπειρία που έχεις αποκτήσει, αναλαμβάνεις τον συντονισμό της ομάδας σου σε επόμενες δράσεις.',
-    },
-    {
-        title: 'Εξελίσσεσαι σε Ηγετικό Ρόλο',
-        text: 'Από επικεφαλής δράσης μέχρι μέλος του Διοικητικού Συμβουλίου — και επιστρέφεις να καθοδηγήσεις τους επόμενους εθελοντές.',
-    },
-];
 ---
 
 <Layout title="ΕΚΝΕ - Mentorship">
@@ -100,53 +51,154 @@ const journeySteps = [
                 <br>
 
             </div>
-
-            <!-- ============== JOURNEY TIMELINE (κάθετο) ============== -->
+            
             <div class="page-section journey-section">
                 <div class="content-container">
-                    <h2 data-i18n="what_do_we_do.mentorship.journey.title">Το ταξίδι σου στο ΕΚΝΕ</h2>
-                    <p class="journey-intro" data-i18n="what_do_we_do.mentorship.journey.intro">
-                        Από την πρώτη σου συμμετοχή ως εθελοντής μέχρι την εξέλιξή σου σε ηγετικούς ρόλους — έτσι μοιάζει συνήθως η πορεία ενός μέλους στο ΕΚΝΕ.
-                    </p>
+                    <h2 data-i18n="what_do_we_do.mentorship.journey.title"></h2>
+
+                    <p
+                    class="journey-intro"
+                    data-i18n="what_do_we_do.mentorship.journey.intro"
+                    ></p>
 
                     <div class="journey-timeline" data-journey>
-                        <div class="journey-line-track">
-                            <div class="journey-line-fill" data-journey-line></div>
-                        </div>
+                    <div class="journey-line-track">
+                        <div class="journey-line-fill" data-journey-line></div>
+                    </div>
 
-                        {journeySteps.map((step, index) => (
-                            <div class="journey-step" data-journey-step>
-                                <span class="journey-marker">{index + 1}</span>
-                                <div class="journey-content">
-                                    <h3 data-i18n={`what_do_we_do.mentorship.journey.steps.s${index + 1}.title`}>{step.title}</h3>
-                                    <p data-i18n={`what_do_we_do.mentorship.journey.steps.s${index + 1}.text`}>{step.text}</p>
-                                </div>
-                            </div>
-                        ))}
+                    <div class="journey-step" data-journey-step>
+                        <span class="journey-marker">1</span>
+                        <div class="journey-content">
+                        <h3 data-i18n="what_do_we_do.mentorship.journey.steps.s1.title"></h3>
+                        <p data-i18n="what_do_we_do.mentorship.journey.steps.s1.text"></p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step" data-journey-step>
+                        <span class="journey-marker">2</span>
+                        <div class="journey-content">
+                        <h3 data-i18n="what_do_we_do.mentorship.journey.steps.s2.title"></h3>
+                        <p data-i18n="what_do_we_do.mentorship.journey.steps.s2.text"></p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step" data-journey-step>
+                        <span class="journey-marker">3</span>
+                        <div class="journey-content">
+                        <h3 data-i18n="what_do_we_do.mentorship.journey.steps.s3.title"></h3>
+                        <p data-i18n="what_do_we_do.mentorship.journey.steps.s3.text"></p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step" data-journey-step>
+                        <span class="journey-marker">4</span>
+                        <div class="journey-content">
+                        <h3 data-i18n="what_do_we_do.mentorship.journey.steps.s4.title"></h3>
+                        <p data-i18n="what_do_we_do.mentorship.journey.steps.s4.text"></p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step" data-journey-step>
+                        <span class="journey-marker">5</span>
+                        <div class="journey-content">
+                        <h3 data-i18n="what_do_we_do.mentorship.journey.steps.s5.title"></h3>
+                        <p data-i18n="what_do_we_do.mentorship.journey.steps.s5.text"></p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-
-            <!-- ============== TESTIMONIALS ============== -->
+                        
             <div class="page-section testimonials-section">
-                <div class="content-container">
-                    <h2 data-i18n="what_do_we_do.mentorship.testimonials.title">Τι λένε τα μέλη μας</h2>
-                    <p class="testimonials-intro" data-i18n="what_do_we_do.mentorship.testimonials.intro">
-                        Λίγα λόγια από μέλη που πέρασαν μέσα από το Mentorship Programme.
-                    </p>
+            <div class="content-container">
+                <h2 data-i18n="what_do_we_do.mentorship.testimonials.title"></h2>
 
-                    <div class="testimonials-grid">
-                        {testimonials.map((t, index) => (
-                            <blockquote class="testimonial-card">
-                                <p class="testimonial-quote" data-i18n={`what_do_we_do.mentorship.testimonials.items.t${index + 1}.quote`}>{t.quote}</p>
-                                <footer class="testimonial-author">
-                                    <span class="testimonial-name" data-i18n={`what_do_we_do.mentorship.testimonials.items.t${index + 1}.name`}>{t.name}</span>
-                                    <span class="testimonial-role" data-i18n={`what_do_we_do.mentorship.testimonials.items.t${index + 1}.role`}>{t.role}</span>
-                                </footer>
-                            </blockquote>
-                        ))}
+                <p
+                class="testimonials-intro"
+                data-i18n="what_do_we_do.mentorship.testimonials.intro"
+                ></p>
+
+                <div class="testimonials-grid">
+                <blockquote class="testimonial-card">
+                    <p
+                    class="testimonial-quote"
+                    data-i18n="what_do_we_do.mentorship.testimonials.items.t1.quote"
+                    ></p>
+
+                    <footer class="testimonial-author">
+                    <img
+                        class="testimonial-avatar"
+                        src="/src/assets/wg-and-rg/sissy.jpg"
+                        alt=""
+                        loading="lazy"
+                    />
+                    <div class="testimonial-author-info">
+                        <span
+                        class="testimonial-name"
+                        data-i18n="what_do_we_do.mentorship.testimonials.items.t1.name"
+                        ></span>
+                        <span
+                        class="testimonial-role"
+                        data-i18n="what_do_we_do.mentorship.testimonials.items.t1.role"
+                        ></span>
                     </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial-card">
+                    <p
+                    class="testimonial-quote"
+                    data-i18n="what_do_we_do.mentorship.testimonials.items.t2.quote"
+                    ></p>
+
+                    <footer class="testimonial-author">
+                    <img
+                        class="testimonial-avatar"
+                        src="/src/assets/wg-and-rg/thanos.jpg"
+                        alt=""
+                        loading="lazy"
+                        height="200px"
+                    />
+                    <div class="testimonial-author-info">
+                        <span
+                        class="testimonial-name"
+                        data-i18n="what_do_we_do.mentorship.testimonials.items.t2.name"
+                        ></span>
+                        <span
+                        class="testimonial-role"
+                        data-i18n="what_do_we_do.mentorship.testimonials.items.t2.role"
+                        ></span>
+                    </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial-card">
+                    <p
+                    class="testimonial-quote"
+                    data-i18n="what_do_we_do.mentorship.testimonials.items.t3.quote"
+                    ></p>
+
+                    <footer class="testimonial-author">
+                    <img
+                        class="testimonial-avatar"
+                        src="/src/assets/photos/mentorship/member3.webp"
+                        alt=""
+                        loading="lazy"
+                    />
+                    <div class="testimonial-author-info">
+                        <span
+                        class="testimonial-name"
+                        data-i18n="what_do_we_do.mentorship.testimonials.items.t3.name"
+                        ></span>
+                        <span
+                        class="testimonial-role"
+                        data-i18n="what_do_we_do.mentorship.testimonials.items.t3.role"
+                        ></span>
+                    </div>
+                    </footer>
+                </blockquote>
                 </div>
+            </div>
             </div>
 
         </body>
@@ -200,7 +252,7 @@ const journeySteps = [
 }
 
 .testimonials-section {
-  padding-block: 4rem 5rem;
+  padding-block: 4rem 0rem;
   background: linear-gradient(135deg, var(--ekne-blue-soft) 0%, #ffffff 65%);
 }
 

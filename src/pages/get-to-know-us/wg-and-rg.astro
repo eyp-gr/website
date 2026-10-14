@@ -1,12 +1,12 @@
 ---
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
-import Layout from '../../layouts/Layout.astro';    
+import Layout from '../../layouts/Layout.astro';
+import RegionalPanel from '../../components/RegionalPanel.astro';
 ---
 
 <Layout title="ΕΚΝΕ - Ομάδες Εργασίας και Περιφερειακές Ομάδες">
-
-	<Navbar />
+    <Navbar />
 
         <body data-level="2">
 
@@ -46,30 +46,45 @@ import Layout from '../../layouts/Layout.astro';
 
                 <h2 data-i18n="groups.coordinators.title">Περιφερειακοί Συντονιστές</h2>
 
-                <div class="card-section">
-                    <div class="content-container">
-                        <div class="card-grid">
+                <div class="region-panel-list">
+                    <RegionalPanel
+                        id="north"
+                        coordinatorImg="/src/assets/wg-and-rg/despoina.webp"
+                        coordinatorObjectPosition="center 45%"
+                        coordinatorLabel="Συντονίστρια Περιφέρειας"
+                        coordinatorName="Δέσποινα Παπαδοπούλου"
+                        regionName="Βόρεια Ελλάδα"
+                        members={[
+                            { img: '/src/assets/wg-and-rg/elena.webp', title: 'Μέλος Περιφερειακής Ομάδας', name: 'Έλενα Αλεξιάδου' },
+                            { img: '/src/assets/wg-and-rg/kyriaki.webp', title: 'Μέλος Περιφερειακής Ομάδας', name: 'Κυριακή Λεπτοκαρίδη' },
+                        ]}
+                    />
 
-                            <div class="info-card">
-                                <img src="/src/assets/wg-and-rg/despoina.webp" style="object-position: center 45%;">
-                                <h3 data-i18n="groups.coordinators.despoina.name">Δέσποινα Παπαδοπούλου</h3>
-                                <p data-i18n="groups.coordinators.despoina.region">Βόρεια Ελλάδα</p>
-                            </div>
+                    <RegionalPanel
+                        id="central"
+                        coordinatorImg="/src/assets/wg-and-rg/domniki.webp"
+                        coordinatorObjectPosition="center 65%"
+                        coordinatorLabel="Συντονίστρια Περιφέρειας"
+                        coordinatorName="Δομνίκη Χατζηαλέξη"
+                        regionName="Κεντρική Ελλάδα"
+                        members={[
+                            { img: '/src/assets/wg-and-rg/apostolos.webp', title: 'Μέλος Περιφερειακής Ομάδας', name: 'Απόστολος Τασούλας' },
+                            { img: '/src/assets/wg-and-rg/marisa.webp', title: 'Μέλος Περιφερειακής Ομάδας', name: 'Μαρίσα Μίγκα' },
+                        ]}
+                    />
 
-                            <div class="info-card">
-                                <img src="/src/assets/wg-and-rg/domniki.webp" style="object-position: center 65%;">
-                                <h3 data-i18n="groups.coordinators.domniki.name">Δομνίκη Χατζηαλέξη</h3>
-                                <p data-i18n="groups.coordinators.domniki.region">Κεντρική Ελλάδα</p>
-                            </div>
-
-                            <div class="info-card">
-                                <img src="/src/assets/wg-and-rg/theophilos.webp" style="object-position: center 65%;">
-                                <h3 data-i18n="groups.coordinators.theophilos.name">Θεόφιλος Καραμανώλης</h3>
-                                <p data-i18n="groups.coordinators.theophilos.region">Νότια Ελλάδα</p>
-                            </div>
-
-                        </div>
-                    </div>
+                    <RegionalPanel
+                        id="south"
+                        coordinatorImg="/src/assets/wg-and-rg/theophilos.webp"
+                        coordinatorObjectPosition="center 65%"
+                        coordinatorLabel="Συντονιστής Περιφέρειας"
+                        coordinatorName="Θεόφιλος Καραμανώλης"
+                        regionName="Νότια Ελλάδα"
+                        members={[
+                            { img: '/src/assets/wg-and-rg/asymina.webp', title: 'Μέλος Περιφερειακής Ομάδας', name: 'Ασημίνα Χάνου' },
+                            { img: '/src/assets/wg-and-rg/melina.webp', title: 'Μέλος Περιφερειακής Ομάδας', name: 'Μελίνα Μαχιμάρη' },
+                        ]}
+                    />
                 </div>
             </div>
 
@@ -77,3 +92,12 @@ import Layout from '../../layouts/Layout.astro';
 
     <Footer />
 </Layout>
+
+<style>
+.region-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+</style>
