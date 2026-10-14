@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: eyp-gr/website
-  branch: Astro
+  branch: main
   base_url: https://decap-proxy.odysseus-kirikopoulos.workers.dev
 
 media_folder: "src/assets/blog"
