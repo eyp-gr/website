@@ -1,16 +1,16 @@
 backend:
   name: github
   repo: eyp-gr/website
-  branch: main
+  branch: Astro
   base_url: https://decap-proxy.odysseus-kirikopoulos.workers.dev
 
-media_folder: "images/blog"
-public_folder: "/images/blog"
+media_folder: "src/assets/blog"
+public_folder: "/src/assets/blog"
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "src/content/blog"
     create: true
     slug: "{{slug}}"
     fields:
@@ -24,7 +24,7 @@ collections:
   
   - name: "policies"
     label: "Policies"
-    folder: "content/policies"
+    folder: "src/content/policies"
     create: true
     slug: "{{slug}}"
     fields:
