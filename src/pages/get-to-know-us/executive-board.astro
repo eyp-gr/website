@@ -2,215 +2,377 @@
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import translations from '../../i18n/translations.json'; // <-- προσαρμόσου στο δικό σου path
+
+// Διαβάζει το ελληνικό κείμενο από το JSON για το server-side render.
+// Η αλλαγή γλώσσας γίνεται στον client από το data-i18n όπως πριν.
+const t = (key: string): string => {
+    const node = key
+        .split('.')
+        .reduce((obj: any, k) => obj?.[k], translations as any);
+    return node?.el ?? key;
+};
+
+/* ---------- Τρέχον ΔΣ (μόνο δεδομένα που δεν είναι κείμενο) ---------- */
+const members = [
+    {
+        id: 'panos',
+        image: '/src/assets/board/panos.jpg',
+        emails: ['panagiotis.tziatzios@eypgreece.org', 'president@eypgreece.org'],
+    },
+    {
+        id: 'petros',
+        image: '/src/assets/board/petros.jpg',
+        emails: ['petros.katrakoulis@eypgreece.org', 'public.relations@eypgreece.org'],
+    },
+    {
+        id: 'alexandros',
+        image: '/src/assets/board/alexandros.jpg',
+        emails: ['alexandros.siomoulis@eypgreece.org', 'treasurer@eypgreece.org'],
+    },
+    {
+        id: 'stergiani',
+        image: '/src/assets/board/stergiani.jpg',
+        emails: ['stergiani.topalidou@eypgreece.org', 'info@eypgreece.org'],
+    },
+    {
+        id: 'maria',
+        image: '/src/assets/board/maria.png',
+        emails: ['maria.erotokritou@eypgreece.org', 'humanresources@eypgreece.org'],
+    },
+    {
+        id: 'iro',
+        image: '/src/assets/board/iro.jpg',
+        emails: ['iro.michailidi@eypgreece.org', 'international.relations@eypgreece.org'],
+    },
+    {
+        id: 'ellie',
+        image: '/src/assets/board/ellie.jpg',
+        emails: ['eleni.gkesouli@eypgreece.org', 'communications@eypgreece.org'],
+    },
+];
+
+/* ---------- Ομάδες εργασίας (μόνο χρώματα) ---------- */
+const workingGroups = [
+    { id: 'secgen', bg: '#1e3a8a', fg: '#ffffff' },
+    { id: 'pr', bg: '#2f5aa8', fg: '#ffffff' },
+    { id: 'fundraising', bg: '#0f766e', fg: '#ffffff' },
+    { id: 'hr', bg: '#3b82f6', fg: '#ffffff' },
+    { id: 'international', bg: '#4338ca', fg: '#ffffff' },
+    { id: 'marketing', bg: '#f2b134', fg: '#1e3a8a' },
+];
+
+/* ---------- Ιστορικό ----------
+   Σειρά μελών: Πρόεδρος, Αντιπρόεδρος, ΓΓ, Ταμίας, Μέλος x3.
+   Τα ids παραπέμπουν στο executiveBoard.history.people του JSON. */
+const pastBoardRoles = [
+    'president',
+    'vicePresident',
+    'secretaryGeneral',
+    'treasurer',
+    'member',
+    'member',
+    'member',
+];
+
+const pastBoards = [
+    { year: '2025', people: ['risvanis', 'karagkitsi', 'tziatzios', 'kazazis', 'pappa', 'marmaras', 'zormpa'] },
+    { year: '2024', people: ['chrysafi', 'mentzelioti', 'syrta', 'giannakopoulou', 'stefanidou', 'mani', 'zormpa'] },
+    { year: '2023', people: ['zagkana', 'varna', 'fotopoulou', 'dipla', 'chrysafi', 'mentzelioti', 'barlogianni'] },
+    { year: '2022', people: ['tsiamis', 'petsa', 'zagkana', 'kerkoulas', 'kalampaliki', 'deliporanidou', 'vasilakopoulou'] },
+    { year: '2021', people: ['varsos', 'koimtzoglou', 'vegkou', 'topali', 'batzili', 'tsiamis', 'karatagli'] },
+    { year: '2020', people: ['tsenes', 'siozou', 'fragios', 'zachariadis', 'pistofidis', 'kotzias', 'theologou'] },
+    { year: '2019', people: ['sidiropoulou', 'siozou', 'kotzias', 'tsenes', 'sdrali', 'roussi', 'pagkozidis'] },
+    { year: '2017 - 2018', people: ['patriarcheas', 'avramidis', 'papadopoulou', 'drampa', 'mantzarlis', 'katharios', 'spania'] },
+    { year: '2016 - 2017', people: ['apostolidou', 'krokos', 'davris', 'zois', 'avramidis', 'mordo', 'megapanou'] },
+    { year: '2015 - 2016', people: ['dimitrakopoulou', 'orfanakos', 'patikos', 'apostolidou', 'davris', 'megapanou', 'krokos'] },
+];
+
+// Μετατρέπει τη λίστα ids σε εγγραφές {role, person} και τις σπάει σε γραμμές 2-2-3
+const buildRows = (people: string[]) => {
+    const entries = people.map((person, i) => ({ role: pastBoardRoles[i], person }));
+    return [entries.slice(0, 2), entries.slice(2, 4), entries.slice(4, 7)];
+};
+const rowClasses = ['board-history-row-top', 'board-history-row-top', 'board-history-row-bottom'];
 ---
- 
+
 <Layout>
- 
-	<Navbar />
- 
-        <body data-level="2">
- 
-            <div class="banner">
-                <h1 data-i18n="executiveBoard.title">Διοικητικό Συμβούλιο</h1>
+    <Navbar />
+
+    <body data-level="2">
+        <div class="banner">
+            <h1 data-i18n="executiveBoard.title">{t('executiveBoard.title')}</h1>
+        </div>
+
+        <div class="content-container">
+            <p
+                class="intro-text"
+                data-i18n="executiveBoard.intro"
+                set:html={t('executiveBoard.intro')}
+            />
+
+            <!-- ΤΡΕΧΟΝ ΔΙΟΙΚΗΤΙΚΟ ΣΥΜΒΟΥΛΙΟ -->
+            <div class="member-grid board-hover-grid">
+                {members.map((member) => (
+                    <article class="member-card" data-member={member.id}>
+                        <div class="image-side">
+                            <div class="rotated-bg"></div>
+
+                            <div class="image-box">
+                                <img
+                                    src={member.image}
+                                    alt={t(`executiveBoard.members.${member.id}.name`)}
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                                />
+
+                                <div
+                                    class="image-placeholder"
+                                    style="display:none;"
+                                    data-i18n={`executiveBoard.members.${member.id}.name`}
+                                >
+                                    {t(`executiveBoard.members.${member.id}.name`)}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-side">
+                            <div>
+                                <h2
+                                    class="member-name"
+                                    data-i18n={`executiveBoard.members.${member.id}.name`}
+                                >
+                                    {t(`executiveBoard.members.${member.id}.name`)}
+                                </h2>
+
+                                <p
+                                    class="member-role"
+                                    data-i18n={`executiveBoard.members.${member.id}.role`}
+                                >
+                                    {t(`executiveBoard.members.${member.id}.role`)}
+                                </p>
+                            </div>
+
+                            <div class="member-contact">
+                                {member.emails.map((email) => (
+                                    <button type="button" class="email-copy" data-copy-email={email}>
+                                        {email}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </article>
+                ))}
             </div>
- 
-            <div class="content-container">
-                <p class="intro-text" data-i18n="executiveBoard.intro">
-                    Το <strong>Διοικητικό Συμβούλιο</strong> του ΕΚΝΕ για το έτος 2026, όπως εκλέχθηκε από τα μέλη του σωματείου, αποτελείται από τους:
-                </p>
-                <div class="member-grid board-hover-grid">
 
-                    <div class="board-row">
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/panos.jpg" alt="Παναγιώτης Τζιάτζιος" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.panos.name">Παναγιώτης Τζιάτζιος</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.panos.name">Παναγιώτης Τζιάτζιος</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.panos.role">Πρόεδρος, Υπεύθυνος Ασφάλειας & Ευημερίας</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('panagiotis.tziatzios@eypgreece.org')">
-                                        panagiotis.tziatzios@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('president@eypgreece.org')">
-                                        president@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+            <!-- ΟΜΑΔΕΣ ΕΡΓΑΣΙΑΣ -->
+            <h2 class="wg-heading" data-i18n="executiveBoard.workingGroups.heading">
+                {t('executiveBoard.workingGroups.heading')}
+            </h2>
 
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/petros.jpg" alt="Πέτρος Κατρακούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.petros.name">Πέτρος Κατρακούλης</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.petros.name">Πέτρος Κατρακούλης</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.petros.role">Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('petros.katrakoulis@eypgreece.org')">
-                                        petros.katrakoulis@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('public.relations@eypgreece.org')">
-                                        public.relations@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="wg-grid">
+                {workingGroups.map((wg) => (
+                    <div class="wg-tile" style={`background:${wg.bg}; color:${wg.fg};`}>
+                        <h3 data-i18n={`executiveBoard.workingGroups.${wg.id}.title`}>
+                            {t(`executiveBoard.workingGroups.${wg.id}.title`)}
+                        </h3>
+
+                        <p data-i18n={`executiveBoard.workingGroups.${wg.id}.text`}>
+                            {t(`executiveBoard.workingGroups.${wg.id}.text`)}
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            <!-- ΙΣΤΟΡΙΚΟ -->
+            <h2 class="board-history-heading" data-i18n="executiveBoard.history.heading">
+                {t('executiveBoard.history.heading')}
+            </h2>
+
+            <p class="board-history-intro" data-i18n="executiveBoard.history.intro">
+                {t('executiveBoard.history.intro')}
+            </p>
+
+            <section class="board-history" data-board-history>
+                <div class="board-history-navigation">
+                    <button
+                        class="board-history-arrow"
+                        data-history-prev
+                        aria-label={t('executiveBoard.history.prevLabel')}
+                        type="button"
+                    >
+                        ‹
+                    </button>
+
+                    <div
+                        class="board-history-years"
+                        data-history-years
+                        tabindex="0"
+                        aria-label={t('executiveBoard.history.yearsLabel')}
+                    >
+                        {pastBoards.map((board, index) => (
+                            <button
+                                type="button"
+                                class={`board-history-chip${index === 0 ? ' is-active' : ''}`}
+                                data-year={board.year}
+                                aria-pressed={index === 0 ? 'true' : 'false'}
+                            >
+                                {board.year}
+                            </button>
+                        ))}
                     </div>
 
-                    <div class="board-row">
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/stergiani.jpg" alt="Στεργιανή Τοπαλίδου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.stergiani.name">Στεργιανή Τοπαλίδου</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.stergiani.name">Στεργιανή Τοπαλίδου</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.stergiani.role">Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('stergiani.topalidou@eypgreece.org')">
-                                        stergiani.topalidou@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('info@eypgreece.org')">
-                                        info@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/alexandros.jpg" alt="Αλέξανδρος Σιωμούλης" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.alexandros.name">Αλέξανδρος Σιωμούλης</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.alexandros.name">Αλέξανδρος Σιωμούλης</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.alexandros.role">Ταμίας</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('alexandros.siomoulis@eypgreece.org')">
-                                        alexandros.siomoulis@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('treasurer@eypgreece.org')">
-                                        treasurer@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="board-row board-row--3">
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/maria.png" alt="Μαρία Ερωτοκρίτου" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.maria.name">Μαρία Ερωτοκρίτου</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.maria.name">Μαρία Ερωτοκρίτου</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.maria.role">Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('maria.erotokritou@eypgreece.org')">
-                                        maria.erotokritou@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('humanresources@eypgreece.org')">
-                                        humanresources@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/iro.jpg" alt="Αργυρώ Δήμητρα (Ηρώ) Μιχαηλίδη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.iro.name">Αργυρώ (Ηρώ) Μιχαηλίδη</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.iro.name">Αργυρώ (Ηρώ) Μιχαηλίδη</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.iro.role">Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('iro.michailidi@eypgreece.org')">
-                                        iro.michailidi@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('international.relations@eypgreece.org')">
-                                        international.relations@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="member-card">
-                            <div class="image-side">
-                                <div class="rotated-bg"></div>
-                                <div class="image-box">
-                                    <img src="/src/assets/board/ellie.jpg" alt="Ελένη Γκεσούλη" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                                    <div class="image-placeholder" style="display:none;" data-i18n="executiveBoard.members.ellie.name">Ελένη Γκεσούλη</div>
-                                </div>
-                            </div>
-                            <div class="text-side">
-                                <div>
-                                    <h2 class="member-name" data-i18n="executiveBoard.members.ellie.name">Ελένη Γκεσούλη</h2>
-                                    <p class="member-role" data-i18n="executiveBoard.members.ellie.role">Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας</p>
-                                </div>
-                                <div class="member-contact">
-                                    <span class="email-copy" onclick="copyToClipboard('eleni.gkesouli@eypgreece.org')">
-                                        eleni.gkesouli@eypgreece.org
-                                    </span>
-                                    <span class="email-copy" onclick="copyToClipboard('communications@eypgreece.org')">
-                                        communications@eypgreece.org
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <button
+                        class="board-history-arrow"
+                        data-history-next
+                        aria-label={t('executiveBoard.history.nextLabel')}
+                        type="button"
+                    >
+                        ›
+                    </button>
                 </div>
-            </div>
- 
-            <script>
-                function copyToClipboard(text: string) {
-                    navigator.clipboard.writeText(text);
-                    const message = document.createElement("div");
-                    message.textContent = "Αντιγράφηκε!";
-                    message.className = "copy-message";
-                    document.body.appendChild(message);
- 
-                    setTimeout(() => {
-                        message.remove();
-                    }, 2000);
-                }
-            </script>
- 
-        </body>
+
+                <div class="board-history-panel">
+                    <p class="board-history-panel-title" aria-live="polite">
+                        <span data-i18n="executiveBoard.history.panelTitle">
+                            {t('executiveBoard.history.panelTitle')}
+                        </span>
+                        <span data-board-history-year>{pastBoards[0].year}</span>
+                    </p>
+
+                    {pastBoards.map((board, index) => (
+                        <div
+                            class="board-history-content"
+                            data-year-panel={board.year}
+                            style={index === 0 ? '' : 'display:none;'}
+                        >
+                            {buildRows(board.people).map((row, rowIndex) => (
+                                <div class={rowClasses[rowIndex]}>
+                                    {row.map((entry) => (
+                                        <div class="board-history-entry">
+                                            <p
+                                                class="role"
+                                                data-i18n={`executiveBoard.history.roles.${entry.role}`}
+                                            >
+                                                {t(`executiveBoard.history.roles.${entry.role}`)}
+                                            </p>
+                                            <p
+                                                class="name"
+                                                data-i18n={`executiveBoard.history.people.${entry.person}`}
+                                            >
+                                                {t(`executiveBoard.history.people.${entry.person}`)}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </div>
+
+        <!-- Κρυφό στοιχείο: το μήνυμα "Αντιγράφηκε!" μεταφράζεται από το i18n και το script το διαβάζει -->
+        <span hidden data-copied-message data-i18n="executiveBoard.copied">
+            {t('executiveBoard.copied')}
+        </span>
+
+        <script>
+            document.querySelectorAll('[data-board-history]').forEach((root) => {
+                const scroller = root.querySelector('[data-history-years]');
+                const chips = Array.from(
+                    root.querySelectorAll<HTMLElement>('.board-history-chip')
+                );
+                const panels = Array.from(
+                    root.querySelectorAll<HTMLElement>('[data-year-panel]')
+                );
+                const yearLabel = root.querySelector('[data-board-history-year]');
+                const prev = root.querySelector('[data-history-prev]');
+                const next = root.querySelector('[data-history-next]');
+
+                if (!scroller || !yearLabel || !prev || !next) return;
+
+                const selectYear = (chip: HTMLElement, shouldScroll = false) => {
+                    const year = chip.dataset.year;
+                    if (!year) return;
+
+                    chips.forEach((item) => {
+                        const active = item === chip;
+                        item.classList.toggle('is-active', active);
+                        item.setAttribute('aria-pressed', String(active));
+                    });
+
+                    panels.forEach((panel) => {
+                        panel.style.display =
+                            panel.dataset.yearPanel === year ? 'flex' : 'none';
+                    });
+
+                    yearLabel.textContent = year;
+
+                    if (shouldScroll) {
+                        chip.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'nearest',
+                            inline: 'center',
+                        });
+                    }
+                };
+
+                chips.forEach((chip) => {
+                    chip.addEventListener('click', () => selectYear(chip));
+                });
+
+                const scrollYears = (direction: number) => {
+                    scroller.scrollBy({
+                        left: direction * Math.max(scroller.clientWidth * 0.75, 180),
+                        behavior: 'smooth',
+                    });
+                };
+
+                prev.addEventListener('click', () => scrollYears(-1));
+                next.addEventListener('click', () => scrollYears(1));
+
+                scroller.addEventListener('keydown', (event: Event) => {
+                    const keyboardEvent = event as KeyboardEvent;
+                    if (keyboardEvent.key !== 'ArrowLeft' && keyboardEvent.key !== 'ArrowRight') return;
+
+                    keyboardEvent.preventDefault();
+
+                    const activeIndex = chips.findIndex((chip) =>
+                        chip.classList.contains('is-active')
+                    );
+
+                    const direction = keyboardEvent.key === 'ArrowRight' ? 1 : -1;
+                    const newIndex = Math.max(
+                        0,
+                        Math.min(chips.length - 1, activeIndex + direction)
+                    );
+
+                    if (chips[newIndex]) selectYear(chips[newIndex], true);
+                });
+            });
+
+            document.querySelectorAll<HTMLButtonElement>('[data-copy-email]').forEach((button) => {
+                button.addEventListener('click', async () => {
+                    const email = button.dataset.copyEmail;
+                    if (!email) return;
+
+                    try {
+                        await navigator.clipboard.writeText(email);
+
+                        const message = document.createElement('div');
+                        message.textContent =
+                            document.querySelector('[data-copied-message]')?.textContent?.trim() ?? '';
+                        message.className = 'copy-message';
+                        document.body.appendChild(message);
+
+                        setTimeout(() => message.remove(), 2000);
+                    } catch (error) {
+                        console.error('Could not copy the email.', error);
+                    }
+                });
+            });
+        </script>
+    </body>
+
     <Footer />
 </Layout>

@@ -2,6 +2,12 @@
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import translations from '../../i18n/translations.json';
+
+const t = (key: string): string => {
+    const node = key.split('.').reduce((obj: any, k) => obj?.[k], translations as any);
+    return node?.el ?? key;
+};
 
 const galleryImages = [
     { src: '/src/assets/photos/image1.webp', alt: 'Στιγμιότυπο από σύνοδο του ΕΚΝΕ' },
@@ -10,12 +16,12 @@ const galleryImages = [
     { src: '/src/assets/photos/image11.webp', alt: 'Συζήτηση σε επιτροπή' },
     { src: '/src/assets/photos/image4.webp', alt: 'Εκδήλωση του ΕΚΝΕ' },
 ];
- 
+
 const stats = [
-    { key: 'years', target: 32, suffix: '+', label: 'Χρόνια δράσης' },
-    { key: 'members', target: 150, suffix: '+', label: 'Ενεργά μέλη' },
-    { key: 'events', target: 120, suffix: '+', label: 'Διοργανωμένες δράσεις' },
-    { key: 'participants', target: 5000, suffix: '+', label: 'Συμμετέχοντες μαθητές' },
+    { key: 'actions',      target: 400,  suffix: '+' },
+    { key: 'years',        target: 30,   suffix: '+' },
+    { key: 'members',      target: 6000, suffix: '+' },
+    { key: 'participants', target: 850,  suffix: '+' },
 ];
 ---
  
@@ -57,7 +63,6 @@ const stats = [
             </div>
         </div>
  
-        <!-- ============== ΓΚΑΛΕΡΙ (μόνο τελίτσες) + ΣΤΑΤΙΣΤΙΚΑ, δίπλα-δίπλα ============== -->
         <div class="page-section gallery-stats-section" data-stats-section>
             <div class="content-container gallery-stats-grid">
  
@@ -92,7 +97,9 @@ const stats = [
                                 <span class="stat-number" data-stat-value data-stat-target={stat.target}>0</span>
                                 <span class="stat-suffix">{stat.suffix}</span>
                             </div>
-                            <p class="stat-label" data-i18n={`whoWeAre.stats.${stat.key}`}>{stat.label}</p>
+                            <p class="stat-label" data-i18n={`whoWeAre.stats.${stat.key}`}>
+                            {t(`whoWeAre.stats.${stat.key}`)}
+                        </p>
                         </div>
                     ))}
                 </div>
@@ -106,9 +113,6 @@ const stats = [
 </Layout>
  
 <script>
-    // --------------------------------------------------------------------
-    // Καρουζέλ: μόνο τελίτσες + αυτόματη εναλλαγή κάθε 5", με παύση στο hover.
-    // --------------------------------------------------------------------
     document.querySelectorAll('[data-carousel]').forEach((carousel) => {
         const track = carousel.querySelector('[data-carousel-track]') as HTMLElement;
         const slides = Array.from(track?.children ?? []) as HTMLElement[];
@@ -142,9 +146,6 @@ const stats = [
         startAutoplay();
     });
  
-    // --------------------------------------------------------------------
-    // Στατιστικά: μετράνε από το 0 μέχρι το target όταν μπαίνουν στην οθόνη.
-    // --------------------------------------------------------------------
     const statsSection = document.querySelector('[data-stats-section]');
  
     function animateValue(el: HTMLElement, target: number) {
@@ -288,8 +289,6 @@ const stats = [
   border-radius: 4px;
   background: var(--ekne-blue);
 }
-
-/* --- Στατιστικά: πάντα 2x2, δίπλα στο καρουζέλ --- */
 
 .stats-grid-2x2 {
   display: grid;

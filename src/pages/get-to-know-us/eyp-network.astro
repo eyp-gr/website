@@ -2,8 +2,14 @@
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
+import translations from '../../i18n/translations.json';
 
-const milestones = [
+const t = (key: string): string => {
+    const node = key.split('.').reduce((obj: any, k) => obj?.[k], translations as any);
+    return node?.el ?? key;
+};
+
+const rawMilestones = [
     { year: 1987, status: 'past' },
     { year: 1988, status: 'past' },
     { year: 1989, status: 'past' },
@@ -23,8 +29,15 @@ const milestones = [
     { year: 2026, status: 'past' },
     { year: 2026, status: 'past' },
     { year: 2026, status: 'past' },
-    { year: 2027, status: 'upcoming' }
+    { year: 2027, status: 'upcoming' },
 ];
+
+const seen: Record<number, number> = {};
+const milestones = rawMilestones.map((m) => {
+    seen[m.year] = (seen[m.year] ?? 0) + 1;
+    const n = seen[m.year];
+    return { ...m, key: n === 1 ? String(m.year) : `${m.year}_${n}` };
+});
 ---
 
 <Layout title="ΕΚΝΕ - Δίκτυο του ΕΚΝ">
@@ -76,7 +89,6 @@ const milestones = [
                     </div>
                 </div>
 
-                <!-- ============== ΟΡΙΖΟΝΤΙΟ TIMELINE ΟΡΟΣΗΜΩΝ ============== -->
                 <div class="page-section timeline-section">
                     <div class="content-container">
                         <h2 data-i18n="eypNetwork.timeline.title">Οι σταθμοί μας</h2>

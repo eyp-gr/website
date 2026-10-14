@@ -274,76 +274,160 @@
       "el": "Το <strong>Διοικητικό Συμβούλιο</strong> του ΕΚΝΕ για το έτος 2026, όπως εκλέχθηκε από τα μέλη του σωματείου, αποτελείται από τους:",
       "en": "The <strong>Executive Board</strong> of EYP Greece for the year 2026, as elected by the members of the organization, consists of:"
     },
+    "copied": {
+      "el": "Αντιγράφηκε!",
+      "en": "Copied!"
+    },
     "members": {
       "panos": {
-        "name": {
-          "el": "Παναγιώτης Τζιάτζιος",
-          "en": "Panagiotis Tziatzios"
-        },
-        "role": {
-          "el": "Πρόεδρος, Υπεύθυνος Ασφάλειας & Ευημερίας",
-          "en": "President, Safe Person & Welfare Officer"
-        }
+        "name": { "el": "Παναγιώτης Τζιάτζιος", "en": "Panagiotis Tziatzios" },
+        "role": { "el": "Πρόεδρος, Υπεύθυνος Ασφάλειας & Ευημερίας", "en": "President, Safe Person & Welfare Officer" }
       },
       "petros": {
-        "name": {
-          "el": "Πέτρος Κατρακούλης",
-          "en": "Petros Katrakoulis"
-        },
-        "role": {
-          "el": "Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης",
-          "en": "Vice President, Head of Public Relations & Strategic Development"
-        }
+        "name": { "el": "Πέτρος Κατρακούλης", "en": "Petros Katrakoulis" },
+        "role": { "el": "Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης", "en": "Vice President, Head of Public Relations & Strategic Development" }
       },
       "stergiani": {
-        "name": {
-          "el": "Στεργιανή Τοπαλίδου",
-          "en": "Stergiani Topalidou"
-        },
-        "role": {
-          "el": "Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων",
-          "en": "Secretary General, Head of Fundraising"
-        }
+        "name": { "el": "Στεργιανή Τοπαλίδου", "en": "Stergiani Topalidou" },
+        "role": { "el": "Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων", "en": "Secretary General, Head of Fundraising" }
       },
       "alexandros": {
-        "name": {
-          "el": "Αλέξανδρος Σιωμούλης",
-          "en": "Alexandros Siomoulis"
-        },
-        "role": {
-          "el": "Ταμίας",
-          "en": "Treasurer"
-        }
+        "name": { "el": "Αλέξανδρος Σιωμούλης", "en": "Alexandros Siomoulis" },
+        "role": { "el": "Ταμίας", "en": "Treasurer" }
       },
       "maria": {
-        "name": {
-          "el": "Μαρία Ερωτοκρίτου",
-          "en": "Maria Erotokritou"
-        },
-        "role": {
-          "el": "Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας",
-          "en": "Board Member, Head of Human Resources & Outreach"
-        }
+        "name": { "el": "Μαρία Ερωτοκρίτου", "en": "Maria Erotokritou" },
+        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας", "en": "Board Member, Head of Human Resources & Outreach" }
       },
       "iro": {
-        "name": {
-          "el": "Αργυρώ (Ηρώ) Μιχαηλίδη",
-          "en": "Argyro (Iro) Michailidi"
-        },
-        "role": {
-          "el": "Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών",
-          "en": "Board Member, Head of International Relations & Delegations"
-        }
+        "name": { "el": "Αργυρώ (Ηρώ) Μιχαηλίδη", "en": "Argyro (Iro) Michailidi" },
+        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών", "en": "Board Member, Head of International Relations & Delegations" }
       },
       "ellie": {
-        "name": {
-          "el": "Ελένη Γκεσούλη",
-          "en": "Eleni Gkesouli"
-        },
-        "role": {
-          "el": "Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας",
-          "en": "Board Member, Head of Marketing & Communications"
+        "name": { "el": "Ελένη Γκεσούλη", "en": "Eleni Gkesouli" },
+        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας", "en": "Board Member, Head of Marketing & Communications" }
+      }
+    },
+    "workingGroups": {
+      "heading": { "el": "Ομάδες Εργασίας", "en": "Working Groups" },
+      "secgen": {
+        "title": { "el": "Ομάδα Υποστήριξης της Γενικής Γραμματείας", "en": "General Secretariat Support Team" },
+        "text": {
+          "el": "Η Ομάδα Υποστήριξης της Γενικής Γραμματείας συμβάλει τόσο κατά τη διάρκεια των Γενικών Συνελεύσεων, συμμετέχοντας στην τήρηση των Βιβλίων των Πρακτικών, όσο και στην υπεύθυνη και συνεπή τήρηση των Βιβλίων Μελών και Πρωτοκόλλου.",
+          "en": "The General Secretariat Support Team contributes during the General Assemblies by helping keep the Minutes Books, as well as by responsibly and consistently maintaining the Members' and Protocol Books."
         }
+      },
+      "pr": {
+        "title": { "el": "Ομάδα Δημοσίων Σχέσεων", "en": "Public Relations Team" },
+        "text": {
+          "el": "Η Ομάδα Εργασίας των Δημοσίων Σχέσεων έχει ως κύρια μέριμνα τη βελτιστοποίηση της φυσικής παρουσίας του Ε.Κ.Ν.Ε., τη διατήρηση και ενίσχυση σχέσεων με τους εν ενεργεία Ευρωβουλευτές, καθώς και τη διερεύνηση συνεργασιών με άλλους οργανισμούς.",
+          "en": "The Public Relations Working Group's main focus is to optimize the physical presence of EYP Greece, to maintain and strengthen relations with serving Members of the European Parliament, and to explore collaborations with other organizations."
+        }
+      },
+      "fundraising": {
+        "title": { "el": "Ομάδα Ανεύρεσης Πόρων", "en": "Fundraising Team" },
+        "text": {
+          "el": "Η Ομάδα Εργασίας της Ανεύρεσης Πόρων είναι υπεύθυνη για την επικοινωνία και διαχείριση των χρηματικών χορηγών του σωματείου, τη διατήρηση παραγωγικών συνεργασιών με αυτούς, και τη διάθεση των προσφερόμενων πόρων στις δράσεις που πραγματοποιούνται εντός του έτους.",
+          "en": "The Fundraising Working Group is responsible for communicating with and managing the association's financial sponsors, maintaining productive partnerships with them, and allocating the resources offered to the activities carried out during the year."
+        }
+      },
+      "hr": {
+        "title": { "el": "Ομάδα Ανθρώπινου Δυναμικού", "en": "Human Resources Team" },
+        "text": {
+          "el": "Η Ομάδα Εργασίας Ανθρώπινων Πόρων και Εξωστρέφειας υποστηρίζει την ομαλή ένταξη νέων μελών και την ενεργή αλληλεπίδραση του υπάρχοντος ανθρώπινου δυναμικού, υλοποιώντας δράσεις που ενδυναμώνουν τις σχέσεις μεταξύ των μελών και εξοικειώνουν τους ενδιαφερόμενους με τον κόσμο του ΕΚΝΕ. Είναι υπεύθυνη για το πρόγραμμα Mentorship “Touched by an Angel”.",
+          "en": "The Human Resources & Outreach Working Group supports the smooth integration of new members and the active interaction of existing members, carrying out activities that strengthen relationships between members and familiarize interested people with the world of EYP Greece. It is responsible for the Mentorship programme “Touched by an Angel”."
+        }
+      },
+      "international": {
+        "title": { "el": "Ομάδα Διεθνών Σχέσεων", "en": "International Relations Team" },
+        "text": {
+          "el": "Η Ομάδα Εργασίας Διεθνών Σχέσεων είναι υπεύθυνη για την οργάνωση και υποστήριξη των αποστολών του ΕΚΝΕ σε δράσεις του εξωτερικού αλλά και για την ενίσχυση των σχέσεων του ΕΚΝΕ με άλλες Εθνικές Επιτροπές.",
+          "en": "The International Relations Working Group is responsible for organizing and supporting EYP Greece's delegations to events abroad, as well as for strengthening EYP Greece's relations with other National Committees."
+        }
+      },
+      "marketing": {
+        "title": { "el": "Ομάδα Μάρκετινγκ & Επικοινωνίας", "en": "Marketing & Communications Team" },
+        "text": {
+          "el": "Η Ομάδα Εργασίας Μάρκετινγκ και Επικοινωνίας είναι υπεύθυνη για την ψηφιακή εικόνα του ΕΚΝΕ, τη διαχείριση των Social Media και του Website. Παράλληλα δημιουργεί το newsletter ενισχύοντας την ενημέρωση και την αλληλεπίδραση με τα μέλη του Σωματείου. Επίσης αναζητά και συνεργάζεται με χορηγούς επικοινωνίας, με στόχο την αύξηση της προβολής του ΕΚΝΕ εντός και εκτός του δικτύου.",
+          "en": "The Marketing & Communications Working Group is responsible for EYP Greece's digital image and for managing its social media and website. It also creates the newsletter, enhancing communication and interaction with the association's members. In addition, it seeks and works with media sponsors, aiming to increase EYP Greece's visibility within and beyond the network."
+        }
+      }
+    },
+    "history": {
+      "heading": { "el": "Ιστορικό Διοικητικών Συμβουλίων", "en": "Board History" },
+      "intro": {
+        "el": "Επιλέξτε μια χρονιά για να δείτε το Διοικητικό Συμβούλιο εκείνης της περιόδου.",
+        "en": "Select a year to see the Executive Board of that period."
+      },
+      "panelTitle": { "el": "Διοικητικό Συμβούλιο", "en": "Executive Board" },
+      "prevLabel": { "el": "Παλαιότερα Διοικητικά Συμβούλια", "en": "Older Executive Boards" },
+      "nextLabel": { "el": "Νεότερα Διοικητικά Συμβούλια", "en": "Newer Executive Boards" },
+      "yearsLabel": { "el": "Επιλογή χρονιάς Διοικητικού Συμβουλίου", "en": "Select Executive Board year" },
+      "roles": {
+        "president": { "el": "Πρόεδρος", "en": "President" },
+        "vicePresident": { "el": "Αντιπρόεδρος", "en": "Vice President" },
+        "secretaryGeneral": { "el": "Γενικός/ή Γραμματέας", "en": "Secretary General" },
+        "treasurer": { "el": "Ταμίας", "en": "Treasurer" },
+        "member": { "el": "Μέλος Δ.Σ.", "en": "Board Member" }
+      },
+      "people": {
+        "risvanis": { "el": "Γιώργος Ρισβάνης", "en": "George Risvanis" },
+        "karagkitsi": { "el": "Κωνσταντίνα Καραγκίτση", "en": "Konstantina Karagkitsi" },
+        "tziatzios": { "el": "Παναγιώτης Τζιάτζιος", "en": "Panagiotis Tziatzios" },
+        "kazazis": { "el": "Παναγιώτης Ιάσονας Καζάζης", "en": "Panagiotis Iasonas Kazazis" },
+        "pappa": { "el": "Ιωάννα Αλεξάνδρα Παππά", "en": "Ioanna Alexandra Pappa" },
+        "marmaras": { "el": "Κων/νος Σταύρος Μαρμαράς", "en": "Konstantinos Stavros Marmaras" },
+        "zormpa": { "el": "Ιωάννα Ελισάβετ Ζορμπά", "en": "Ioanna Elisavet Zormpa" },
+        "chrysafi": { "el": "Έλενα Χρυσάφη", "en": "Elena Chrysafi" },
+        "mentzelioti": { "el": "Ελβίρα Μεντζελιώτη", "en": "Elvira Mentzelioti" },
+        "syrta": { "el": "Ιωάννα Ευθυμία Σύρτα", "en": "Ioanna Efthymia Syrta" },
+        "giannakopoulou": { "el": "Παναγιώτα Γιαννακοπούλου", "en": "Panagiota Giannakopoulou" },
+        "stefanidou": { "el": "Γωγώ Στεφανίδου", "en": "Gogo Stefanidou" },
+        "mani": { "el": "Δανάη Μάνη", "en": "Danai Mani" },
+        "zagkana": { "el": "Σοφία Ζαγγανά", "en": "Sofia Zagkana" },
+        "varna": { "el": "Δανάη Βαρνά", "en": "Danai Varna" },
+        "fotopoulou": { "el": "Αγγελική Φωτοπούλου", "en": "Angeliki Fotopoulou" },
+        "dipla": { "el": "Φρόσω Δίπλα", "en": "Froso Dipla" },
+        "barlogianni": { "el": "Μάρθα Μπαρλογιάννη", "en": "Martha Barlogianni" },
+        "tsiamis": { "el": "Ραφαήλ Τσιάμης", "en": "Rafail Tsiamis" },
+        "petsa": { "el": "Έλενα Πέτσα", "en": "Elena Petsa" },
+        "kerkoulas": { "el": "Στέφανος Κερκουλάς", "en": "Stefanos Kerkoulas" },
+        "kalampaliki": { "el": "Μαρία Καλαμπαλίκη", "en": "Maria Kalampaliki" },
+        "deliporanidou": { "el": "Μαρία Δεληπορανίδου", "en": "Maria Deliporanidou" },
+        "vasilakopoulou": { "el": "Σπυριδούλα-Ίρις Βασιλακοπούλου", "en": "Spyridoula-Iris Vasilakopoulou" },
+        "varsos": { "el": "Βασίλης Βάρσος", "en": "Vasilis Varsos" },
+        "koimtzoglou": { "el": "Μαρία Κοϊμτζόγλου", "en": "Maria Koimtzoglou" },
+        "vegkou": { "el": "Νίκη Βέγκου", "en": "Niki Vegkou" },
+        "topali": { "el": "Χριστίνα Τοπάλη", "en": "Christina Topali" },
+        "batzili": { "el": "Λουκία Μπατζιλή", "en": "Loukia Batzili" },
+        "karatagli": { "el": "Αφροδίτη Καράταγλη", "en": "Afroditi Karatagli" },
+        "tsenes": { "el": "Βασίλης Τσενές", "en": "Vasilis Tsenes" },
+        "siozou": { "el": "Ελεάννα Σιώζου", "en": "Eleanna Siozou" },
+        "fragios": { "el": "Βασίλης Φράγιος", "en": "Vasilis Fragios" },
+        "zachariadis": { "el": "Γιώργος Ζαχαριάδης", "en": "George Zachariadis" },
+        "pistofidis": { "el": "Αιμίλιος Πιστοφίδης-Χατζηδημητρίου", "en": "Aimilios Pistofidis-Chatzidimitriou" },
+        "kotzias": { "el": "Νίκος-Παύλος Κοτζιάς", "en": "Nikos-Pavlos Kotzias" },
+        "theologou": { "el": "Νίκος Θεολόγου", "en": "Nikos Theologou" },
+        "sidiropoulou": { "el": "Ελισάβετ Σιδηροπούλου", "en": "Elisavet Sidiropoulou" },
+        "sdrali": { "el": "Σοφία Σδράλη", "en": "Sofia Sdrali" },
+        "roussi": { "el": "Ελισάβετ Ρούσση", "en": "Elisavet Roussi" },
+        "pagkozidis": { "el": "Ηλίας Παγκοζίδης", "en": "Ilias Pagkozidis" },
+        "patriarcheas": { "el": "Διονύσης Πατριαρχέας", "en": "Dionysis Patriarcheas" },
+        "avramidis": { "el": "Νίκος Αβραμίδης", "en": "Nikos Avramidis" },
+        "papadopoulou": { "el": "Ειρήνη Παπαδοπούλου", "en": "Eirini Papadopoulou" },
+        "drampa": { "el": "Βαγιαλένα Δράμπα", "en": "Vagialena Drampa" },
+        "mantzarlis": { "el": "Στέφανος Μαντζαρλής", "en": "Stefanos Mantzarlis" },
+        "katharios": { "el": "Σοφία-Ξένη Καθαρείου", "en": "Sofia-Xeni Kathareiou" },
+        "spania": { "el": "Πηνελόπη Σπανιά", "en": "Penelope Spania" },
+        "apostolidou": { "el": "Μυρτώ Αποστολίδου", "en": "Myrto Apostolidou" },
+        "krokos": { "el": "Δημήτρης Κρόκος", "en": "Dimitris Krokos" },
+        "davris": { "el": "Δημήτρης Δάβρης", "en": "Dimitris Davris" },
+        "zois": { "el": "Χρήστος Ζώης", "en": "Christos Zois" },
+        "mordo": { "el": "Βασίλης Μόρντο", "en": "Vasilis Mordo" },
+        "megapanou": { "el": "Μαρία Μεγαπάνου", "en": "Maria Megapanou" },
+        "dimitrakopoulou": { "el": "Δέσποινα Δημητρακοπούλου", "en": "Despoina Dimitrakopoulou" },
+        "orfanakos": { "el": "Παναγιώτης Ορφανάκος", "en": "Panagiotis Orfanakos" },
+        "patikos": { "el": "Παναγιώτης Πατίκος", "en": "Panagiotis Patikos" }
       }
     }
   },
@@ -643,6 +727,12 @@
         "el": "Κύριοι στόχοι του είναι η προώθηση μιας Ευρωπαϊκής διάστασης στην εκπαίδευση των νέων, η ανάληψη πρωτοβουλιών, καθώς και η ανάπτυξη κοινωνικών και επαγγελματικών δεξιοτήτων.",
         "en": "Its main objectives are promoting a European dimension in youth education, encouraging initiative, and fostering social and professional skill development."
       }
+    },
+    "stats": {
+      "actions": { "el": "Δράσεις ετησίως στο δίκτυο", "en": "Activities per year in the network" },
+      "years": { "el": "Χρόνια ενεργής πορείας", "en": "Years of active presence" },
+      "members": { "el": "Ενεργά μέλη στο δίκτυο", "en": "Active members in the network" },
+      "participants": { "el": "Συμμετέχοντες σε συνέδρια του ΕΚΝΕ", "en": "Participants in EYP Greece sessions" }
     }
   },
   "participation": {
