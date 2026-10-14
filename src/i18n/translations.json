@@ -1135,58 +1135,68 @@
           "en": "Your Journey at EYP Greece"
         },
         "intro": {
-          "el": "Από την πρώτη σου συμμετοχή ως εθελοντής μέχρι την εξέλιξή σου σε ηγετικούς ρόλους — έτσι μοιάζει συνήθως η πορεία ενός μέλους στο ΕΚΝΕ.",
-          "en": "From your first experience as a volunteer to taking on leadership roles, this is what a member's journey at EYP Greece can look like."
+          "el": "Από την πρώτη σου συμμετοχή σε μια Συνδιάσκεψη του EYP μέχρι την ανάληψη ηγετικών ρόλων — έτσι μπορεί να εξελιχθεί η πορεία ενός εθελοντή στο ΕΚΝΕ.",
+          "en": "From your first EYP session as a delegate to taking on leadership roles, this is how a volunteer's journey at EYP Greece can evolve."
         },
         "steps": {
           "s1": {
             "title": {
-              "el": "Γίνεσαι Εθελοντής",
-              "en": "Become a Volunteer"
+              "el": "Συμμετέχεις σε Συνδιάσκεψη",
+              "en": "Attend an EYP Session"
             },
             "text": {
-              "el": "Κάνεις την πρώτη σου αίτηση και συμμετέχεις σε μια δράση του ΕΚΝΕ, γνωρίζοντας τον οργανισμό και τους ανθρώπους του από κοντά.",
-              "en": "You submit your first application and take part in an EYP Greece activity, getting to know the organisation and its people first-hand."
+              "el": "Οι περισσότεροι EYPers ξεκινούν συμμετέχοντας σε μια Συνδιάσκεψη του EYP ως συμμετέχοντες ή delegates, γνωρίζοντας τον Οργανισμό και τις αξίες του.",
+              "en": "Most EYPers begin by attending an EYP session as participants or delegates, getting to know the Organisation and its values."
             }
           },
           "s2": {
             "title": {
-              "el": "Επιλέγεις Ομάδα",
-              "en": "Choose a Team"
+              "el": "Συνεχίζεις τη Συμμετοχή σου",
+              "en": "Continue Your Involvement"
             },
             "text": {
-              "el": "Διαλέγεις σε ποια ομάδα θέλεις να δραστηριοποιηθείς: Οργανωτική, Ακαδημαϊκή, Δημοσιογραφική, Ομάδα Αξιολόγησης ή Ομάδα Ασφάλειας.",
-              "en": "You choose which team you want to join: Organising, Academic, Media, Evaluation or Safeguarding."
+              "el": "Μετά την πρώτη τους δράση, πολλοί συνεχίζουν συμμετέχοντας σε Trainings, Γενικές Συνελεύσεις και το Mentorship Program, αποκτώντας βαθύτερη κατανόηση του Οργανισμού.",
+              "en": "After their first session, many continue their involvement through Trainings, General Assemblies and the Mentorship Program, gaining a deeper understanding of the Organisation."
             }
           },
           "s3": {
             "title": {
-              "el": "Αναλαμβάνεις Ρόλο σε Δράση",
-              "en": "Take on a Role in an Activity"
+              "el": "Αναλαμβάνεις Θέση Λειτουργικού Στελέχους",
+              "en": "Become an Official"
             },
             "text": {
-              "el": "Συμμετέχεις ενεργά σε συγκεκριμένη δράση με συγκεκριμένο ρόλο μέσα στην ομάδα σου και αποκτάς πρακτική εμπειρία.",
-              "en": "You actively contribute to a specific activity, taking on a defined role within your team and gaining practical experience."
+              "el": "Όταν αποκτήσεις εικόνα για τη δομή του Οργανισμού και τη λειτουργία των ομάδων, μπορείς να υποβάλεις αίτηση για θέσεις Λειτουργικών Στελεχών, στην Ελλάδα ή στο εξωτερικό.",
+              "en": "Once you understand how the Organisation is structured and how its teams work, you can apply for Officials' Positions, either in your country or abroad."
             }
           },
           "s4": {
             "title": {
-              "el": "Γίνεσαι Υπεύθυνος Ομάδας",
-              "en": "Become a Team Coordinator"
+              "el": "Γίνεσαι Μέλος Ομάδας Εργασίας",
+              "en": "Join a Working Group"
             },
             "text": {
-              "el": "Με την εμπειρία που έχεις αποκτήσει, αναλαμβάνεις τον συντονισμό της ομάδας σου σε επόμενες δράσεις.",
-              "en": "Building on the experience you have gained, you take responsibility for coordinating your team in future activities."
+              "el": "Μπορείς επίσης να υποβάλεις αίτηση για να γίνεις μέλος μιας Ομάδας Εργασίας, συμβάλλοντας στο ετήσιο έργο του Οργανισμού μέσα από ένα χαρτοφυλάκιο, όπως του Γενικού Γραμματέα ή των Δημοσίων Σχέσεων.",
+              "en": "You can also apply to join a Working Group, contributing to the Organisation's year-long work through a portfolio such as Secretary General or Public Relations."
             }
           },
           "s5": {
             "title": {
-              "el": "Εξελίσσεσαι σε Ηγετικό Ρόλο",
-              "en": "Grow into a Leadership Role"
+              "el": "Αναλαμβάνεις τη Διοργάνωση μιας Συνδιάσκεψης",
+              "en": "Become a Head Organiser"
             },
             "text": {
-              "el": "Από επικεφαλής δράσης μέχρι μέλος του Διοικητικού Συμβουλίου — και επιστρέφεις να καθοδηγήσεις τους επόμενους εθελοντές.",
-              "en": "From leading an activity to becoming a member of the Board, you can eventually return to guide the next generation of volunteers."
+              "el": "Με την εμπειρία που έχεις αποκτήσει, μπορείς να αναλάβεις τη διοργάνωση μιας Συνδιάσκεψης ως μέλος της Διοργανωτικής Επιτροπής, έχοντας την ευθύνη για τον σχεδιασμό και την υλοποίησή της.",
+              "en": "As you gain experience, you may organise a session as a Head Organiser, taking responsibility for planning and delivering the event."
+            }
+          },
+          "s6": {
+            "title": {
+              "el": "Εκλέγεσαι στο Διοικητικό Συμβούλιο",
+              "en": "Join the Executive Board"
+            },
+            "text": {
+              "el": "Τέλος, μπορείς να θέσεις υποψηφιότητα για το Διοικητικό Συμβούλιο και, εφόσον εκλεγείς, να συμβάλεις στη διαμόρφωση της στρατηγικής και των λειτουργιών της Εθνικής Επιτροπής, υποστηρίζοντας την ανάπτυξη του Οργανισμού.",
+              "en": "Finally, you may run for election to the Executive Board and, if elected, help shape the National Committee's operations and strategy, contributing your knowledge to the Organisation's growth."
             }
           }
         }
