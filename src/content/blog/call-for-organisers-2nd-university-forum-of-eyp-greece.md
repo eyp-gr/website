@@ -2,7 +2,7 @@
 title: " Call for Organisers | 2nd University Forum of EYP Greece"
 date: 2026-08-22T12:59:00.000+03:00
 author: Ε.Κ.Ν.Ε.
-image: /src/assets/blog/oudas-26-full-logo.png
+image: /public/assets/blog/oudas-26-full-logo.png
 summary: Call for Organisers for the 2nd University Forum of the European Youth
   Parliament
   Greece.

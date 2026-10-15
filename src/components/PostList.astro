@@ -10,7 +10,7 @@ type Props = {
 const { posts } = Astro.props;
 
 const imageModules = import.meta.glob(
-  "/src/assets/blog/**/*.{jpg,jpeg,png,webp,avif,gif,svg}",
+  "/public/assets/blog/**/*.{jpg,jpeg,png,webp,avif,gif,svg}",
   {
     eager: true,
     query: "?url",

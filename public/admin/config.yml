@@ -4,8 +4,8 @@ backend:
   branch: Astro
   base_url: https://decap-proxy.odysseus-kirikopoulos.workers.dev
 
-media_folder: "src/assets/blog"
-public_folder: "/src/assets/blog"
+media_folder: "public/assets/blog"
+public_folder: "/public/assets/blog"
 
 collections:
   - name: "blog"
