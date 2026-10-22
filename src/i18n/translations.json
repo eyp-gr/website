@@ -1307,40 +1307,40 @@
               "en": "I joined EYP Greece without knowing anyone. Within a few months, I had found a whole community and a mentor who guided me every step of the way."
             },
             "name": {
-              "el": "Μέλος ΕΚΝΕ",
-              "en": "EYP Greece Member"
+              "el": "Σίσσυ Βελαώρα",
+              "en": "Sissy Valaora"
             },
             "role": {
-              "el": "Μαθήτρια Λυκείου, Θεσσαλονίκη",
-              "en": "High school student, Thessaloniki"
+              "el": "'Touched by an angel' mentorship programme",
+              "en": "'Touched by an angel' mentorship programme"
             }
           },
           "t2": {
             "quote": {
-              "el": "Ο μέντοράς μου με βοήθησε να καταλάβω πώς λειτουργεί το σωματείο και ποια βήματα έπρεπε να ακολουθήσω για να αναλάβω πρώτο ρόλο σε Σύνοδο.",
+              "el": "Μέσω το προγράμματος mentorship προσανατολίστηκα για τα επόμενα βήματά μου στο ΕΚΝΕ αλλά και για το πώς να είμαι πιο ενεργή εντός αυτού. Επίσης, εξάσκησα και εμπλούτισα τις γνώσεις μου σχετικά με τους ρόλους του ΕYP, γνώρισα νέα άτομα και αντάλλαξα ιδέες μαζί τους!!",
               "en": "My mentor helped me understand how the organisation works and which steps I needed to take to get my first role at a Session."
             },
             "name": {
-              "el": "Μέλος ΕΚΝΕ",
-              "en": "EYP Greece Member"
+              "el": "Θάνος Θεοδώρου",
+              "en": "Thanos Theodorou"
             },
             "role": {
-              "el": "Φοιτητής, Αθήνα",
-              "en": "University student, Athens"
+              "el": "'Touched by an angel' mentorship programme",
+              "en": "'Touched by an angel' mentorship programme"
             }
           },
           "t3": {
             "quote": {
-              "el": "Μετά από δύο χρόνια αδράνειας, το πρόγραμμα mentorship με βοήθησε να ξαναμπώ στο ΕΚΝΕ χωρίς να νιώθω χαμένος.",
+              "el": "Το Mentorship Programme του EYP Greece με βοήθησε να δω πιο ξεκάθαρα πώς μπορώ να μετατρέψω το ενδιαφέρον μου για τις ευρωπαϊκές υποθέσεις σε ουσιαστική συμμετοχή. Ήταν μια ευκαιρία να ανακαλύψω νέες προοπτικές  και να κατανοήσω καλύτερα τη θέση μου στην κοινότητα του EYP! Φεύγω με ακόμη μεγαλύτερο κίνητρο να συμμετέχω σε κάποιο από τα επόμενα συνέδρια!",
               "en": "After two years of inactivity, the Mentorship Programme helped me reconnect with EYP Greece without feeling lost."
             },
             "name": {
-              "el": "Μέλος ΕΚΝΕ",
-              "en": "EYP Greece Member"
+              "el": "Αλεξία Καδόγλου",
+              "en": "Alexia Kadoglou"
             },
             "role": {
-              "el": "Φοιτήτρια, Θεσσαλονίκη",
-              "en": "University student, Thessaloniki"
+              "el": "'Touched by an angel' mentorship programme",
+              "en": "'Touched by an angel' mentorship programme"
             }
           }
         }
@@ -1417,13 +1417,9 @@
     }
   },
   "contact": {
-    "title1": {
-      "el": "Επικοινωνήστε",
-      "en": "Contact!"
-    },
-    "title2": {
-      "el": " μαζί μας!",
-      "en": "Us!"
+    "title": {
+      "el": "Επικοινωνήστε <br>μαζί μας!",
+      "en": "Contact us!"
     },
     "sectionTitle": {
       "el": "Contact Us",

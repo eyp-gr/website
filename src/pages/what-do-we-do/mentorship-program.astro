@@ -136,7 +136,7 @@ import Layout from '../../layouts/Layout.astro';
                     <footer class="testimonial-author">
                     <img
                         class="testimonial-avatar"
-                        src="/assets/wg-and-rg/sissy.jpg"
+                        src="/assets/wg-and-rg/sissy.webp"
                         alt=""
                         loading="lazy"
                     />
@@ -160,13 +160,7 @@ import Layout from '../../layouts/Layout.astro';
                     ></p>
 
                     <footer class="testimonial-author">
-                    <img
-                        class="testimonial-avatar"
-                        src="/assets/wg-and-rg/thanos.jpg"
-                        alt=""
-                        loading="lazy"
-                        height="200px"
-                    />
+                    <img class="testimonial-avatar" src="/assets/wg-and-rg/thanos.webp" alt="Μέλος του ΕΚΝΕ" loading="lazy" />
                     <div class="testimonial-author-info">
                         <span
                         class="testimonial-name"
@@ -189,7 +183,7 @@ import Layout from '../../layouts/Layout.astro';
                     <footer class="testimonial-author">
                     <img
                         class="testimonial-avatar"
-                        src="/assets/photos/mentorship/member3.webp"
+                        src="/assets/wg-and-rg/alexia.webp"
                         alt=""
                         loading="lazy"
                     />
@@ -259,64 +253,154 @@ import Layout from '../../layouts/Layout.astro';
   --ekne-radius: 14px;
 }
 
+
+/* =========================
+   TESTIMONIALS
+   ========================= */
+
 .testimonials-section {
-  padding-block: 4rem 0rem;
-  background: linear-gradient(135deg, var(--ekne-blue-soft) 0%, #ffffff 65%);
+  padding-block: 1rem;
+  background: linear-gradient(135deg, var(--ekne-blue-soft) 0%, #fff 65%);
 }
 
 .testimonials-section h2 {
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .testimonials-intro {
   max-width: 600px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 1.5rem;
   text-align: center;
   color: var(--ekne-muted);
+  line-height: 1.7;
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
 }
 
 .testimonial-card {
+  min-width: 0;
   margin: 0;
-  padding: 1.85rem 1.75rem;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: var(--ekne-radius);
-  box-shadow: 0 10px 30px rgba(15, 42, 82, 0.08);
+  box-shadow: 0 8px 26px rgba(15, 42, 82, 0.08);
+  overflow-wrap: anywhere;
 }
 
 .testimonial-quote {
   margin: 0 0 1.25rem;
-  font-size: 1.02rem;
-  line-height: 1.65;
   color: var(--ekne-ink);
+  font-size: 1rem;
+  line-height: 1.75;
   font-style: italic;
 }
 
+/* Φωτογραφίες με κοινές διαστάσεις και αναλογία */
+.testimonial-avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin: 0 0 0.75rem;
+  background: var(--ekne-blue-soft);
+}
+
+/* Στοιχεία μέλους κάτω από τη φωτογραφία */
 .testimonial-author {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
-}
-
-.testimonial-name {
-  font-weight: 700;
-  color: var(--ekne-navy);
+  gap: 0.25rem;
+  margin-top: auto;
   font-style: normal;
 }
 
-.testimonial-role {
-  font-size: 0.85rem;
-  color: var(--ekne-muted);
+.testimonial-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
 }
+
+.testimonial-name {
+  color: var(--ekne-navy);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.testimonial-role {
+  color: var(--ekne-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .testimonial-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Κινητά */
+@media (max-width: 600px) {
+  .testimonials-section {
+    padding-block: 2.5rem;
+  }
+
+  .testimonials-section .content-container {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .testimonials-intro {
+    margin-bottom: 1.75rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .testimonial-card {
+    padding: 1.125rem;
+    border-radius: 12px;
+  }
+
+  .testimonial-quote {
+    font-size: 0.975rem;
+    line-height: 1.7;
+  }
+
+  .testimonial-avatar {
+    aspect-ratio: 4 / 3;
+    object-position: center;
+  }
+}
+
+/* Σεβασμός στη ρύθμιση μειωμένης διακίνησης */
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-card {
+    scroll-behavior: auto;
+  }
+}
+
 
 /* =========================================================================
    6. JOURNEY TIMELINE — κάθετο, γεμίζει καθώς σκρολάρεις (σελίδα "Mentorship")
