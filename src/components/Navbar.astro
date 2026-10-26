@@ -1,28 +1,28 @@
 ---
 import logoImg from '../../public/assets/logo/long_white.webp';
 ---
-
+ 
 <header class="header">
     <div class="container">
-
+ 
         <a href="/" class="logo">
             <img src={logoImg.src} alt="EYP Greece" />
         </a>
-
+ 
         <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false">
             <span class="hamburger-icon">☰</span>
         </button>
-
+ 
         <nav class="nav">
-
+ 
             <a href="/news" data-i18n="nav.news">Νέα</a>
-
+ 
             <div class="nav-item">
                 <button data-i18n="nav.getToKnowUs">
                     Γνωρίστε μας
                     <span>▾</span>
                 </button>
-
+ 
                 <div class="mega-menu">
                     <a href="/get-to-know-us/who-we-are" data-i18n="nav.whoWeAre">Ποιοι είμαστε</a>
                     <a href="/get-to-know-us/executive-board" data-i18n="nav.executiveBoard">Διοικητικό Συμβούλιο</a>
@@ -30,39 +30,39 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                     <a href="/get-to-know-us/eyp-network" data-i18n="nav.eypNetwork">Δίκτυο του Ε.Κ.Ν.</a>
                 </div>
             </div>
-
+ 
             <div class="nav-item">
                 <button data-i18n="nav.whatWeDo">
                     Τι κάνουμε
                     <span>▾</span>
                 </button>
-
+ 
                 <div class="mega-menu">
                     <a href="/what-do-we-do/sessions" data-i18n="nav.sessions">Δράσεις</a>
                     <a href="/what-do-we-do/mentorship-program" data-i18n="nav.mentorship">Πρόγραμμα Mentorship</a>
                     <a href="/what-do-we-do/members-assembly" data-i18n="nav.membersAssembly">Γενικές Συνελεύσεις</a>
                 </div>
             </div>
-
+ 
             <div class="nav-item">
                 <button data-i18n="nav.understandingEurope">
                     Understanding Europe
                     <span>▾</span>
                 </button>
-
+ 
                 <div class="mega-menu">
                     <a href="/understanding-europe/what-is-ue" data-i18n="nav.whatIsUE">Τι είναι το πρόγραμμα</a>
                     <a href="/understanding-europe/structure" data-i18n="nav.structure">Δομή Προγράμματος</a>
                     <a href="/understanding-europe/participation" data-i18n="nav.participation">Συμμετοχή</a>
                 </div>
             </div>
-
+ 
             <div class="nav-item">
                 <button data-i18n="nav.participation">
                     Συμμετοχή
                     <span>▾</span>
                 </button>
-
+ 
                 <div class="mega-menu">
                     <a href="/participation/participants" data-i18n="nav.participants">Συμμετέχοντες</a>
                     <a href="/participation/volunteers" data-i18n="nav.volunteers">Εθελοντές</a>
@@ -70,83 +70,416 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                     <a href="/participation/faq" data-i18n="nav.faq">Συχνές Ερωτήσεις</a>
                 </div>
             </div>
-
+ 
             <div class="nav-item">
                 <button data-i18n="nav.partners">
                     Συνεργάτες
                     <span>▾</span>
                 </button>
-
+ 
                 <div class="mega-menu">
                     <a href="/partners/our-partners" data-i18n="nav.ourPartners">Οι συνεργάτες μας</a>
                     <a href="/partners/become-a-partner" data-i18n="nav.becomePartner">Γίνετε Συνεργάτης</a>
                 </div>
             </div>
-
+ 
             <a href="/alumni" data-i18n="nav.alumni">Alumni</a>
             <a href="/contact" data-i18n="nav.contact">Επικοινωνία</a>
-
+ 
             <button id="language-switch" class="lang-switch" data-language-switch type="button" aria-label="Change language">
                 <img class="flag-icon" src="/lang/en-icon.png" width="39" height="27" alt="English"/>
             </button>
         </nav>
-
+ 
         <div class="overflow-panel" aria-hidden="true">
             <nav class="overflow-nav" aria-label="Περισσότερες επιλογές"></nav>
         </div>
-
+ 
     </div>
 </header>
-
+ 
 <style is:global>
-    .lang-switch {
+    /* =========================================================
+       NAVBAR RESTYLE (Understanding-Europe inspired)
+       Όλα τα overrides είναι εδώ, με πρόθεμα .header ώστε να
+       υπερισχύουν του γενικού CSS χωρίς να το πειράξουμε.
+    ========================================================= */
+ 
+    .header {
+        /* κυματιστή κίτρινη γραμμή (SVG, επαναλαμβανόμενο pattern) */
+        --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='8' viewBox='0 0 24 8'%3E%3Cpath d='M0 4 Q6 0 12 4 T24 4' fill='none' stroke='%23F3BF00' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+ 
+    @keyframes nav-wave {
+        to { background-position-x: 24px; }
+    }
+ 
+    @keyframes nav-item-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+ 
+    /* ---------- Γλώσσα ---------- */
+    .header .lang-switch {
         flex-shrink: 0;
-
         width: 48px;
         height: 90px;
-
         margin-left: 4px;
         padding: 0;
-
         display: flex;
         align-items: center;
         justify-content: center;
-
         border: none;
         background: transparent;
-
         cursor: pointer;
     }
-
-    .lang-switch .flag-icon {
+ 
+    .header .lang-switch .flag-icon {
         display: block;
-
         width: 39px;
         height: 27px;
-
         object-fit: contain;
-
         border-radius: 2px;
-
-        transition: transform 0.2s ease;
+        transition: transform 0.25s ease;
+    }
+ 
+    .header .lang-switch:hover .flag-icon {
+        transform: scale(1.1) rotate(-3deg);
+    }
+ 
+    /* ---------- Hamburger: δύο γραμμές -> X ---------- */
+    .header .menu-toggle .hamburger-icon {
+        position: relative;
+        display: block;
+        width: 28px;
+        height: 12px;
+        font-size: 0;
+        line-height: 0;
+    }
+ 
+    .header .menu-toggle .hamburger-icon::before,
+    .header .menu-toggle .hamburger-icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--white);
+        transition: top .25s ease, bottom .25s ease, transform .25s ease;
+    }
+ 
+    .header .menu-toggle .hamburger-icon::before { top: 0; }
+    .header .menu-toggle .hamburger-icon::after  { bottom: 0; }
+ 
+    .header .menu-toggle[aria-expanded="true"] .hamburger-icon::before {
+        top: 5px;
+        transform: rotate(45deg);
+    }
+ 
+    .header .menu-toggle[aria-expanded="true"] .hamburger-icon::after {
+        bottom: 5px;
+        transform: rotate(-45deg);
+    }
+ 
+    /* ---------- Κυματιστή γραμμή (κοινή για όλα) ---------- */
+    .header .nav > a,
+    .header .nav-item > button,
+    .header .nav .mega-menu a {
+        position: relative;
+    }
+ 
+    .header .nav > a::after,
+    .header .nav-item > button::after,
+    .header .nav .mega-menu a::after {
+        content: "";
+        position: absolute;
+        height: 8px;
+        background: var(--wave) repeat-x 0 0 / 24px 8px;
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+        pointer-events: none;
+        transition: clip-path .45s ease, opacity .2s ease;
+    }
+ 
+    .header .nav > a:hover::after,
+    .header .nav > a:focus-visible::after,
+    .header .nav-item:hover > button::after,
+    .header .nav-item:focus-within > button::after,
+    .header .nav-item.active > button::after,
+    .header .nav .mega-menu a:hover::after,
+    .header .nav .mega-menu a:focus-visible::after {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+        animation: nav-wave .9s linear infinite;
+    }
+ 
+    .header .nav a:focus-visible,
+    .header .nav-item > button:focus-visible {
+        outline: none;
+    }
+ 
+ 
+    /* =========================================================
+       DESKTOP
+    ========================================================= */
+    @media (min-width: 769px) {
+ 
+        .header {
+            height: 80px;
+        }
+ 
+        .header .logo img {
+            height: 62px;
+        }
+ 
+        .header .nav > a,
+        .header .nav-item > button {
+            height: 80px;
+            padding: 0 16px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: .01em;
+        }
+ 
+        /* καθόλου γεμάτο background στο hover — μόνο η γραμμή */
+        .header .nav > a:hover,
+        .header .nav-item > button:hover {
+            background: none;
+        }
+ 
+        .header .lang-switch {
+            height: 80px;
+        }
+ 
+        .header .nav > a::after,
+        .header .nav-item > button::after {
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+        }
+ 
+        .header .nav-item:hover > button span {
+            transform: rotate(180deg);
+        }
+ 
+        /* Ελαφρύ dropdown: στρογγυλεμένο, χωρίς διαχωριστικές γραμμές */
+        .header .nav .mega-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 290px;
+            padding: 10px 0 14px;
+            border-radius: 0 0 18px 18px;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, .14);
+            transform: translate(-50%, 8px);
+            transition: opacity .25s ease, transform .25s ease, visibility .25s;
+        }
+ 
+        .header .nav .nav-item:hover .mega-menu,
+        .header .nav .nav-item:focus-within .mega-menu {
+            transform: translate(-50%, 0);
+        }
+ 
+        .header .nav .mega-menu a {
+            width: auto;
+            max-width: 100%;
+            padding: 9px 24px;
+            border: 0;
+            background: none;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.35;
+        }
+ 
+        .header .nav .mega-menu a:hover {
+            background: none;
+        }
+ 
+        .header .nav .mega-menu a::after {
+            left: 24px;
+            right: 24px;
+            bottom: 1px;
+        }
+ 
+        /* panel υπερχείλισης */
+        .nav.has-overflow ~ .overflow-panel {
+            border-radius: 0 0 18px 18px;
+            overflow: hidden;
+        }
+    }
+ 
+ 
+    /* =========================================================
+       MOBILE — απλό, λιτό, δεξιά στοίχιση (όπως το UE)
+    ========================================================= */
+    @media (max-width: 768px) {
+ 
+        /* Logo αριστερά, hamburger δεξιά */
+        .header .logo {
+            left: 15px;
+            transform: translateY(-50%);
+            justify-content: flex-start;
+        }
+ 
+        .header .logo img {
+            width: min(200px, calc(100vw - 110px));
+            max-height: 52px;
+        }
+ 
+        /* Πάνελ πλήρους ύψους, ίδιο μπλε, χωρίς σκιά */
+        .header .nav {
+            position: fixed;
+            top: 75px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            align-items: flex-end;
+            padding: 36px 24px 48px;
+            overflow-y: auto;
+            box-shadow: none;
+        }
+ 
+        .header .nav.active > * {
+            animation: nav-item-in .4s ease both;
+        }
+ 
+        .header .nav.active > :nth-child(2) { animation-delay: .04s; }
+        .header .nav.active > :nth-child(3) { animation-delay: .08s; }
+        .header .nav.active > :nth-child(4) { animation-delay: .12s; }
+        .header .nav.active > :nth-child(5) { animation-delay: .16s; }
+        .header .nav.active > :nth-child(6) { animation-delay: .20s; }
+        .header .nav.active > :nth-child(7) { animation-delay: .24s; }
+        .header .nav.active > :nth-child(8) { animation-delay: .28s; }
+        .header .nav.active > :nth-child(9) { animation-delay: .32s; }
+ 
+        /* Κύρια links: μεγάλα, bold, δεξιά */
+        .header .nav > a,
+        .header .nav-item > button {
+            width: auto;
+            min-height: 0;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: right;
+            justify-content: flex-end;
+        }
+ 
+        .header .nav > a:hover,
+        .header .nav-item > button:hover {
+            background: none;
+        }
+ 
+        .header .nav > a::after,
+        .header .nav-item > button::after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+ 
+        .header .nav-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+ 
+        .header .nav-item > button span {
+            margin-left: 8px;
+            font-size: 12px;
+        }
+ 
+        /* Υπο-μενού: χωρίς κουτί, ανοίγει ομαλά */
+        .header .nav .mega-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            max-height: 0;
+            padding: 0;
+            overflow: hidden;
+            background: none;
+            transition: max-height .4s ease, padding .4s ease;
+        }
+ 
+        .header .nav .nav-item.active .mega-menu {
+            max-height: 420px;
+            padding: 4px 0 16px;
+        }
+ 
+        .header .nav .mega-menu a {
+            width: auto;
+            padding: 7px 0;
+            border: 0;
+            background: none;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.3;
+            text-align: right;
+        }
+ 
+        .header .nav .mega-menu a:hover {
+            background: none;
+        }
+ 
+        .header .nav .mega-menu a::after {
+            left: 0;
+            right: 0;
+            bottom: -2px;
+        }
+ 
+        .header .lang-switch {
+            width: auto;
+            height: auto;
+            margin: 18px 0 0;
+            padding: 10px 0;
+        }
+    }
+ 
+    @media (max-width: 480px) {
+        .header .nav {
+            top: 70px;
+            padding: 28px 22px 40px;
+        }
+ 
+        .header .nav > a,
+        .header .nav-item > button {
+            font-size: 22px;
+        }
+    }
+ 
+    @media (prefers-reduced-motion: reduce) {
+        .header .nav > a::after,
+        .header .nav-item > button::after,
+        .header .nav .mega-menu a::after {
+            animation: none !important;
+            transition: none;
+        }
+ 
+        .header .nav.active > * {
+            animation: none;
+        }
     }
 </style>
-
+ 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-
+ 
         const header = document.querySelector('.header') as HTMLElement | null;
         const nav = document.querySelector('.nav') as HTMLElement | null;
         const menuToggle = document.querySelector('.menu-toggle') as HTMLButtonElement | null;
         const overflowPanel = document.querySelector('.overflow-panel') as HTMLElement | null;
         const overflowNav = document.querySelector('.overflow-nav') as HTMLElement | null;
-
+ 
         if (!header || !nav || !menuToggle || !overflowPanel || !overflowNav) return;
-
+ 
         // Desktop Overflow Calculation
         function updateDesktopOverflow() {
             if (!header || !nav || !overflowPanel || !overflowNav) return;
-
+ 
             if (window.innerWidth <= 768) {
                 header.classList.remove('has-overflow');
                 nav.classList.remove('has-overflow');
@@ -159,17 +492,17 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                 });
                 return;
             }
-
+ 
             header.classList.remove('has-overflow');
             nav.classList.remove('has-overflow');
             overflowNav.innerHTML = '';
             const items = Array.from(nav.children) as HTMLElement[];
             items.forEach(child => child.classList.remove('is-overflowed'));
-
+ 
             const navWidth = nav.clientWidth;
             let totalWidth = 0;
             const overflowedItems: HTMLElement[] = [];
-
+ 
             items.forEach(item => {
                 totalWidth += item.offsetWidth;
                 if (totalWidth > navWidth - 60) {
@@ -177,7 +510,7 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                     overflowedItems.push(item);
                 }
             });
-
+ 
             if (overflowedItems.length > 0) {
                 header.classList.add('has-overflow');
                 nav.classList.add('has-overflow');
@@ -188,31 +521,31 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                 });
             }
         }
-
+ 
         // Hamburger Menu Toggle
         menuToggle?.addEventListener('click', (e) => {
             e.stopPropagation();
             if (!menuToggle) return;
-
+ 
             const isOpen = window.innerWidth <= 768 
                 ? nav.classList.toggle('active')
                 : overflowPanel.classList.toggle('active');
-
+ 
             menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
-
+ 
         document.querySelectorAll('.nav-item > button').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const button = e.currentTarget as HTMLButtonElement;
                 const navItem = button.parentElement;
-
+ 
                 button.blur();
-
+ 
                 if (window.innerWidth > 768 || !navItem) return;
-
+ 
                 const isOpen = navItem.classList.toggle('active');
                 button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-
+ 
                 if (isOpen) {
                     navItem.parentElement?.querySelectorAll('.nav-item.active').forEach(item => {
                         if (item !== navItem) {
@@ -223,7 +556,7 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                 }
             });
         });
-
+ 
         document.addEventListener('click', (e) => {
             const target = e.target as Node;
             if (!header.contains(target)) {
@@ -236,7 +569,7 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                 });
             }
         });
-
+ 
         window.addEventListener('resize', updateDesktopOverflow);
         updateDesktopOverflow();
     });
