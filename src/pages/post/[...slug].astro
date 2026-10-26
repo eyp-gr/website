@@ -41,6 +41,10 @@ const mediaFiles = import.meta.glob(
 function getMediaUrl(path?: string) {
   if (!path) return undefined;
 
+  if (path.startsWith('/')) {
+    return encodeURI(path);
+  }
+
   const filename = path.split('/').pop();
   if (!filename) return undefined;
 
