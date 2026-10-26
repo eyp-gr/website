@@ -152,7 +152,11 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                 nav.classList.remove('has-overflow');
                 overflowPanel.classList.remove('active');
                 menuToggle?.setAttribute('aria-expanded', 'false');
-                Array.from(nav.children).forEach(child => (child as HTMLElement).classList.remove('is-overflowed'));
+                Array.from(nav.children).forEach(child => {
+                    const navItem = child as HTMLElement;
+                    navItem.classList.remove('is-overflowed', 'active');
+                    navItem.querySelector(':scope > button')?.setAttribute('aria-expanded', 'false');
+                });
                 return;
             }
 
@@ -199,7 +203,24 @@ import logoImg from '../../public/assets/logo/long_white.webp';
 
         document.querySelectorAll('.nav-item > button').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                (e.currentTarget as HTMLButtonElement).blur();
+                const button = e.currentTarget as HTMLButtonElement;
+                const navItem = button.parentElement;
+
+                button.blur();
+
+                if (window.innerWidth > 768 || !navItem) return;
+
+                const isOpen = navItem.classList.toggle('active');
+                button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+                if (isOpen) {
+                    navItem.parentElement?.querySelectorAll('.nav-item.active').forEach(item => {
+                        if (item !== navItem) {
+                            item.classList.remove('active');
+                            item.querySelector(':scope > button')?.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                }
             });
         });
 
@@ -209,6 +230,10 @@ import logoImg from '../../public/assets/logo/long_white.webp';
                 overflowPanel.classList.remove('active');
                 nav.classList.remove('active');
                 menuToggle?.setAttribute('aria-expanded', 'false');
+                nav.querySelectorAll('.nav-item.active').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector(':scope > button')?.setAttribute('aria-expanded', 'false');
+                });
             }
         });
 
