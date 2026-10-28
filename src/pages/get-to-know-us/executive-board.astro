@@ -2,10 +2,8 @@
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
-import translations from '../../i18n/translations.json'; // <-- προσαρμόσου στο δικό σου path
+import translations from '../../i18n/translations.json';
 
-// Διαβάζει το ελληνικό κείμενο από το JSON για το server-side render.
-// Η αλλαγή γλώσσας γίνεται στον client από το data-i18n όπως πριν.
 const t = (key: string): string => {
     const node = key
         .split('.')
@@ -13,7 +11,6 @@ const t = (key: string): string => {
     return node?.el ?? key;
 };
 
-/* ---------- Τρέχον ΔΣ (μόνο δεδομένα που δεν είναι κείμενο) ---------- */
 const members = [
     {
         id: 'panos',
@@ -52,16 +49,6 @@ const members = [
     },
 ];
 
-/* ---------- Ομάδες εργασίας (μόνο χρώματα) ---------- */
-const workingGroups = [
-    { id: 'secgen', bg: '#1e3a8a', fg: '#ffffff' },
-    { id: 'pr', bg: '#2f5aa8', fg: '#ffffff' },
-    { id: 'fundraising', bg: '#0f766e', fg: '#ffffff' },
-    { id: 'hr', bg: '#3b82f6', fg: '#ffffff' },
-    { id: 'international', bg: '#4338ca', fg: '#ffffff' },
-    { id: 'marketing', bg: '#f2b134', fg: '#1e3a8a' },
-];
-
 /* ---------- Ιστορικό ----------
    Σειρά μελών: Πρόεδρος, Αντιπρόεδρος, ΓΓ, Ταμίας, Μέλος x3.
    Τα ids παραπέμπουν στο executiveBoard.history.people του JSON. */
@@ -98,7 +85,6 @@ const rowClasses = ['board-history-row-top', 'board-history-row-top', 'board-his
 
 <Layout>
     <Navbar />
-
     <body data-level="2">
         <div class="banner">
             <h1 data-i18n="executiveBoard.title">{t('executiveBoard.title')}</h1>
@@ -161,25 +147,6 @@ const rowClasses = ['board-history-row-top', 'board-history-row-top', 'board-his
                             </div>
                         </div>
                     </article>
-                ))}
-            </div>
-
-            <!-- ΟΜΑΔΕΣ ΕΡΓΑΣΙΑΣ -->
-            <h2 class="wg-heading" data-i18n="executiveBoard.workingGroups.heading">
-                {t('executiveBoard.workingGroups.heading')}
-            </h2>
-
-            <div class="wg-grid">
-                {workingGroups.map((wg) => (
-                    <div class="wg-tile" style={`background:${wg.bg}; color:${wg.fg};`}>
-                        <h3 data-i18n={`executiveBoard.workingGroups.${wg.id}.title`}>
-                            {t(`executiveBoard.workingGroups.${wg.id}.title`)}
-                        </h3>
-
-                        <p data-i18n={`executiveBoard.workingGroups.${wg.id}.text`}>
-                            {t(`executiveBoard.workingGroups.${wg.id}.text`)}
-                        </p>
-                    </div>
                 ))}
             </div>
 

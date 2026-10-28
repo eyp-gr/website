@@ -3,6 +3,24 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import Layout from '../../layouts/Layout.astro';
 import RegionalPanel from '../../components/RegionalPanel.astro';
+import translations from '../../i18n/translations.json';
+
+const t = (key: string): string => {
+    const node = key
+        .split('.')
+        .reduce((obj: any, k) => obj?.[k], translations as any);
+    return node?.el ?? key;
+};
+
+/* ---------- Ομάδες εργασίας (μόνο χρώματα) ---------- */
+const workingGroups = [
+    { id: 'secgen', bg: '#1e3a8a', fg: '#ffffff' },
+    { id: 'pr', bg: '#2f5aa8', fg: '#ffffff' },
+    { id: 'fundraising', bg: '#0f766e', fg: '#ffffff' },
+    { id: 'hr', bg: '#3b82f6', fg: '#ffffff' },
+    { id: 'international', bg: '#4338ca', fg: '#ffffff' },
+    { id: 'marketing', bg: '#f2b134', fg: '#1e3a8a' },
+];
 ---
 
 <Layout title="ΕΚΝΕ - Ομάδες Εργασίας και Περιφερειακές Ομάδες">
@@ -25,6 +43,27 @@ import RegionalPanel from '../../components/RegionalPanel.astro';
                             Οι Ομάδες Εργασίας, αποτελούνται από μέλη του Ε.Κ.Ν.Ε. με ενδιαφέρον πάνω στη θεματική της Ομάδας και επιλέγονται, συνήθως μετά από αίτησή τους, από το Μέλος Δ.Σ. που είναι Υπεύθυνο για την Ομάδα.
                         </p>
                     </div>
+                </div>
+            </div>
+
+            <!-- ΟΜΑΔΕΣ ΕΡΓΑΣΙΑΣ -->
+            <div class="content-container">
+                <h2 class="wg-heading" data-i18n="executiveBoard.workingGroups.heading">
+                    {t('executiveBoard.workingGroups.heading')}
+                </h2>
+
+                <div class="wg-grid">
+                    {workingGroups.map((wg) => (
+                        <div class="wg-tile" style={`background:${wg.bg}; color:${wg.fg};`}>
+                            <h3 data-i18n={`executiveBoard.workingGroups.${wg.id}.title`}>
+                                {t(`executiveBoard.workingGroups.${wg.id}.title`)}
+                            </h3>
+
+                            <p data-i18n={`executiveBoard.workingGroups.${wg.id}.text`}>
+                                {t(`executiveBoard.workingGroups.${wg.id}.text`)}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
 

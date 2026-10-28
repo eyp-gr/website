@@ -1158,7 +1158,7 @@ main,
 /* --- Working Groups: 3x2 κολλημένα χρωματιστά τετράγωνα --- */
 
 .wg-heading {
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -1167,9 +1167,11 @@ main,
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(190px, 1fr));
     gap: 0;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom:40px;
     border-radius: 22px;
     overflow: hidden;
+    text-align: center;
 }
 
 .wg-tile {
@@ -1392,6 +1394,7 @@ main,
         flex: 1 1 100%;
     }
 }
+
 
 /* =========================================================
    9. HOMEPAGE HERO

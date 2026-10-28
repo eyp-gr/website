@@ -105,13 +105,25 @@ const milestones = rawMilestones.map((m) => {
                                 <div class="timeline-line" aria-hidden="true"></div>
 
                                 {milestones.map((milestone, index) => (
-                                    <div class={`timeline-point ${index % 2 === 0? 'timeline-point--above': 'timeline-point--below'} ${milestone.status === 'upcoming'? 'timeline-point--future': ''}`}>
+                                    <div
+                                        class={`timeline-point ${
+                                            index % 2 === 0
+                                                ? 'timeline-point--above'
+                                                : 'timeline-point--below'
+                                        } ${
+                                            milestone.status === 'upcoming'
+                                                ? 'timeline-point--future'
+                                                : ''
+                                        }`} 
+                                        >
                                         <span class="timeline-dot" aria-hidden="true"></span>
 
                                         <div class="timeline-card">
                                             <span class="timeline-year">{milestone.year}</span>
-                                            <h3 data-i18n={`eypNetwork.timeline.${milestone.year}.title`}></h3>
-                                            <p data-i18n={`eypNetwork.timeline.${milestone.year}.description`}></p>
+
+                                            <h3 data-i18n={`eypNetwork.timeline.${milestone.key}.title`}></h3>
+
+                                            <p data-i18n={`eypNetwork.timeline.${milestone.key}.description`}></p>
                                         </div>
                                     </div>
                                 ))}

@@ -285,11 +285,11 @@
       },
       "petros": {
         "name": { "el": "Πέτρος Κατρακούλης", "en": "Petros Katrakoulis" },
-        "role": { "el": "Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης", "en": "Vice President, Head of Public Relations & Strategic Development" }
+        "role": { "el": "Αντιπρόεδρος, Υπεύθυνος Δημοσίων Σχέσεων & Στρατηγικής Ανάπτυξης", "en": "Vice President, Responsible for Public Relations & Strategic Development" }
       },
       "stergiani": {
         "name": { "el": "Στεργιανή Τοπαλίδου", "en": "Stergiani Topalidou" },
-        "role": { "el": "Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων", "en": "Secretary General, Head of Fundraising" }
+        "role": { "el": "Γενική Γραμματέας, Υπεύθυνη Ανεύρεσης Πόρων", "en": "Secretary General, Responsible for Fundraising" }
       },
       "alexandros": {
         "name": { "el": "Αλέξανδρος Σιωμούλης", "en": "Alexandros Siomoulis" },
@@ -297,15 +297,15 @@
       },
       "maria": {
         "name": { "el": "Μαρία Ερωτοκρίτου", "en": "Maria Erotokritou" },
-        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας", "en": "Board Member, Head of Human Resources & Outreach" }
+        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Ανθρώπινων Πόρων & Εξωστρέφειας", "en": "Board Member, Responsible for Human Resources & Outreach" }
       },
       "iro": {
         "name": { "el": "Αργυρώ (Ηρώ) Μιχαηλίδη", "en": "Argyro (Iro) Michailidi" },
-        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών", "en": "Board Member, Head of International Relations & Delegations" }
+        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Διεθνών Σχέσεων & Αποστολών", "en": "Board Member, Responsible for International Relations & Delegations" }
       },
       "ellie": {
         "name": { "el": "Ελένη Γκεσούλη", "en": "Eleni Gkesouli" },
-        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας", "en": "Board Member, Head of Marketing & Communications" }
+        "role": { "el": "Μέλος του Δ.Σ., Υπεύθυνη Μάρκετινγκ & Επικοινωνίας", "en": "Board Member, Responsible for Marketing & Communications" }
       }
     },
     "workingGroups": {
@@ -461,31 +461,31 @@
     },
     "1988": {
       "title": {
-        "el": "Πρώτη Διεθνής Συνδιάσκεψη",
+        "el": "Πρώτη Διεθνής Σύνοδος",
         "en": "First International Session"
       },
       "description": {
-        "el": "Διεξαγωγή της πρώτης Διεθνούς Συνδιάσκεψης στο Φοντενεμπλό της Γαλλίας.",
+        "el": "Διεξαγωγή της πρώτης Διεθνούς Συνόδου στο Φοντενεμπλό της Γαλλίας.",
         "en": "The first International Session is held in Fontainebleau, France."
       }
     },
     "1989": {
       "title": {
-        "el": "3η Διεθνής Συνδιάσκεψη",
+        "el": "3η Διεθνής Σύνοδος",
         "en": "3rd International Session"
       },
       "description": {
-        "el": "Διοργανώνεται η 3η Διεθνής Συνδιάσκεψη στη Θεσσαλονίκη, Ελλάδα.",
+        "el": "Διοργανώνεται η 3η Διεθνής Σύνοδος στη Θεσσαλονίκη, Ελλάδα.",
         "en": "The 3rd International Session takes place in Thessaloniki, Greece."
       }
     },
     "1992": {
       "title": {
-        "el": "10η Διεθνής Συνδιάσκεψη",
+        "el": "10η Διεθνής Σύνοδος",
         "en": "10th International Session"
       },
       "description": {
-        "el": "Διοργανώνεται η 10η Διεθνής Συνδιάσκεψη στο Στρασβούργο της Γαλλίας.",
+        "el": "Διοργανώνεται η 10η Διεθνής Σύνοδος στο Στρασβούργο της Γαλλίας.",
         "en": "The 10th International Session takes place in Strasbourg, France."
       }
     },
@@ -501,21 +501,21 @@
     },
     "1997": {
       "title": {
-        "el": "24η Διεθνής Συνδιάσκεψη",
+        "el": "24η Διεθνής Σύνοδος",
         "en": "24th International Session"
       },
       "description": {
-        "el": "Διοργανώνεται η 24η Διεθνής Συνδιάσκεψη στη Θεσσαλονίκη, Ελλάδα.",
+        "el": "Διοργανώνεται η 24η Διεθνής Σύνοδος στη Θεσσαλονίκη, Ελλάδα.",
         "en": "The 24th International Session takes place in Thessaloniki, Greece."
       }
     },
     "2000": {
       "title": {
-        "el": "33η Διεθνής Συνδιάσκεψη",
+        "el": "33η Διεθνής Σύνοδος",
         "en": "33rd International Session"
       },
       "description": {
-        "el": "Διοργανώνεται η 33η Διεθνής Συνδιάσκεψη στην Αθήνα, Ελλάδα.",
+        "el": "Διοργανώνεται η 33η Διεθνής Σύνοδος στην Αθήνα, Ελλάδα.",
         "en": "The 33rd International Session takes place in Athens, Greece."
       }
     },
@@ -531,11 +531,11 @@
     },
     "2011": {
       "title": {
-        "el": "66η Διεθνής Συνδιάσκεψη",
+        "el": "66η Διεθνής Σύνοδος",
         "en": "66th International Session"
       },
       "description": {
-        "el": "Διοργανώνεται η 66η Διεθνής Συνδιάσκεψη στην Αθήνα, Ελλάδα, την άνοιξη του 2011.",
+        "el": "Διοργανώνεται η 66η Διεθνής Σύνοδος στην Αθήνα, Ελλάδα, την άνοιξη του 2011.",
         "en": "The 66th International Session takes place in Athens, Greece, in spring 2011."
       }
     },
@@ -581,11 +581,11 @@
     },
     "2024": {
       "title": {
-        "el": "100ή Διεθνής Συνδιάσκεψη",
+        "el": "100ή Διεθνής Σύνοδος",
         "en": "100th International Session"
       },
       "description": {
-        "el": "Διοργανώνεται η 100ή Διεθνής Συνδιάσκεψη στη Θεσσαλονίκη, Ελλάδα.",
+        "el": "Διοργανώνεται η 100ή Διεθνής Σύνοδος στη Θεσσαλονίκη, Ελλάδα.",
         "en": "The 100th International Session takes place in Thessaloniki, Greece."
       }
     },
@@ -750,16 +750,16 @@
         "en": "When do the annual sessions take place?"
       },
       "q1_answer": {
-        "el": "Τον Απρίλιο (Αθήνα) και τον Δεκέμβριο (Θεσσαλονίκη)",
-        "en": "In April (Athens) and in December (Thessaloniki)"
+        "el": "Στην θεσσαλονίκη πριν τα Χριστούγεννα ενώ στην Αθήνα πριν το Πάσχα.",
+        "en": "In thessaloniki before Christmas, while in Athens before Easter."
       },
       "q2_question": {
         "el": "Πώς μπορώ να ενημερώνομαι;",
         "en": "How can I stay informed?"
       },
       "q2_answer": {
-        "el": "Μπορείς να ενημερώνεσαι για τις επερχόμενες δράσεις και τις διαθέσιμες αιτήσεις συμμετοχής μέσα από την ιστοσελίδα μας και τα μέσα κοινωνικής δικτύωσης.",
-        "en": "You can stay informed about upcoming events and available application forms through our website and social media channels."
+        "el": "Μπορείς να ενημερώνεσαι για τις επερχόμενες δράσεις, τις διαθέσιμες αιτήσεις συμμετοχής όπως και για τα νέα του ΕΚΝΕ μέσα από την ιστοσελίδα μας, τα μέσα κοινωνικής δικτύωσης του Ε.Κ.Ν.Ε. και την mailing list.",
+        "en": "You can be informed for the upcoming events, the available applications for participation, as well as the news of EYP Greece through our website, EYP Greece's social media channels, and the mailing list."
       },
       "q3_question": {
         "el": "Πώς μπορώ να συμμετέχω;",
@@ -782,34 +782,26 @@
         "en": "If you wish to participate in other activities: you can apply for Regional Conferences, Trainings, or the Mentorship Programme."
       },
       "q4_question": {
-        "el": "Πώς μπορώ να ενημερώνομαι για νέες δράσεις και ανοιχτές αιτήσεις;",
-        "en": "How can I stay updated on new projects and open calls?"
-      },
-      "q4_answer": {
-        "el": "Μέσα από τα social media του Ε.Κ.Ν.Ε., την ιστοσελίδα και την mailing list.",
-        "en": "Through EYP Greece's social media, website, and mailing list."
-      },
-      "q5_question": {
         "el": "Πώς λαμβάνω επιπλέον καθοδήγηση στον Οργανισμό;",
         "en": "How do I receive additional guidance in the Organization?"
       },
-      "q5_answer_intro": {
+      "q4_answer_intro": {
         "el": "Η καθοδήγηση παρέχεται μέσα από:",
         "en": "Guidance is provided through:"
       },
-      "q5_answer_li1": {
+      "q4_answer_li1": {
         "el": "το Mentorship Programme",
         "en": "the Mentorship Programme"
       },
-      "q5_answer_li2": {
+      "q4_answer_li2": {
         "el": "τα Trainings του Ε.Κ.Ν.Ε.",
         "en": "EYP Greece Trainings"
       },
-      "q5_answer_li3": {
+      "q4_answer_li3": {
         "el": "την συμμετοχή στις Γενικές συνελεύσεις ή",
         "en": "participation in General Assemblies or"
       },
-      "q5_answer_li4": {
+      "q4_answer_li4": {
         "el": "την επικοινωνία με μέλη του ΔΣ και τους υπεύθυνους των ομάδων",
         "en": "communication with Board members and team leaders"
       }
@@ -840,8 +832,8 @@
         "en": "Youth"
       },
       "youth_text": {
-        "el": "Άτομα άνω των 18 μπορούν να δηλώσουν συμμετοχή ως λειτουργικά στελέχη ή mentees του Mentroship Program δημιουργώντας λογαριασμό στο Members Platform και κάνοντας αίτηση συμμετοχής σε δράσεις σε όλη την Ελλάδα και Ευρώπη.",
-        "en": "Individuals over 18 can apply as officials or mentees in the Mentorship Programme by creating an account on the Members Platform and submitting applications for events across Greece and Europe."
+        "el": "Άτομα άνω των 16 μπορούν να δηλώσουν συμμετοχή ως λειτουργικά στελέχη ή mentees του Mentroship Program δημιουργώντας λογαριασμό στο Members Platform και κάνοντας αίτηση συμμετοχής σε δράσεις σε όλη την Ελλάδα και Ευρώπη.",
+        "en": "Individuals over 16 can apply as officials or mentees in the Mentorship Programme by creating an account on the Members Platform and submitting applications for events across Greece and Europe."
       },
       "btn_volunteers_positions": {
         "el": "Θέσεις λειτουργικών στελεχών",
@@ -866,7 +858,7 @@
         "en": "School Participation in Conferences"
       },
       "section_text": {
-        "el": "Στις Εθνικές Συνδυασκέψεις του Ε.Κ.Ν.Ε, μπορούν να συμμετέχουν μαθητές της Α, Β, Γ, Λυκείου όλων των Λυκείων της Ελλάδας, μέσω του υπέυθυνου καθηγητή. Στην καρτέλα νέα μπορείτε να δείτε ανακοινώσεις και καλέσματα προς σχολεία για την αποστολή συνέδρων σε δράσεις μας. Επικοινωνήστε στο mail info@eypgreece.org για περισσότερες πληροφορίες ή ερωτήσεις.",
+        "el": "Στις Εθνικές Συνδυασκέψεις του Ε.Κ.Ν.Ε, μπορούν να συμμετέχουν μαθητές λυκείων (Γενικού και Επαγγελματικού) 16-18, μέσω του υπέυθυνου καθηγητή. Στην καρτέλα νέα μπορείτε να δείτε ανακοινώσεις και καλέσματα προς σχολεία για την αποστολή συνέδρων σε δράσεις μας. Επικοινωνήστε στο mail info@eypgreece.org για περισσότερες πληροφορίες ή ερωτήσεις.",
         "en": "High school students in 10th, 11th, and 12th grade from any high school in Greece can participate in EYP Greece's National Conferences through their teacher in charge. In the news section you can find announcements and calls for schools to send delegates to our events. Contact us at info@eypgreece.org for more information or inquiries."
       },
       "btn_news": {
@@ -938,6 +930,14 @@
       "safety_text": {
         "el": "Αποτελείται από τον Event Safe Person και τον National Safety Person και έχει ως σκοπό τη διαφύλαξη της ασφάλειας της δράσης και της ευημέρειας των συμμετεχόντων της.",
         "en": "Consists of the Event Safe Person and National Safety Person, aiming to ensure safety and maintain the well-being of all session participants."
+      },
+      "nc_title": {
+        "el": "Διοικητικό Συμβούλιο",
+        "en": "NC Representative"
+      },
+      "nc_text": {
+        "el": "Ο Εκπρόσωπος του ΔΣ, αποτελεί τον δίαυλο επικοινωνίας της Οργανωτικής Ομάδας με το υπόλοιπο Διοικητικό Συμβούλιο και καθοδηγεί τους Επικεφαλείς της Διοργάνωσης όπου χρειάζεται.",
+        "en": "The NC Representative, serving as the link between the Organising Team and the rest of the NC, guiding the Event Heads where necessary."
       }
     }
   },
