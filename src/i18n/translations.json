@@ -672,6 +672,10 @@
         "en": "Regional Coordinators"
       },
       "despoina": {
+        "label": {
+          "el": "Περιφερειακή Συντονίστρια",
+          "en": "Regional Coordinator"
+        },
         "name": {
           "el": "Δέσποινα Παπαδοπούλου",
           "en": "Despoina Papadopoulou"
@@ -679,9 +683,35 @@
         "region": {
           "el": "Βόρεια Ελλάδα",
           "en": "Northern Greece"
+        },
+        "members": {
+          "m1": {
+            "title": {
+              "el": "Μέλος Περιφερειακής Ομάδας",
+              "en": "Regional Group Member"
+            },
+            "name": {
+              "el": "Έλενα Αλεξιάδου",
+              "en": "Elena Alexiadou"
+            }
+          },
+          "m2": {
+            "title": {
+              "el": "Μέλος Περιφερειακής Ομάδας",
+              "en": "Regional Group Member"
+            },
+            "name": {
+              "el": "Κυριακή Λεπτοκαρίδη",
+              "en": "Kyriaki Leptokaridi"
+            }
+          }
         }
       },
       "domniki": {
+        "label": {
+          "el": "Περιφερειακή Συντονίστρια",
+          "en": "Regional Coordinator"
+        },
         "name": {
           "el": "Δομνίκη Χατζηαλέξη",
           "en": "Domniki Chatzialexi"
@@ -689,9 +719,35 @@
         "region": {
           "el": "Κεντρική Ελλάδα",
           "en": "Central Greece"
+        },
+        "members": {
+          "m1": {
+            "title": {
+              "el": "Μέλος Περιφερειακής Ομάδας",
+              "en": "Regional Group Member"
+            },
+            "name": {
+              "el": "Απόστολος Τασούλας",
+              "en": "Apostolos Tasoulas"
+            }
+          },
+          "m2": {
+            "title": {
+              "el": "Μέλος Περιφερειακής Ομάδας",
+              "en": "Regional Group Member"
+            },
+            "name": {
+              "el": "Μαρίσα Μίγκα",
+              "en": "Marisa Miga"
+            }
+          }
         }
       },
       "theophilos": {
+        "label": {
+          "el": "Περιφερειακός Συντονιστής",
+          "en": "Regional Coordinator"
+        },
         "name": {
           "el": "Θεόφιλος Καραμανώλης",
           "en": "Theophilos Karamanolis"
@@ -699,6 +755,28 @@
         "region": {
           "el": "Νότια Ελλάδα",
           "en": "Southern Greece"
+        },
+        "members": {
+          "m1": {
+            "title": {
+              "el": "Μέλος Περιφερειακής Ομάδας",
+              "en": "Regional Group Member"
+            },
+            "name": {
+              "el": "Ασημίνα Χάνου",
+              "en": "Asimina Chanou"
+            }
+          },
+          "m2": {
+            "title": {
+              "el": "Μέλος Περιφερειακής Ομάδας",
+              "en": "Regional Group Member"
+            },
+            "name": {
+              "el": "Μελίνα Μαχιμάρη",
+              "en": "Melina Machimari"
+            }
+          }
         }
       }
     }
@@ -1414,6 +1492,10 @@
     "text4": {
       "el": "Η διαρκής σύνδεσή τους με τον Οργανισμό συμβάλλει στη σταθερότητα και τη συνέχεια ενός δικτύου που εξελίσσεται, εμπνέει και υποστηρίζει τις επόμενες γενιές EYPiers που δραστηριοποιούνται στην χώρα μας.",
       "en": "With the experience and knowledge gained through their participation and roles, Alumni can continue to support our mission and contribute to the work of EYP Greece.<br><br>Their ongoing connection with the Organization contributes to the stability and continuity of a network that evolves, inspires, and supports future generations of EYPiers in our country."
+    },
+    "hrButton": {
+      "el": "Επικοινωνία με την υπεύθυνη ανθρώπινου δυναμικού",
+      "en":"Contact our HR officer"
     }
   },
   "contact": {
