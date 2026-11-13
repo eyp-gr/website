@@ -1,5 +1,5 @@
 ---
-title: " Call for Organisers | 2nd University Forum of EYP Greece"
+title: Κάλεσμα για τα Μέλη Οργανωτικής Ομάδας (Organisers) | 2ο Πανεπιστημιακό Φόρουμ
 date: 2026-08-22T12:59:00.000+03:00
 author: Ε.Κ.Ν.Ε.
 image: /assets/blog/oudas-26-full-logo.png
