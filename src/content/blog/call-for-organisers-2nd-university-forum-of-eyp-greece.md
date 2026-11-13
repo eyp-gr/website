@@ -3,40 +3,41 @@ title: " Call for Organisers | 2nd University Forum of EYP Greece"
 date: 2026-08-22T12:59:00.000+03:00
 author: Ε.Κ.Ν.Ε.
 image: /assets/blog/oudas-26-full-logo.png
-summary: Call for Organisers for the 2nd University Forum of the European Youth
-  Parliament
-  Greece.
+summary: Κάλεσμα για τα Μέλη Οργανωτικής Ομάδας (Organisers) του 2ου
+  Πανεπιστημιακού Φόρουμ του Ευρωπαϊκού Κοινοβουλίου Νέων Ελλάδος.
 ---
-Dear members of the EYP community,
+Σας κοινοποιούμε το παρακάτω μήνυμα της Διοργανωτικής Επιτροπής του **2ου Πανεπιστημιακού Φόρουμ του Ευρωπαϊκού Κοινοβουλίου Νέων Ελλάδος.** 
 
-                                                                                                                                           
+“Είμαστε στην ευχάριστη θέση να ανακοινώσουμε **το κάλεσμα για τα Μέλη Οργανωτικής Ομάδας** **(Organisers)** του 2ου Πανεπιστημιακού Φόρουμ του Ευρωπαϊκού Κοινοβουλίου Νέων Ελλάδος. 
 
-The European Youth Parliament Greece is proud to open the **Call for Organisers** for the **2nd University Forum of the European Youth Parliament Greece.**                                                                                                     
+Το 2ο Πανεπιστημιακό Φόρουμ του Ε.Κ.Ν.Ε θα πραγματοποιηθεί από τις **26 έως τις 29 Νοεμβρίου 2026** στην **Αθήνα** υπό την θεματική: 
 
-                                                                                                                                         
+**“Oὗdas: Stepping into a sustainable future” \[EN]**
 
-The event will take place in the city of Athens from the **26th till the 29th of November 2026**. Under the theme **"Oὗdas: Stepping into a sustainable future"** the session is going to gather approximately **203** participants from all over Europe.
+**«Οὖδας: Οδεύοντας προς ένα βιώσιμο μέλλον» \[ΕΛ]** 
 
-The Head Organiser of the Forum, **Mrs. Eva Kafourou (GR)** is looking for **12** people to join the **Organising Team.** Before applying, we highly encourage you to read the **[Vision](https://drive.google.com/file/d/1Kv08fvDCFhNVorlMDH9KEET0Eg1jCxsi/view?usp=sharing) for the Organisers.** 
+και θα συγκεντρώσει **203** συμμετέχοντες από όλα τα γεωγραφικά μήκη και πλάτη της Ευρώπης.
 
-All Officials are expected to pay **30€ (for EYP-Greece Officials and for Non-EYP Greece Officials) participation fee, covering participants’ accommodation and food expenses in Athens.** 
+Υπεύθυνη για τη διοργάνωση είναι η Εύα Καφούρου (GR).
 
-Those who wish to apply as an **Organiser** are required to apply as follows:
+Αναζητούμε **12 μέλη** που θα αποτελέσουν τα **Μέλη Οργανωτικής Ομάδας** **(Organisers)** της δράσης. Πριν την υποβολή της αίτησής σας, σας προτρέπουμε να διαβάσετε **[το όραμα](https://drive.google.com/file/d/1Kv08fvDCFhNVorlMDH9KEET0Eg1jCxsi/view?usp=sharing) της Εύας Καφούρου (GR),** **Head Organiser.**
 
-Anyone wishing to apply to become a Core Organizer must fill out the **Google Form [here ](https://forms.gle/uTKaDfGCcsQkH1jD9)(alternatively: <https://forms.gle/uTKaDfGCcsQkH1jD9>)** and submit their application by answering the questions.
+Όλα τα λειτουργικά στελέχη, συμπεριλαμβανόμενων των **Μελών Οργανωτικής Ομάδας (Organisers),** θα κληθούν να καταβάλουν **30€ (για τα EYP-Greece και τα Non-EYP Greece Λειτουργικά Στελέχη) ως κόμιστρο συμμετοχής στην δράση, το οποίο θα καλύψει τα έξοδα της διαμονής και της διατροφής τους στην Αθήνα.** 
 
-Should you have any questions or face any issues regarding your application, feel free to contact us through the event’s email: **[university.forum@eypgreece.org](mailto:university.forum@eypgreece.org)**. 
+Όσα επιθυμούν να αιτηθούν για να γίνουν **Μέλη Οργανωτικής Ομάδας** **(Organisers)** υποχρεούνται να συμπληρώσουν το **Google Form [εδώ](https://forms.gle/LmgEz9Q7mjXWwBR67) (εναλλακτικά: <https://forms.gle/LmgEz9Q7mjXWwBR67>)** και να υποβάλουν την αίτηση τους απαντώντας στις ερωτήσεις.
 
-However, please keep in mind that by contacting us at the e-mail address provided above, you consent to us storing the content of your personal data for the purposes of  the 2nd University Forum of EYP Greece. For information regarding your personal data and your rights according to the GDPR please contact [data@eypgreece.org](mailto:data@eypgreece.org) and you will receive a response within 30 days.                                                                           
+Εάν έχετε οποιαδήποτε ερώτηση, μη διστάσετε να επικοινωνήσετε μαζί μας στο στο email της δράσης **[university.forum@eypgreece.org](mailto:university.forum@eypgreece.org)**.
 
-**The deadline for submitting applications is Sunday 30th of August 2026, at 11:59 p.m. Greek (EEST) time.**
+Ωστόσο, λάβετε υπόψη ότι επικοινωνώντας μαζί μας στην παραπάνω διεύθυνση ηλεκτρονικού ταχυδρομείου, συναινείτε στην επεξεργασία των προσωπικών σας δεδομένων τα οποία διαμοιράζεστε με το Ε.Κ.Ν.Ε. για τους σκοπούς της διοργάνωσης του 2ου Πανεπιστημιακού Φόρουμ του E.K.N.E**.** Μπορείτε να διαβάσετε αναλυτικά την πολιτική απορρήτου στην ιστοσελίδα μας (<https://www.eypgreece.org/el/page/politikh-aporritou>). Για θέματα που αφορούν προσωπικά δεδομένα και τα δικαιώματα σας βάση του Γ.Κ.Π.Δ. μπορείτε να επικοινωνήσετε στη διεύθυνση [data@eypgreece.org](mailto:data@eypgreece.org) και θα λάβετε απάντηση εντός τριάντα ημερών.
 
-All applicants will be informed individually about the outcome of their application via e-mail after the selection period is over.                                                                                                                                
+**Η προθεσμία υποβολής αίτησης είναι η Κυριακή 30 Αυγούστου 2026, στις 23.59 ώρα Ελλάδος.** 
 
- 
+Όλα τα υποψήφια άτομα θα ενημερωθούν ατομικά μέσω email για το αποτέλεσμα της επιλογής αμέσως μετά την ολοκλήρωση της διαδικασίας επιλογής. 
 
-The selection panel for the **Organisers** will be composed by the Core Organisers, **Ms. Thekla Kandyli (GR), Mr. Chris Kordelis (GR), Ms. Vera Vasileiou (GR), Mr. Dimitris Tsintziroulis (GR) and Ms. Foteini Polyxronidou (GR)** alongside the the Head Organising Committee, namely **Mrs. Eva Kafourou (GR)** with **Mr. Panagiotis Tziatzios (GR)**, representing the NC Board.              
+Την **Επιτροπή Επιλογής των Μελών της Οργανωτικής Ομάδας** θα συγκροτήσουν τα Μέλη της Ομάδας Συντονισμού που αποτελούνται από τους **κα. Θέκλα Κανδύλη (GR), κ. Κρις Κορδέλη (GR), κα. Βέρα Βασιλείου (GR), κ. Δημήτρη Τσιντζιρούλη (GR) και κα. Φωτεινή Πολυχρονίδου (GR)** μαζί με την Διοργανωτική Επιτροπή, **κα**. **Εύα Καφούρου** **(GR)** και τον **κ. Παναγιώτη Τζιάτζιο (GR)** που θα εκπροσωπήσει το Διοικητικό Συμβούλιο.
 
-                                                                                                                   
+**Ανυπομονούμε να λάβουμε τις αιτήσεις σας!**”
 
-**We are really looking forward to seeing your applications!**
+Με εκτίμηση,
+
+Το Διοικητικό Συμβούλιο
